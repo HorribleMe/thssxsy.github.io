@@ -1,24 +1,44 @@
+{% load staticfiles %}
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<title>新闻速递</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{% static 'css/news.css' %}">
+	<title>HorribleMe</title>
+
 </head>
 <body>
-	<h1>新闻速递</h1>
-	{% for new in news %}
-	<div>
-		<h2>{{ new.title }}</h2>
-		<p><b>{{ new.author }}</b>发表于{{new.time}}</p>
-		<p>{{ new.content }}</p>
+	<div class="page-header">
+	<h1><a href='/' id="headTitle">News Express</a></h1>
+	<h4><a class="logLink" href="http://127.0.0.1:8000/accounts/login/">LogIn</a></h4><br>
+	<h4><a class="logLink" href="http://127.0.0.1:8000/accounts/logout/">LogOut</a></h4>
 	</div>
-	{% endfor %}
+
+	<div class="content container">
+		<div class="row">
+			<div class="col-md-8">
+				{% for new in news %}
+				<div class="newsList">
+				<h2>{{ new.title }}</h2>
+				<p><b>{{ new.author }}</b> at {{new.time}}</p>
+				<p>{{ new.content }}</p>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
 	<hr>
 	<form method="POST" class="post-form">{%csrf_token%}
 	{{ form.as_p }}
-	<button type="submit" class="save btn btn-default">添加新闻</button>
+	<button type="submit" class="save btn btn-default">add</button>
 	</form>
 </body>
+
 <br>
-<a href="http://127.0.0.1:8000/accounts/login/">LogIn</a><br>
-<a href="http://127.0.0.1:8000/accounts/logout/">LogOut</a>
+<footer>
+	
+</footer>
 </html>
