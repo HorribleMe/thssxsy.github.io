@@ -1,0 +1,24 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>新闻速递</title>
+</head>
+<body>
+	<h1>新闻速递</h1>
+	{% for new in news %}
+	<div>
+		<h2>{{ new.title }}</h2>
+		<p><b>{{ new.author }}</b>发表于{{new.time}}</p>
+		<p>{{ new.content }}</p>
+	</div>
+	{% endfor %}
+	<hr>
+	<form method="POST" class="post-form">{%csrf_token%}
+	{{ form.as_p }}
+	<button type="submit" class="save btn btn-default">添加新闻</button>
+	</form>
+</body>
+<br>
+<a href="http://127.0.0.1:8000/accounts/login/">LogIn</a><br>
+<a href="http://127.0.0.1:8000/accounts/logout/">LogOut</a>
+</html>
