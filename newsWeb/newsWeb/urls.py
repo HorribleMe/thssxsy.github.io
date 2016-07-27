@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^accounts/', include('registration.backends.simple.urls')),
     url(r'^show/$', 'news.views.news_show'),
     url(r'^account_info/', include('account.urls')),
+    url(r'^visit/$', 'account.views.visit'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

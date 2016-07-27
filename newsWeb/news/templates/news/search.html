@@ -19,16 +19,7 @@
 	<h4><a class="logLink" href="./accounts/logout/">{{ state2 }}</a></h4>
 	</div>
 
-	<form method="post" class="searchTitle">
-	{% csrf_token %}
-	{{form1}}
-	<input type="submit" value="Search">
-	</form>
-	<form method="post" class="searchContent">
-	{% csrf_token %}
-	{{form2}}
-	<input type="submit" value="Search">
-	</form>
+	<p class="resultNum">{{num}} results founded : </p><br>
 	<div class="content container">
 		<div class="row">
 			<div class="col-md-8">

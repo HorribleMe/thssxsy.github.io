@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import UserInfo
 from .forms import InfoForm
+from django.contrib.auth import get_user_model
 
 # Create your views here.
 def editInfo(request):
@@ -25,3 +26,14 @@ def editInfo(request):
 	except :
 		presentAcc = UserInfo()
 	return render(request, 'account/info.html', {'presentAcc': presentAcc, 'form': form})
+
+def visit(request):
+	p1 = request.GET.get('name')
+	User = get_user_model()
+	author = User.objects.get(username = p1)
+	info = UserInfo.objects.get(user = author)
+	return render(request, 'account/visit.html', {'info': info})
+
+
+
+

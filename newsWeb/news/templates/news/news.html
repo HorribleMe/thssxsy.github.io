@@ -30,7 +30,7 @@
 				{% for comment in comments %}
 				<div>
 					<p>{{ comment.content }}</p><br>
-					<p><b>{{comment.author}}</b> at {{comment.time}}</p>
+					<p><b><a href='http://127.0.0.1:8000/visit/?name={{comment.author.username}}'>{{comment.author}}</a></b> at {{comment.time}}</p>
 				</div>
 				{% endfor %}
 			</div>

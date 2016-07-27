@@ -14,10 +14,9 @@ class News(models.Model):
 
 class Comments(models.Model):
 	author = models.ForeignKey('auth.User')
-	news = models.ForeignKey('News')
+	news = models.ForeignKey('News', related_name='news')
 	content = models.TextField()
 	time = models.DateTimeField(default=timezone.now)
 	support = models.IntegerField(default = 0)
-
 	def __str__(self):
 		return self.content

@@ -53,3 +53,23 @@ h4 {
     position: absolute;
     right: 20px;
 }
+
+.userInfo {
+    font-size: 20pt;
+    margin-left: 20px;
+}
+
+.searchTitle{
+    position: absolute;
+    left: 50px;
+    top: 210px;
+}
+.searchContent{
+    position: absolute;
+    left: 350px;
+    top: 210px;
+}
+.resultNum {
+    font-size: 15pt;
+    margin-left: 50px;
+}

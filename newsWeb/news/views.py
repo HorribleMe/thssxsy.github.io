@@ -1,23 +1,45 @@
 from django.shortcuts import render
 from .models import News
 from .models import Comments
-from .forms import CommentsForm
+from .forms import CommentsForm, SearchForm, SearchByContent
+from account.models import UserInfo
 
 STATE1 = 'LogIn'
 STATE2 = ''
+STATE3 = ''
 # Create your views here.
 def news_list(request):
 	global STATE1
 	global STATE2
+	global STATE3
+	if request.method == 'POST':
+		form1 = SearchForm(request.POST)
+		form2 = SearchByContent(request.POST)
+		if form1.is_valid():
+			title = form1.cleaned_data['title']
+			result = News.objects.filter(title__contains=title)
+			num = result.count()
+			return render(request, 'news/search.html', {'state1': STATE1, 
+		'state2': STATE2, 'state3': STATE3, 'news':result, 'num':num})
+		elif form2.is_valid():
+			content = form2.cleaned_data['content']
+			result = News.objects.filter(content__contains=content)
+			num = result.count()
+			return render(request, 'news/search.html', {'state1': STATE1, 
+		'state2': STATE2, 'state3': STATE3, 'news':result, 'num':num})
+	else:
+		form1 = SearchForm()
+		form2 = SearchByContent()
 	check(request)
 	news = News.objects.all()
 	return render(request, 'news/news_list.html', {'news': news, 'state1': STATE1, 
-		'state2': STATE2})
+		'state2': STATE2, 'state3': STATE3, 'form1':form1, 'form2': form2})
 
 
 def news_show(request):
 	global STATE1
 	global STATE2
+	global STATE3
 	check(request)
 	params = request.POST if request.method == 'POST' else None
 	form = CommentsForm(params)
@@ -30,16 +52,20 @@ def news_show(request):
 		post.save()
 		form = CommentsForm()
 	comments = Comments.objects.filter(news = new)
+
 	return render(request, 'news/news.html', {'new': new, 'form': form, 'comments':comments, 
-		'state1': STATE1, 'state2': STATE2})
+		'state1': STATE1, 'state2': STATE2, 'state3': STATE3})
 
 
 def check(request):
 	global STATE1
 	global STATE2
+	global STATE3
 	if request.user.is_anonymous():
 		STATE1 = 'LogIn'
 		STATE2 = ''
+		STATE3 = ''
 	else:
-		STATE1 = request.user.get_username()
+		STATE1 = ''
 		STATE2 = 'LogOut'
+		STATE3 = request.user.get_username()

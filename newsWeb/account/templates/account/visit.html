@@ -7,27 +7,21 @@
 	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="{% static 'css/news.css' %}">
-	<title>HorribleMe | Info</title>
+	<title>HorribleMe | Visit</title>
 
 </head>
 <body>
 	<div class="page-header">
 	<h1><a href='/' id="headTitle">News Express</a></h1>
 	</div>
-	<div class='userInfo'>
-		<p>Account: {{presentAcc.user}}</p><br>
-		<p>Account Nickname: {{presentAcc.nickname}}</p><br>
-		<p>Account Email: {{presentAcc.email}}</p><br>
-		<p>Account Follow: {{presentAcc.follow}}</p><br>
-		<p>Account Fans: {{presentAcc.fans}}</p><br>
-		<img src='./media/{{presentAcc.headPic}}' width="200" height="200" />
+	<div class='accountInfo'>
+		<h2>Account: {{info.user}}</h2><br>
+		<h2>Account Nickname: {{info.nickname}}</h2><br>
+		<h2>Account Email: {{info.email}}</h2><br>
+		<h2>Account Follow: {{info.follow}}</h2><br>
+		<h2>Account Fans: {{info.fans}}</h2><br>
+		<img class="headPic" src='http://127.0.0.1:8000/account_info/media/{{info.headPic}}' width="200" height="200" />
 	</div>
-
-	<hr>
-	<form method="POST" class="post-form">{%csrf_token%}
-	{{ form.as_p }}
-	<button type="submit" class="save btn btn-default">Submit</button>
-	</form>
 </body>
 
 <br>
