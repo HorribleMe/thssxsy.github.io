@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{% static 'css/news.css' %}">
+	<title>HorribleMe | Follow</title>
+
+</head>
+<body>
+	<div class="page-header">
+	<h1><a href='/' id="headTitle">News Express</a></h1>
+	</div>
+	<div class='checkResult'>
+		{% for save in saves %}
+		<a href="{% url 'show'%}?title={{save.news.title}}"><h3><b>{{save.news.title}}</b></h3></a><br>
+		<p>{{save.news.author}} at {{save.news.time}}</p><br>
+		{% endfor %}
+	</div>
+</body>
+
+<br>
+<footer>
+	
+</footer>
+</html>

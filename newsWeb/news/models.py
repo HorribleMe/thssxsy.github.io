@@ -20,3 +20,8 @@ class Comments(models.Model):
 	support = models.IntegerField(default = 0)
 	def __str__(self):
 		return self.content
+
+class Save(models.Model):
+	user = models.ForeignKey('auth.User')
+	news = models.ForeignKey('News', related_name='saveNews')
+

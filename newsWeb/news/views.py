@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from .models import News
 from .models import Comments
+from .models import Save
 from .forms import CommentsForm, SearchForm, SearchByContent
-from account.models import UserInfo
 
 STATE1 = 'LogIn'
 STATE2 = ''
@@ -37,11 +37,30 @@ def news_list(request):
 
 
 def news_show(request):
+	newOne = True
 	global STATE1
 	global STATE2
 	global STATE3
 	check(request)
 	params = request.POST if request.method == 'POST' else None
+	if params and params['type'] == 'support':
+		ID = params['commentId']
+		comment = Comments.objects.get(id = ID)
+		comment.support+=1
+		comment.save()
+	if params and params['type'] == 'save':
+		ID = params['newsId']
+		new = News.objects.get(id = ID)
+		try:
+			save = Save.objects.get(user = request.user, news = new)
+			newOne = False
+		except:
+			save = Save()
+			newOne = True
+		if newOne == True:
+			save.user = request.user
+			save.news = new
+			save.save()
 	form = CommentsForm(params)
 	p1 = request.GET.get('title')
 	new = News.objects.get(title = p1)

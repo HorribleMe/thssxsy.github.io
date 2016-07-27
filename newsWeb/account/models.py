@@ -11,3 +11,7 @@ class UserInfo(models.Model):
 
 	def __str__(self):
 		return self.nickname
+
+class Like(models.Model):
+	star = models.ForeignKey('UserInfo', related_name='star')
+	fan = models.ForeignKey('UserInfo', related_name='fan')

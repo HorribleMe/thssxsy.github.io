@@ -22,9 +22,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('news.urls')),
     url(r'^accounts/', include('registration.backends.simple.urls')),
-    url(r'^show/$', 'news.views.news_show'),
+    url(r'^show/$', 'news.views.news_show', name='show'),
     url(r'^account_info/', include('account.urls')),
-    url(r'^visit/$', 'account.views.visit'),
+    url(r'^visit/$', 'account.views.visit', name='visit'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

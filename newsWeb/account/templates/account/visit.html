@@ -20,7 +20,18 @@
 		<h2>Account Email: {{info.email}}</h2><br>
 		<h2>Account Follow: {{info.follow}}</h2><br>
 		<h2>Account Fans: {{info.fans}}</h2><br>
-		<img class="headPic" src='http://127.0.0.1:8000/account_info/media/{{info.headPic}}' width="200" height="200" />
+		<img class="headPic" src="{% url 'editInfo' %}media/{{info.headPic}}"" width="200" height="200" />
+		<hr>
+		<form method="POST" action="">{%csrf_token%}
+			<input type="hidden" name="type" value="like" />
+			<input type="hidden" name="nickname" value="{{info.nickname}}" action=""></input>
+			<button type="submit">Follow</button>
+		</form>
+		<form method="POST" action="">{%csrf_token%}
+			<input type="hidden" name="type" value="unfollow" />
+			<input type="hidden" name="nickname" value="{{info.nickname}}" action=""></input>
+			<button type="submit">Unfollow</button>
+		</form>
 	</div>
 </body>
 

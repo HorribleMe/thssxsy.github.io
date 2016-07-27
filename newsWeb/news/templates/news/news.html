@@ -13,8 +13,9 @@
 <body>
 	<div class="page-header">
 	<h1><a href='/' id="headTitle">News Express</a></h1>
-	<h4><a class="logLink" href="http://127.0.0.1:8000/accounts/login/">{{state1}}</a></h4><br>
-	<h4><a class="logLink" href="http://127.0.0.1:8000/accounts/logout/">{{state2}}</a></h4>
+	<h4><a class="logLink" href="{% url 'editInfo' %}">{{ state3 }}</a></h4><br>
+	<h4><a class="logLink" href="{% url 'home' %}accounts/login">{{state1}}</a></h4><br>
+	<h4><a class="logLink" href="{% url 'home' %}accounts/logout">{{state2}}</a></h4>
 	</div>
 
 	<div class="content container">
@@ -23,14 +24,28 @@
 				<div class="newsList">
 				<h2>{{ new.id }}.{{ new.title }}</h2><br>
 				<p>{{ new.content }}</p><br>
-				<p id = 'date'><b>{{ new.author }}</b> at {{new.time}}</p>
+				<img src="{% url 'home' %}media/{{new.img}}" width="800" height="600" /><br>
+				<hr>
+				<p id = 'date'><b>{{ new.author }}</b> at {{new.time}}</p><br>
+				<form method="POST" action="">{%csrf_token%}
+						<input type="hidden" name="type" value="save" />
+						<input type="hidden" name="newsId" value="{{new.id}}" action=""></input>
+						<button type="submit">save</button>
+					</form>
 				</div><br>
 
-				<h3>Comments: </h3>
+				<h3>Comments: </h3><br>
 				{% for comment in comments %}
 				<div>
 					<p>{{ comment.content }}</p><br>
 					<p><b><a href='http://127.0.0.1:8000/visit/?name={{comment.author.username}}'>{{comment.author}}</a></b> at {{comment.time}}</p>
+					<p>Support: {{comment.support}} </p>
+					<form method="POST" action="">{%csrf_token%}
+						<input type="hidden" name="type" value="support" />
+						<input type="hidden" name="commentId" value="{{comment.id}}" action=""></input>
+						<button type="submit">support</button>
+					</form>
+					<HR style="border:1 dashed #987cb9" width="100%" color=#66B3FF SIZE=1>
 				</div>
 				{% endfor %}
 			</div>
@@ -39,7 +54,9 @@
 	<hr>
 	<form method="POST" class="post-form">{%csrf_token%}
 	{{ form.as_p }}
-	<button type="submit" class="save btn btn-default">comment</button>
+	<input type="hidden" name="type" value="post" />
+
+	<button type="submit">comment</button>
 	</form>
 </body>
 
