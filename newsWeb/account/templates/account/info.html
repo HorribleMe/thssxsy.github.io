@@ -1,0 +1,39 @@
+{% load staticfiles %}
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{% static 'css/news.css' %}">
+	<title>HorribleMe | Info</title>
+
+</head>
+<body>
+	<div class="page-header">
+	<h1><a href='/' id="headTitle">News Express</a></h1>
+	<h4><a class="logLink" href="http://127.0.0.1:8000/accounts/login/">{{state1}}</a></h4><br>
+	<h4><a class="logLink" href="http://127.0.0.1:8000/accounts/logout/">{{state2}}</a></h4>
+	</div>
+	<div>
+		<h2>Account: {{presentAcc.user}}</h2><br>
+		<h2>Account Nickname: {{presentAcc.nickname}}</h2><br>
+		<h2>Account Email: {{presentAcc.email}}</h2><br>
+		<h2>Account Follow: {{presentAcc.follow}}</h2><br>
+		<h2>Account Fans: {{presentAcc.fans}}</h2><br>
+		<img src='./media/{{presentAcc.headPic}}'/>
+	</div>
+
+	<hr>
+	<form method="POST" class="post-form">{%csrf_token%}
+	{{ form.as_p }}
+	<button type="submit" class="save btn btn-default">Submit</button>
+	</form>
+</body>
+
+<br>
+<footer>
+	
+</footer>
+</html>

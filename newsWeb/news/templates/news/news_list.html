@@ -7,14 +7,16 @@
 	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="{% static 'css/news.css' %}">
+	<script type="text/javascript" src='/static/js/newsWeb.js'></script>
 	<title>HorribleMe</title>
 
 </head>
 <body>
 	<div class="page-header">
-	<h1><a href='/' id="headTitle">News Express</a></h1>
-	<h4><a class="logLink" href="http://127.0.0.1:8000/accounts/login/">LogIn</a></h4><br>
-	<h4><a class="logLink" href="http://127.0.0.1:8000/accounts/logout/">LogOut</a></h4>
+	<h1><a id='test' href='/'>News Express</a></h1>
+	<h4><a class="logLink" href="./account_info/">Info</a></h4><br>
+	<h4><a class="logLink" href="./accounts/login/">{{ state1 }}</a></h4><br>
+	<h4><a class="logLink" href="./accounts/logout/">{{ state2 }}</a></h4>
 	</div>
 
 	<div class="content container">
@@ -22,19 +24,14 @@
 			<div class="col-md-8">
 				{% for new in news %}
 				<div class="newsList">
-				<h2>{{ new.title }}</h2>
+				<h2><a href='./show/?title={{new.title}}'>{{ new.title }}</a></h2>
 				<p><b>{{ new.author }}</b> at {{new.time}}</p>
-				<p>{{ new.content }}</p>
+				<img src='./media/{{new.img}}' />
 				</div>
 				{% endfor %}
 			</div>
 		</div>
 	</div>
-	<hr>
-	<form method="POST" class="post-form">{%csrf_token%}
-	{{ form.as_p }}
-	<button type="submit" class="save btn btn-default">add</button>
-	</form>
 </body>
 
 <br>

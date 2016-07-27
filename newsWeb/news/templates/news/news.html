@@ -1,0 +1,50 @@
+{% load staticfiles %}
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{% static 'css/news.css' %}">
+	<title>HorribleMe | News</title>
+
+</head>
+<body>
+	<div class="page-header">
+	<h1><a href='/' id="headTitle">News Express</a></h1>
+	<h4><a class="logLink" href="http://127.0.0.1:8000/accounts/login/">{{state1}}</a></h4><br>
+	<h4><a class="logLink" href="http://127.0.0.1:8000/accounts/logout/">{{state2}}</a></h4>
+	</div>
+
+	<div class="content container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="newsList">
+				<h2>{{ new.id }}.{{ new.title }}</h2><br>
+				<p>{{ new.content }}</p><br>
+				<p id = 'date'><b>{{ new.author }}</b> at {{new.time}}</p>
+				</div><br>
+
+				<h3>Comments: </h3>
+				{% for comment in comments %}
+				<div>
+					<p>{{ comment.content }}</p><br>
+					<p><b>{{comment.author}}</b> at {{comment.time}}</p>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<hr>
+	<form method="POST" class="post-form">{%csrf_token%}
+	{{ form.as_p }}
+	<button type="submit" class="save btn btn-default">comment</button>
+	</form>
+</body>
+
+<br>
+<footer>
+	
+</footer>
+</html>

@@ -1,7 +1,7 @@
 from django import forms
-from .models import News
+from .models import Comments
 
-class NewsForm(forms.ModelForm):
+class CommentsForm(forms.ModelForm):
 	class Meta:
-		model = News
-		fields = ('title', 'content')
+		model = Comments
+		fields = ('content',)
