@@ -25,7 +25,7 @@
 			<div class="col-md-8">
 				{% for new in news %}
 				<div class="newsList">
-				<h2><a href='./show/?title={{new.title}}'>{{ new.title }}</a></h2>
+				<h2><a href="{% url 'home'%}show/?title={{new.title}}">{{ new.title }}</a></h2>
 				<p><b>{{ new.author }}</b> at {{new.time}}</p>
 				<img src="{% url 'home' %}media/{{new.img}}"" width="1150" height="700" />
 				</div>

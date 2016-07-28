@@ -20,7 +20,7 @@
 		<p>Account Email: {{info.email}}</p><br>
 		<p>Account Follow: {{info.follow}}</p><br>
 		<p>Account Fans: {{info.fans}}</p><br>
-		<img class="headPic" src="{% url 'editInfo' %}media/{{info.headPic}}"" width="200" height="200" />
+		<img class="userPic" src="{% url 'editInfo' %}media/{{info.headPic}}"" width="200" height="200" />
 		<hr>
 		<form method="POST" action="">{%csrf_token%}
 			<input type="hidden" name="type" value="like" />

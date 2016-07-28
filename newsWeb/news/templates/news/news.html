@@ -23,27 +23,28 @@
 			<div class="col-md-8">
 				<div class="newsList">
 				<h2>{{ new.id }}.{{ new.title }}</h2><br>
-				<p>{{ new.content }}</p><br>
+				<p class="newsContent">{{ new.content }}</p><br>
 				<img src="{% url 'home' %}media/{{new.img}}" width="800" height="600" /><br>
 				<hr>
 				<p id = 'date'><b>{{ new.author }}</b> at {{new.time}}</p><br>
 				<form method="POST" action="">{%csrf_token%}
 						<input type="hidden" name="type" value="save" />
 						<input type="hidden" name="newsId" value="{{new.id}}" action=""></input>
-						<button type="submit">save</button>
+						<button type="submit" class="supportButton">save</button>
 					</form>
 				</div><br>
 
 				<h3>Comments: </h3><br>
+				<hr>
 				{% for comment in comments %}
 				<div>
-					<p>{{ comment.content }}</p><br>
+					<h4><b>{{ comment.content }}</b></h4><br>
 					<p><b><a href='http://127.0.0.1:8000/visit/?name={{comment.author.username}}'>{{comment.author}}</a></b> at {{comment.time}}</p>
 					<p>Support: {{comment.support}} </p>
 					<form method="POST" action="">{%csrf_token%}
 						<input type="hidden" name="type" value="support" />
 						<input type="hidden" name="commentId" value="{{comment.id}}" action=""></input>
-						<button type="submit">support</button>
+						<button type="submit" class="supportButton">support</button>
 					</form>
 					<HR style="border:1 dashed #987cb9" width="100%" color=#66B3FF SIZE=1>
 				</div>
@@ -52,11 +53,12 @@
 		</div>
 	</div>
 	<hr>
-	<form method="POST" class="post-form">{%csrf_token%}
+	<form method="POST" class="post-form">
+	{%csrf_token%}
 	{{ form.as_p }}
 	<input type="hidden" name="type" value="post" />
 
-	<button type="submit">comment</button>
+	<button type="submit" class="commentButton">comment</button>
 	</form>
 </body>
 

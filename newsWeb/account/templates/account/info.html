@@ -20,7 +20,7 @@
 		<p>Email: {{presentAcc.email}}</p><br>
 		<p>Follow: {{presentAcc.follow}}</p><br>
 		<p>Fans: {{presentAcc.fans}}</p><br>
-		<img src="{% url 'editInfo' %}media/{{presentAcc.headPic}}"" width="200" height="200" /><br>
+		<img src="{% url 'editInfo' %}media/{{presentAcc.headPic}}"" width="200" height="200" class="userPic" /><br>
 		<hr>
 		<form method="POST" action="">{%csrf_token%}
 			<input type="hidden" name="type" value="checkFollow" />
@@ -41,7 +41,8 @@
 
 	<br>
 	<hr>
-	<form method="POST" class="post-form">{%csrf_token%}
+	<p><b>Edit Your Info Here: </b></p><br>
+	<form method="POST">{%csrf_token%}
 	{{ form.as_p }}
 	<button type="submit" class="save btn btn-default">Edit</button>
 	</form>
