@@ -12,6 +12,7 @@
 
 .content {
     margin-left: 40px;
+    margin-top: 50px;
 }
 
 h1, h2, h3 {
@@ -62,12 +63,12 @@ h4 {
 .searchTitle{
     position: absolute;
     left: 50px;
-    top: 210px;
+    top: 250px;
 }
 .searchContent{
     position: absolute;
     left: 350px;
-    top: 210px;
+    top: 250px;
 }
 .resultNum {
     font-size: 15pt;
@@ -76,4 +77,39 @@ h4 {
 .checkResult{
     font-size: 10pt;
     margin-left: 50px;
+}
+#footClaim{
+    position: absolute;
+    margin-bottom: 0px;
+    left: 38%;
+}
+#tag1{
+    position: absolute;
+    font-size: 15pt;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+#tag2{
+    position: absolute;
+    font-size: 15pt;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+#tag3{
+    position: absolute;
+    font-size: 15pt;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+#tag4{
+    position: absolute;
+    font-size: 15pt;
+    margin-top: 50px;
+    margin-left: 215px;
+}
+#tag5{
+    position: absolute;
+    font-size: 15pt;
+    margin-top: 50px;
+    margin-left: 350px;
 }

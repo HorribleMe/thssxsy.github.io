@@ -96,6 +96,9 @@ def visit(request):
 	User = get_user_model()
 	author = User.objects.get(username = p1)
 	info = UserInfo.objects.get(user = author)
+	if author == request.user:
+		form = InfoForm()
+		return render(request, 'account/info.html', {'presentAcc': info, 'form': form})
 	return render(request, 'account/visit.html', {'info': info})
 
 

@@ -1,16 +1,25 @@
 {% load i18n %}
+{% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <link rel="stylesheet" href="{{ STATIC_URL }}style.css" />
-    <title>{% block title %}User test{% endblock %}</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/news.css' %}">
+    <title>{% block title %}HorribleMe | Account{% endblock %}</title>
 </head>
 
 <body>
-    <div id="header">
+    <div class="page-header">
+    <h1><a href='/' id="headTitle">News Express</a></h1>
+    </div>
+    <div>
     {% block header %}
-    <a href="{% url 'news_list' %}">{% trans "Home" %}</a> | 
+    <a href="{% url 'home' %}">{% trans "Home" %}</a> | 
 
     {% if user.is_authenticated %}
         {% trans "Logged in" %}: {{ user.username }} 
@@ -34,4 +43,8 @@
     </div>
 </body>
 
+<br>
+<footer>
+    <p id='footClaim'>Copyright © 2016 HorribleMe. All rights reserved.</p>
+</footer>
 </html>

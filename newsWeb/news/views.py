@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import News
 from .models import Comments
 from .models import Save
+from .models import Tag
 from .forms import CommentsForm, SearchForm, SearchByContent
 
 STATE1 = 'LogIn'
@@ -12,6 +13,7 @@ def news_list(request):
 	global STATE1
 	global STATE2
 	global STATE3
+	check(request)
 	if request.method == 'POST':
 		form1 = SearchForm(request.POST)
 		form2 = SearchByContent(request.POST)
@@ -30,8 +32,7 @@ def news_list(request):
 	else:
 		form1 = SearchForm()
 		form2 = SearchByContent()
-	check(request)
-	news = News.objects.all()
+	news = News.objects.all()[0:5]
 	return render(request, 'news/news_list.html', {'news': news, 'state1': STATE1, 
 		'state2': STATE2, 'state3': STATE3, 'form1':form1, 'form2': form2})
 
@@ -74,6 +75,17 @@ def news_show(request):
 
 	return render(request, 'news/news.html', {'new': new, 'form': form, 'comments':comments, 
 		'state1': STATE1, 'state2': STATE2, 'state3': STATE3})
+
+def tagSearch(request):
+	global STATE1
+	global STATE2
+	global STATE3
+	tag = request.GET.get('tag')
+	_tag = Tag.objects.get(name = tag)
+	news = News.objects.filter(classify = _tag)
+	num = news.count()
+	return render(request, 'news/search.html', {'state1': STATE1, 
+		'state2': STATE2, 'state3': STATE3, 'news':news, 'num':num})
 
 
 def check(request):

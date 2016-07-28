@@ -14,12 +14,12 @@
 	<div class="page-header">
 	<h1><a href='/' id="headTitle">News Express</a></h1>
 	</div>
-	<div class='accountInfo'>
-		<h2>Account: {{info.user}}</h2><br>
-		<h2>Account Nickname: {{info.nickname}}</h2><br>
-		<h2>Account Email: {{info.email}}</h2><br>
-		<h2>Account Follow: {{info.follow}}</h2><br>
-		<h2>Account Fans: {{info.fans}}</h2><br>
+	<div class='userInfo'>
+		<p><b>Account: {{info.user}}</b></p><br>
+		<p>Account Nickname: {{info.nickname}}</p><br>
+		<p>Account Email: {{info.email}}</p><br>
+		<p>Account Follow: {{info.follow}}</p><br>
+		<p>Account Fans: {{info.fans}}</p><br>
 		<img class="headPic" src="{% url 'editInfo' %}media/{{info.headPic}}"" width="200" height="200" />
 		<hr>
 		<form method="POST" action="">{%csrf_token%}
@@ -37,6 +37,6 @@
 
 <br>
 <footer>
-	
+	<p id='footClaim'>Copyright © 2016 HorribleMe. All rights reserved.</p>
 </footer>
 </html>

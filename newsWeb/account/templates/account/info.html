@@ -20,7 +20,7 @@
 		<p>Email: {{presentAcc.email}}</p><br>
 		<p>Follow: {{presentAcc.follow}}</p><br>
 		<p>Fans: {{presentAcc.fans}}</p><br>
-		<img src='./media/{{presentAcc.headPic}}' width="200" height="200" /><br>
+		<img src="{% url 'editInfo' %}media/{{presentAcc.headPic}}"" width="200" height="200" /><br>
 		<hr>
 		<form method="POST" action="">{%csrf_token%}
 			<input type="hidden" name="type" value="checkFollow" />
@@ -49,6 +49,6 @@
 
 <br>
 <footer>
-	
+	<p id='footClaim'>Copyright © 2016 HorribleMe. All rights reserved.</p>
 </footer>
 </html>
