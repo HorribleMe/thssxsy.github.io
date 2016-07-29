@@ -14,10 +14,19 @@
 	<div class="page-header">
 	<h1><a href='/' id="headTitle">News Express</a></h1>
 	</div>
+	{% if fans == None %}
+	<p class="infoWarning"><b>Please edit your info first.</b></p>
+	{% endif %}
+	{% if fansNum != 0 %}
+	<h4 class="cuteFont">You have {{fansNum}} fans:</h4><hr>
+	{% endif %}
 	<div class='checkResult'>
 		{% for fan in fans %}
-		<p><b>{{fan.fan.nickname}}</b></p><a href="{% url 'visit' %}?name={{fan.fan.user.username}}"><img src='./media/{{fan.fan.headPic}}' width="150" height="100" /></a><br><br>
+		<h4><b>{{fan.fan.nickname}}</b></h4><a href="{% url 'visit' %}?name={{fan.fan.user.username}}"><img src='./media/{{fan.fan.headPic}}' width="150" height="100" /></a><br><br>
 		<p>Follow: {{fan.fan.follow}}   Fans: {{fan.fan.fans}}</p><br>
+		<h3 class="email"> {{fan.fan.email}} </h3>
+		<HR style="border:1 dashed #987cb9" width="100%" color=#66B3FF SIZE=1>
+		<br><br>
 		{% endfor %}
 	</div>
 </body>

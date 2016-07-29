@@ -17,9 +17,8 @@
     <div class="page-header">
     <h1><a href='/' id="headTitle">News Express</a></h1>
     </div>
-    <div>
+    <div class="base">
     {% block header %}
-    <a href="{% url 'home' %}">{% trans "Home" %}</a> | 
 
     {% if user.is_authenticated %}
         {% trans "Logged in" %}: {{ user.username }} 

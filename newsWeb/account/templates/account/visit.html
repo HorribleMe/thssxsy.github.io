@@ -14,25 +14,28 @@
 	<div class="page-header">
 	<h1><a href='/' id="headTitle">News Express</a></h1>
 	</div>
+	{% if info == None %}
+	<p class="infoWarning">This guy is so lazy</p>
+	{% endif %}
 	<div class='userInfo'>
-		<p><b>Account: {{info.user}}</b></p><br>
-		<p>Account Nickname: {{info.nickname}}</p><br>
-		<p>Account Email: {{info.email}}</p><br>
-		<p>Account Follow: {{info.follow}}</p><br>
-		<p>Account Fans: {{info.fans}}</p><br>
+		<p><b>Account:</b>  {{info.user}}</p><br>
+		<p><b>Account Nickname:</b> {{info.nickname}}</p><br>
+		<p><b>Account Email:</b> {{info.email}}</p><br>
+		<p><b>Account Follow:</b> {{info.follow}}</p><br>
+		<p><b>Account Fans:</b> {{info.fans}}</p><br>
 		<img class="userPic" src="{% url 'editInfo' %}media/{{info.headPic}}"" width="200" height="200" />
 		<hr>
-		<form method="POST" action="">{%csrf_token%}
+	</div>
+	<form method="POST" action="">{%csrf_token%}
 			<input type="hidden" name="type" value="like" />
 			<input type="hidden" name="nickname" value="{{info.nickname}}" action=""></input>
-			<button type="submit">Follow</button>
+			<button id="followButton" type="submit">Follow</button>
 		</form>
 		<form method="POST" action="">{%csrf_token%}
 			<input type="hidden" name="type" value="unfollow" />
 			<input type="hidden" name="nickname" value="{{info.nickname}}" action=""></input>
-			<button type="submit">Unfollow</button>
+			<button id="unfollowButton" type="submit">Unfollow</button>
 		</form>
-	</div>
 </body>
 
 <br>

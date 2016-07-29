@@ -2,6 +2,9 @@
 {% load i18n %}
 
 {% block content %}
+<div class="myHr">
+	<h2>Welcome: </h2>
+</div>
 <form method="post" action=".">
   {% csrf_token %} 
   {{ form.as_p }}

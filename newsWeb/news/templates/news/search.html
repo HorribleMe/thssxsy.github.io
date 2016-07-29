@@ -14,12 +14,13 @@
 <body>
 	<div class="page-header">
 	<h1><a id='test' href='/'>News Express</a></h1>
-	<h4><a class="logLink" href="./account_info/">{{ state3 }}</a></h4><br>
-	<h4><a class="logLink" href="./accounts/login/">{{ state1 }}</a></h4><br>
-	<h4><a class="logLink" href="./accounts/logout/">{{ state2 }}</a></h4>
+	<h4 id='logLink1'><a class="logLink" href="./account_info/">{{ state3 }}</a></h4><br>
+	<h4 id='logLink2'><a class="logLink" href="./accounts/login/">{{ state1 }}</a></h4><br>
+	<h4 id='logLink3'><a class="logLink" href="./accounts/logout/">{{ state2 }}</a></h4>
 	</div>
 
-	<p class="resultNum">{{num}} results founded : </p><br>
+	<h4 class="resultNum">{{num}} results founded : </h4>
+	<hr>
 	<div class="content container">
 		<div class="row">
 			<div class="col-md-8">

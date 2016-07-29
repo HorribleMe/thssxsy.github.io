@@ -16,6 +16,7 @@ class News(models.Model):
 	content = models.TextField()
 	img = models.ImageField(upload_to='images', default='images/default.png')
 	time = models.DateTimeField(default=timezone.now)
+	clickNum = models.IntegerField(default=0)
 
 	def __str__(self):
 		return self.title

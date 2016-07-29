@@ -45,10 +45,11 @@ def news_show(request):
 	check(request)
 	params = request.POST if request.method == 'POST' else None
 	if params and params['type'] == 'support':
-		ID = params['commentId']
-		comment = Comments.objects.get(id = ID)
-		comment.support+=1
-		comment.save()
+		if not request.user.is_anonymous():
+			ID = params['commentId']
+			comment = Comments.objects.get(id = ID)
+			comment.support+=1
+			comment.save()
 	if params and params['type'] == 'save':
 		ID = params['newsId']
 		new = News.objects.get(id = ID)
@@ -65,16 +66,20 @@ def news_show(request):
 	form = CommentsForm(params)
 	p1 = request.GET.get('title')
 	new = News.objects.get(title = p1)
+	new.clickNum += 1
+	new.save()
+	num = new.clickNum
 	if form.is_valid():
 		post = form.save(commit=False)
-		post.author = request.user
-		post.news = new
-		post.save()
+		if not request.user.is_anonymous():
+			post.author = request.user
+			post.news = new
+			post.save()
 		form = CommentsForm()
-	comments = Comments.objects.filter(news = new)
+	comments = Comments.objects.filter(news = new)[0:10]
 
 	return render(request, 'news/news.html', {'new': new, 'form': form, 'comments':comments, 
-		'state1': STATE1, 'state2': STATE2, 'state3': STATE3})
+		'state1': STATE1, 'state2': STATE2, 'state3': STATE3, 'num':num})
 
 def tagSearch(request):
 	global STATE1

@@ -14,37 +14,45 @@
 	<div class="page-header">
 	<h1><a href='/' id="headTitle">News Express</a></h1>
 	</div>
+	{% if presentAcc == None %}
+	<p class="infoWarning">Please edit your info.</p>
+	{% endif %}
 	<div class='userInfo'>
-		<p>Account: {{presentAcc.user}}</p><br>
-		<p>Nickname: {{presentAcc.nickname}}</p><br>
-		<p>Email: {{presentAcc.email}}</p><br>
-		<p>Follow: {{presentAcc.follow}}</p><br>
-		<p>Fans: {{presentAcc.fans}}</p><br>
+		<p><b>Account:</b>  {{presentAcc.user}}</p><br>
+		<p><b>Nickname:</b>  {{presentAcc.nickname}}</p><br>
+		<p><b>Email:</b>  {{presentAcc.email}}</p><br>
+		<p><b>Follow:</b>  {{presentAcc.follow}}</p><br>
+		<p><b>Fans:</b>  {{presentAcc.fans}}</p><br>
 		<img src="{% url 'editInfo' %}media/{{presentAcc.headPic}}"" width="200" height="200" class="userPic" /><br>
-		<hr>
+	</div>
+
+	<hr>
 		<form method="POST" action="">{%csrf_token%}
 			<input type="hidden" name="type" value="checkFollow" />
 			<input type="hidden" name="nickname" value="{{presentAcc.nickname}}" action=""></input>
-			<button type="submit">Check Follow</button>
+			<button id="checkFollow" type="submit">Check Follow</button>
 		</form>
 		<form method="POST" action="">{%csrf_token%}
 			<input type="hidden" name="type" value="checkFans" />
 			<input type="hidden" name="nickname" value="{{presentAcc.nickname}}" action=""></input>
-			<button type="submit">Check Fans</button>
+			<button id="checkFans" type="submit">Check Fans</button>
 		</form>
 		<form method="POST" action="">{%csrf_token%}
 			<input type="hidden" name="type" value="checkSave" />
 			<input type="hidden" name="nickname" value="{{presentAcc.nickname}}" action=""></input>
-			<button type="submit">Check Save</button>
+			<button id="checkSave" type="submit">Check Save</button>
 		</form>
-	</div>
 
 	<br>
 	<hr>
-	<p><b>Edit Your Info Here: </b></p><br>
-	<form method="POST">{%csrf_token%}
+	<div class="myHr">
+	<h2><b>Edit Your Info Here: </b></h2><br>
+	</div>
+	<form method="POST" enctype="multipart/form-data" id="editInfo">
+	{%csrf_token%}
 	{{ form.as_p }}
-	<button type="submit" class="save btn btn-default">Edit</button>
+	<input type="hidden" name="type" value="editInfo" />
+	<button type="submit" id="infoSubmit">Edit</button>
 	</form>
 </body>
 
