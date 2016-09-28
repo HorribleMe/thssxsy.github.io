@@ -1,6 +1,8 @@
 //HorribleMe
 //Created on 7.3 2016
-// 2014013413
+//2014013413
+
+/* exported search */
 
 function search(para1, para2)
 {

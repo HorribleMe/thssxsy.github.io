@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="./node_modules/mocha/mocha.css">
+</head>
+<body>
+	<div id="mocha"></div>
+	<script type="text/javascript" src="./node_modules/mocha/mocha.js"></script>
+	<script>mocha.setup('bdd');</script>
+	<script src="./node_modules/chai/chai.js"></script>
+	<script>
+		var assert = chai.assert;
+	</script>
+	<script src="game.js"></script>
+	<script src="game_test.js"></script>
+	<script>
+		mocha.run();
+	</script>
+	<table>
+		<button id="startButton" onclick="start()" style="display: none">Start</button>
+		<button id="pauseButton" onclick="pause()" style="display: none">Pause</button>
+		<button id="resetButton" onclick="reset()" style="display: none">Reset</button>
+	</table>
+
+	<tr align="center">
+		<td colspan="2"><canvas id="gameArea" width="500" height="500" style="border: 1px solid; background-color: #eeeeee; display: none;" /></td>
+	</tr>
+</body>
+</html>

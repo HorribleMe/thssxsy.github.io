@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Game Of Life</title>
+	<link href="./style/game.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<script type="text/javascript" src="./js/game.js"></script>
+	<table>
+		<h1 id="title">Game of Life</h1>
+		<button id="startButton" onclick="start()">Start</button>
+		<button id="pauseButton" onclick="pause()">Pause</button>
+		<button id="resetButton" onclick="reset()">Reset</button>
+	</table>
+
+	<tr align="center">
+		<td colspan="2"><canvas id="gameArea" width="500" height="500" style="border: 1px solid; background-color: #eeeeee;" /></td>
+	</tr>
+</body>
+</html>
