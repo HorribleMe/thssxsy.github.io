@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "Tgraphwidget::mousePressEvent(QMouseEvent*):tgraphwidget.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "poisition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Pgraphwidget::mousePressEvent(QMouseEvent*):pgraphwidget.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "i">
+            </PersistentString>
+            <PersistentString
+               value = "poisition[i]">
+            </PersistentString>
+            <PersistentString
+               value = "poisition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

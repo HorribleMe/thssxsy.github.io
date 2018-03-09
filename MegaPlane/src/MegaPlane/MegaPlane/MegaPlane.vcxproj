@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F2B7C840-77C6-49DB-8CEB-ED5B17B9E5D3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MegaPlane</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="makeitclear.h" />
+    <ClInclude Include="MegaPlane.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MegaPlane.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ui\2bigenemy.bmp" />
+    <Image Include="res\ui\2middleenemy.bmp" />
+    <Image Include="res\ui\2smallenemy.bmp" />
+    <Image Include="res\ui\3bigenemy.bmp" />
+    <Image Include="res\ui\3middleenemy.bmp" />
+    <Image Include="res\ui\3smallenemy.bmp" />
+    <Image Include="res\ui\4bigenemy.bmp" />
+    <Image Include="res\ui\4middleenemy.bmp" />
+    <Image Include="res\ui\4smallenemy.bmp" />
+    <Image Include="res\ui\background.bmp" />
+    <Image Include="res\ui\background1.bmp" />
+    <Image Include="res\ui\background2.bmp" />
+    <Image Include="res\ui\background3.bmp" />
+    <Image Include="res\ui\background4.bmp" />
+    <Image Include="res\ui\bitmap1.bmp" />
+    <Image Include="res\ui\boss1.bmp" />
+    <Image Include="res\ui\boss2.bmp" />
+    <Image Include="res\ui\boss3.bmp" />
+    <Image Include="res\ui\boss4.bmp" />
+    <Image Include="res\ui\bossfire.bmp" />
+    <Image Include="res\ui\BULLET1.bmp" />
+    <Image Include="res\ui\bullet3.bmp" />
+    <Image Include="res\ui\bumble.bmp" />
+    <Image Include="res\ui\emeBullet.bmp" />
+    <Image Include="res\ui\gameover.bmp" />
+    <Image Include="res\ui\help.bmp" />
+    <Image Include="res\ui\hero.bmp" />
+    <Image Include="res\ui\enemy_small.bmp" />
+    <Image Include="res\ui\enemy_middle.bmp" />
+    <Image Include="res\ui\enemy_big.bmp" />
+    <Image Include="res\ui\game_status.bmp" />
+    <Image Include="res\ui\herolife.bmp" />
+    <Image Include="res\ui\icon.ico" />
+    <Image Include="res\ui\mybomb.bmp" />
+    <Image Include="res\ui\recover.bmp" />
+    <Image Include="res\ui\start2.bmp" />
+    <Image Include="res\ui\ufo1.bmp" />
+    <Image Include="res\ui\ufo2.bmp" />
+    <Image Include="res\ui\UFO22.bmp" />
+    <Image Include="res\ui\ufo3.bmp" />
+    <Image Include="res\ui\第一关.bmp" />
+    <Image Include="res\ui\第三关.bmp" />
+    <Image Include="res\ui\第二关.bmp" />
+    <Image Include="res\ui\第四关.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MegaPlane.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\sound\game_music.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,384 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="P3P" content='CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"'>
+<title>十年——陈奕迅，搜狗音乐在线试听</title>
+<link href="/dist/css/music.css?t=2015071013" rel="stylesheet" type="text/css">
+<link href="/dist/css/frame.css?t=2015071013" rel="stylesheet" type="text/css">
+<script src="/js/common/cookie.js" language="javascript" type="text/javascript"></script>
+<script src="/js/player/play_exe.js?t=20151102" language="javascript" type="text/javascript"></script>
+<script src="/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="/js/jquery.zclip.min.js"></script>
+</head>
+<body>
+	
+
+
+<div class="searchnav">
+  <ul class="topnav">
+    <li><a href="http://news.sogou.com/news?query=" onclick="navSubmit(this,'http://news.sogou.com/news');">新闻</a></li>
+	<li><a href="http://www.sogou.com/web?p=41240100&query=" onclick="navSubmit(this,'http://www.sogou.com/web?p=41240100');">网页</a></li>
+	<li><a href="http://weixin.sogou.com/weixin?p=41351200&type=2&query=" onclick="navSubmit(this,'http://weixin.sogou.com/weixin?p=41351200&type=2')">微信</a></li>
+	<li style="position: relative;"><a href="http://zhihu.sogou.com/zhihu?p=41351202&query=" onclick="navSubmit(this,'http://zhihu.sogou.com/?p=41351201')">知乎<img src="https://www.sogou.com/images/nav-new.gif" height="16" width="13" style="position: absolute;right:-12px;top:0;"></a></li>
+	<li><a href="http://wenwen.sogou.com/s/?cid=mp3search2ww&w=" onclick="navSubmit(this,'http://wenwen.sogou.com/?cid=mp3search2ww')">问问</a></li>
+	<li><a href="http://pic.sogou.com/pics?query=" onclick="navSubmit(this,'http://pic.sogou.com/');">图片</a></li>
+	<li><a href="http://v.sogou.com/v?query=" onclick="navSubmit(this,'http://v.sogou.com/');">视频</a></li>
+	<li class="cur">音乐</li>
+	<li><a href="http://map.sogou.com/#city=%u5168%u56FD&page=1&lq=" onclick="navSubmit(this,'http://map.sogou.com/');">地图</a></li>
+	<li><a href="http://www.sogou.com/docs/more.htm" target="_blank" uigs="result_nav_more">更多<span class="topraquo">&raquo;</span></a></li>
+  </ul>
+</div>
+<div class="header">
+  <div class="searchbox">
+    <a href="/" title="搜狗音乐"><img width="135" height="40" class="logo" title="搜狗音乐" src="/images/yinyue135x40.png?t=20150120" alt="搜狗音乐"></a>
+    <form class="searchform" id="searchForm" name="searchForm" action="/music.so" method="get">
+      <div class="querybox">
+        <div class="qborder"><input class="query" id="query" name="query" type="text" maxlength="100" value="十年" autocomplete="off"> 
+		      <input type=hidden name="class" id="classid" value=1 />
+		      <input type=hidden name="ac" id="ac" value="1">
+		      <input type=hidden name="_asf" id="_asf">
+		      <input type=hidden name="_ast" id="_ast">
+		      <input type=hidden name="p" id="p">
+		      <input type="hidden" name="w" value="06009900"/>
+		      <input type=hidden name="interV" id="inter">
+		</div>
+      </div>
+      <div class="sbtn1"><input type="submit" value="搜狗搜索"></div>
+    </form>
+  </div>
+</div>
+<div class="mnavbox">
+  <ul class="mnav">
+    <li ><a uigs="in_header_tiny_nav" href="/">首页</a><i class="tip"></i></li>
+    <li ><a uigs="in_header_tiny_nav" href="/bang_list.html">榜单</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/list/singer">歌手</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/top/tag_list.html">标签</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/tiny/dissList">歌单</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/list/album">专辑</a></li>
+    <li ><a uigs="in_header_list_nav" href="/top/mv_bang.html">MV</a></li>  
+  	
+      <li class="act_info">
+      <span><a href="http://mp3.sogou.com/tiny/album?album_id=1174104&query=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4%B5%DA%CB%C4%BC%BE+%D7%DC%BE%F6%C8%FC&album_name=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4%B5%DA%CB%C4%BC%BE+%D7%DC%BE%F6%C8%FC&singer_name=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4" class="act_icon" title="中国好声音第四季">中国好声音第四季</a></span>
+      <span>|</span>
+<span><a href="http://kan.sogou.com/player/180823920/" class="null" title="好声音现场视频">好声音现场视频</a></span>
+      
+      </li>
+  </ul>
+</div>
+<script>
+function navSubmit(obj, defaultHref) {
+    if (document.searchForm.query.value.length > 0) {
+        var href = obj.href;
+        var query = document.searchForm.query.value;
+        href = href + encodeURIComponent(query);
+        obj.href = href;
+    }else{
+    	obj.href = defaultHref;
+    }
+}
+</script>
+<!--zly-->
+	<div id="wrapper" class="wrapper">
+	
+		<div class="location">
+			<a uigs="in_song_tiny_nav2" href="/list/singer">歌手</a> <span>&gt;</span> <a uigs="in_song_tiny_nav2" href="/tiny/singer?singer_id=143&query=%B3%C2%DE%C8%D1%B8&singer_name=%B3%C2%DE%C8%D1%B8">陈奕迅</a> <span>&gt;</span> 十年
+		</div>
+		<div class="content">
+			<div class="l_con_680">
+				<div class="song_info_area">
+					<div class="album_cover">
+						<img src="http://imgcache.qq.com/music/photo/album_300/16/300_albumpic_716_0.jpg" title="十年" alt="十年" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="220" height="220">
+					</div>
+					<div class="song_info">
+						<div class="song_tit">
+							<h2 title="十年">十年
+							
+							<a uigs="out_song_tiny_mv" title="十年的MV" class="video_icon" target="_blank" href="http://www.iqiyi.com/yinyue/20110826/8c03f710564a6117.html"></a>
+							</h2>
+						</div>
+						<div class="song_btns">
+							<a uigs="out_song_tiny_play" onclick="play(event,'[[#8804#,#2#,#http://cc.stream.qqmusic.qq.com/C100001ixp014Kmo7p.m4a?fromtag=52#,#十年#,#143#,#陈奕迅#,#716#,#七#,#204#,#5298b8475ba25a42#]]')" href="javascript:void(0)" class="start_btn">播放</a>
+						</div>
+						<ul class="song_detail">
+							<li>歌手：<a uigs="in_song_tiny_singer" href="/tiny/singer?singer_id=143&query=%B3%C2%DE%C8%D1%B8&singer_name=%B3%C2%DE%C8%D1%B8" target="_blank" title="陈奕迅">陈奕迅</a></li>
+							<li>语言：<span>国语 </span></li>
+							<li>所属专辑：<a uigs="in_song_tiny_album" href="/tiny/album?album_id=716&album_name=%C6%DF&singer_name=%B3%C2%DE%C8%D1%B8&query=%C6%DF" target="_blank" title="七">七</a></li>
+							<li>发行时间：<span>2003-11-18 </span></li>
+						</ul>
+					</div>
+				</div><div class="lyrics">
+				<p class="lyrics_tit">歌词<span class="opt"><a id="copy-button" href="javascript:void(0)">复制</a></span></p><p style="">十年 - 陈奕迅</p><p style="">词：林夕</p><p style="">曲：陈小霞</p><p style="">如果那两个字没有颤抖</p><p style="">我不会发现 我难受</p><p style="">怎么说出口 也不过是分手</p><p style="">如果对于明天没有要求</p><p style="">牵牵手就像旅游</p><p style="">成千上万个门口 总有一个人要先走</p><p style="">怀抱既然不能逗留</p><p style="">何不在离开的时候</p><p><a class="more_open" href="javascript:void(0)" onclick="$('.more_open').hide();$('.more_close').show();$('.lyrics p').show();">更多</a></p><p style="display:none">一边享受 一边泪流</p><p style="display:none">十年之前</p><p style="display:none">我不认识你 你不属于我</p><p style="display:none">我们还是一样 陪在一个陌生人左右</p><p style="display:none">走过渐渐熟悉的街头</p><p style="display:none">十年之后</p><p style="display:none">我们是朋友 还可以问候</p><p style="display:none">只是那种温柔 再也找不到拥抱的理由</p><p style="display:none">情人最后难免沦为朋友</p><p style="display:none">怀抱既然不能逗留</p><p style="display:none">何不在离开的时候</p><p style="display:none">一边享受 一边泪流</p><p style="display:none">十年之前</p><p style="display:none">我不认识你 你不属于我</p><p style="display:none">我们还是一样 陪在一个陌生人左右</p><p style="display:none">走过渐渐熟悉的街头</p><p style="display:none">十年之后</p><p style="display:none">我们是朋友 还可以问候</p><p style="display:none">只是那种温柔 再也找不到拥抱的理由</p><p style="display:none">情人最后难免沦为朋友</p><p style="display:none">直到和你做了多年朋友</p><p style="display:none">才明白我的眼泪</p><p style="display:none">不是为你而流 也为别人而流</p><p><a style="display:none" class="more_close" href="javascript:void(0)" onclick="$('.more_close').hide();$('.more_open').show();$('.lyrics p:gt(12)').hide();">收起</a></p><textarea id="copy_value" style="display:none">十年 - 陈奕迅
+词：林夕
+曲：陈小霞
+如果那两个字没有颤抖
+我不会发现 我难受
+怎么说出口 也不过是分手
+如果对于明天没有要求
+牵牵手就像旅游
+成千上万个门口 总有一个人要先走
+怀抱既然不能逗留
+何不在离开的时候
+一边享受 一边泪流
+十年之前
+我不认识你 你不属于我
+我们还是一样 陪在一个陌生人左右
+走过渐渐熟悉的街头
+十年之后
+我们是朋友 还可以问候
+只是那种温柔 再也找不到拥抱的理由
+情人最后难免沦为朋友
+怀抱既然不能逗留
+何不在离开的时候
+一边享受 一边泪流
+十年之前
+我不认识你 你不属于我
+我们还是一样 陪在一个陌生人左右
+走过渐渐熟悉的街头
+十年之后
+我们是朋友 还可以问候
+只是那种温柔 再也找不到拥抱的理由
+情人最后难免沦为朋友
+直到和你做了多年朋友
+才明白我的眼泪
+不是为你而流 也为别人而流
+</textarea><script>
+						$("#copy-button").zclip({
+						    path: "/js/ZeroClipboard.swf",
+						    copy: function(){return $("#copy_value").val();},
+							afterCopy:function(){
+								alert("歌词已复制到剪贴板");
+							}
+						});
+						
+						</script></div>
+				<div class="music_list_area">
+			        <div class="music_list_02 music_list_r">
+			          <div class="m_tit">
+			              <h2>该专辑其他歌曲</h2>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play_all" href="javascript:void(0)" onclick="playAlbumOtherSongList(event)">播放</a>
+			          </div>
+			          <ul>
+			            
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>1</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5934d9828c34293d&query=%D0%D6%C3%C3&song_name=%D0%D6%C3%C3" title="兄妹">兄妹</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=143&query=%B3%C2%DE%C8%D1%B8&singer_name=%B3%C2%DE%C8%D1%B8" title="陈奕迅">陈奕迅</a></span>
+			              <span class="time">3:30</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002QNrGm3jVSxg.m4a?fromtag=52#,#兄妹#,#143#,#陈奕迅#,#716#,#七#,#210#,#002QNrGm3jVSxg#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>2</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=516203c161821164&query=%C3%BB%D3%D0%CA%D6%BB%FA%B5%C4%C8%D5%D7%D3&song_name=%C3%BB%D3%D0%CA%D6%BB%FA%B5%C4%C8%D5%D7%D3" title="没有手机的日子">没有手机的日子</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=143&query=%B3%C2%DE%C8%D1%B8&singer_name=%B3%C2%DE%C8%D1%B8" title="陈奕迅">陈奕迅</a></span>
+			              <span class="time">4:28</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001NXmMX40aTma.m4a?fromtag=52#,#没有手机的日子#,#143#,#陈奕迅#,#716#,#七#,#268#,#001NXmMX40aTma#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>3</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=54b66e68d02358e2&query=%C4%D0%C8%CB%B5%C4%B4%ED&song_name=%C4%D0%C8%CB%B5%C4%B4%ED" title="男人的错">男人的错</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=143&query=%B3%C2%DE%C8%D1%B8&singer_name=%B3%C2%DE%C8%D1%B8" title="陈奕迅">陈奕迅</a></span>
+			              <span class="time">3:51</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003BG1Iw0pnhlq.m4a?fromtag=52#,#男人的错#,#143#,#陈奕迅#,#716#,#七#,#231#,#003BG1Iw0pnhlq#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>4</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=58ec4d2de7f1c1a3&query=%BC%C5%C4%AF%C8%C3%C4%E3%B8%FC%BF%EC%C0%D6&song_name=%BC%C5%C4%AF%C8%C3%C4%E3%B8%FC%BF%EC%C0%D6" title="寂寞让你更快乐">寂寞让你更快乐</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=143&query=%B3%C2%DE%C8%D1%B8&singer_name=%B3%C2%DE%C8%D1%B8" title="陈奕迅">陈奕迅</a></span>
+			              <span class="time">4:12</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000EArUy3fyIFe.m4a?fromtag=52#,#寂寞让你更快乐#,#143#,#陈奕迅#,#716#,#七#,#252#,#000EArUy3fyIFe#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>5</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=53686d4ba440ac20&query=%D0%BB%D0%BB%D9%AF&song_name=%D0%BB%D0%BB%D9%AF" title="谢谢侬">谢谢侬</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=143&query=%B3%C2%DE%C8%D1%B8&singer_name=%B3%C2%DE%C8%D1%B8" title="陈奕迅">陈奕迅</a></span>
+			              <span class="time">4:20</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000002Ut4F0RH46d.m4a?fromtag=52#,#谢谢侬#,#143#,#陈奕迅#,#716#,#七#,#260#,#0002Ut4F0RH46d#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>6</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5d1b087fcd660be4&query=%CE%D2%C3%C7%B6%BC%BC%C5%C4%AF&song_name=%CE%D2%C3%C7%B6%BC%BC%C5%C4%AF" title="我们都寂寞">我们都寂寞</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=143&query=%B3%C2%DE%C8%D1%B8&singer_name=%B3%C2%DE%C8%D1%B8" title="陈奕迅">陈奕迅</a></span>
+			              <span class="time">4:50</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001nnPeb1pMhvt.m4a?fromtag=52#,#我们都寂寞#,#143#,#陈奕迅#,#716#,#七#,#290#,#001nnPeb1pMhvt#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>7</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=51a970b55105b214&query=%C8%AB%CA%C0%BD%E7%CA%A7%C3%DF&song_name=%C8%AB%CA%C0%BD%E7%CA%A7%C3%DF" title="全世界失眠">全世界失眠</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=143&query=%B3%C2%DE%C8%D1%B8&singer_name=%B3%C2%DE%C8%D1%B8" title="陈奕迅">陈奕迅</a></span>
+			              <span class="time">4:10</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000036ywkl3G09Cc.m4a?fromtag=52#,#全世界失眠#,#143#,#陈奕迅#,#716#,#七#,#250#,#0036ywkl3G09Cc#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>8</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=548dd03ff305b94b&query=%CF%EB%BF%DE&song_name=%CF%EB%BF%DE" title="想哭">想哭</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=143&query=%B3%C2%DE%C8%D1%B8&singer_name=%B3%C2%DE%C8%D1%B8" title="陈奕迅">陈奕迅</a></span>
+			              <span class="time">4:00</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000020OKvZ1dPRJR.m4a?fromtag=52#,#想哭#,#143#,#陈奕迅#,#716#,#七#,#240#,#0020OKvZ1dPRJR#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>9</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=549d1696066e8939&query=%B0%AE%CA%C7%BB%B3%D2%C9&song_name=%B0%AE%CA%C7%BB%B3%D2%C9" title="爱是怀疑">爱是怀疑</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=143&query=%B3%C2%DE%C8%D1%B8&singer_name=%B3%C2%DE%C8%D1%B8" title="陈奕迅">陈奕迅</a></span>
+			              <span class="time">4:33</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003kJTax4GVnKk.m4a?fromtag=52#,#爱是怀疑#,#143#,#陈奕迅#,#716#,#七#,#273#,#003kJTax4GVnKk#]]', true)">播放</a>
+			            </li>
+			          </ul>
+			          <script type="text/javascript">
+							function playAlbumOtherSongList(event) {
+								play(event,"[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002QNrGm3jVSxg.m4a?fromtag=52#,#兄妹#,#143#,#陈奕迅#,#716#,#七#,#210#,#002QNrGm3jVSxg#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001NXmMX40aTma.m4a?fromtag=52#,#没有手机的日子#,#143#,#陈奕迅#,#716#,#七#,#268#,#001NXmMX40aTma#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003BG1Iw0pnhlq.m4a?fromtag=52#,#男人的错#,#143#,#陈奕迅#,#716#,#七#,#231#,#003BG1Iw0pnhlq#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000EArUy3fyIFe.m4a?fromtag=52#,#寂寞让你更快乐#,#143#,#陈奕迅#,#716#,#七#,#252#,#000EArUy3fyIFe#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000002Ut4F0RH46d.m4a?fromtag=52#,#谢谢侬#,#143#,#陈奕迅#,#716#,#七#,#260#,#0002Ut4F0RH46d#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001nnPeb1pMhvt.m4a?fromtag=52#,#我们都寂寞#,#143#,#陈奕迅#,#716#,#七#,#290#,#001nnPeb1pMhvt#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000036ywkl3G09Cc.m4a?fromtag=52#,#全世界失眠#,#143#,#陈奕迅#,#716#,#七#,#250#,#0036ywkl3G09Cc#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000020OKvZ1dPRJR.m4a?fromtag=52#,#想哭#,#143#,#陈奕迅#,#716#,#七#,#240#,#0020OKvZ1dPRJR#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003kJTax4GVnKk.m4a?fromtag=52#,#爱是怀疑#,#143#,#陈奕迅#,#716#,#七#,#273#,#003kJTax4GVnKk#]]");
+							}
+						</script>
+			        </div>
+			        <div class="music_list_02">
+			          <div class="m_tit">
+			              <h2>该歌手热门曲目</h2>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play_all" href="javascript:void(0)" onclick="playSingerOtherSongList(event)">播放</a>
+			              <span class="tit_info">
+			                  <a class="more" uigs="in_song_tiny_singer_hot_song_more" href="/tiny/singer?singer_id=143&query=%B3%C2%DE%C8%D1%B8&singer_name=%B3%C2%DE%C8%D1%B8">更多<span>&gt;</span></a>
+			              </span>
+			          </div>
+			          <ul>
+			            
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>1</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5714035720de6f4d&query=%C5%E3%C4%E3%B6%C8%B9%FD%C2%FE%B3%A4%CB%EA%D4%C2+%28%A1%B6%C5%E3%B0%B2%B6%AB%C4%E1%B6%C8%B9%FD%C2%FE%B3%A4%CB%EA%D4%C2%A1%B7%B5%E7%D3%B0%D6%F7%CC%E2%C7%FA%29&song_name=%C5%E3%C4%E3%B6%C8%B9%FD%C2%FE%B3%A4%CB%EA%D4%C2+%28%A1%B6%C5%E3%B0%B2%B6%AB%C4%E1%B6%C8%B9%FD%C2%FE%B3%A4%CB%EA%D4%C2%A1%B7%B5%E7%D3%B0%D6%F7%CC%E2%C7%FA%29" title="陪你度过漫长岁月 (《陪安东尼度过漫长岁月》电影主题曲)">陪你度过漫长岁月 (《陪安东尼度过漫长岁月》电影主题曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=1180610&query=%C5%E3%C4%E3%B6%C8%B9%FD%C2%FE%B3%A4%CB%EA%D4%C2&album_name=%C5%E3%C4%E3%B6%C8%B9%FD%C2%FE%B3%A4%CB%EA%D4%C2" title="陪你度过漫长岁月">陪你度过漫长岁月</a></span>
+			              <span class="time">4:02</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003ULL5o2D7UMu.m4a?fromtag=52#,#陪你度过漫长岁月 (《陪安东尼度过漫长岁月》电影主题曲)#,#143#,#陈奕迅#,#1180610#,#陪你度过漫长岁月#,#242#,#003ULL5o2D7UMu#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>2</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5d7087fcd5678cd7&query=%BA%CE%B1%D8%C4%D8+%28%A1%B6%BB%AA%C0%F6%C9%CF%B0%E0%D7%E5%A1%B7%B5%E7%D3%B0%B2%E5%C7%FA%29&song_name=%BA%CE%B1%D8%C4%D8+%28%A1%B6%BB%AA%C0%F6%C9%CF%B0%E0%D7%E5%A1%B7%B5%E7%D3%B0%B2%E5%C7%FA%29" title="何必呢 (《华丽上班族》电影插曲)">何必呢 (《华丽上班族》电影插曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=1152100&query=%BB%AA%C0%F6%C9%CF%B0%E0%D7%E5+%B5%E7%D3%B0%D4%AD%C9%F9%B4%F3%B5%FA&album_name=%BB%AA%C0%F6%C9%CF%B0%E0%D7%E5+%B5%E7%D3%B0%D4%AD%C9%F9%B4%F3%B5%FA" title="华丽上班族 电影原声大碟">华丽上班族 电影原声大碟</a></span>
+			              <span class="time">5:01</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000gHAjp4atnOs.m4a?fromtag=52#,#何必呢 (《华丽上班族》电影插曲)#,#143#,#陈奕迅#,#1152100#,#华丽上班族 电影原声大碟#,#301#,#000gHAjp4atnOs#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>3</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5f4e462bb619839f&query=%CE%D2%C3%C7%B5%C4%C0%CF%B5%D8%B7%BD+%28%A1%B6%BB%AA%C0%F6%C9%CF%B0%E0%D7%E5%A1%B7%B5%E7%D3%B0%D6%F7%CC%E2%C7%FA%29&song_name=%CE%D2%C3%C7%B5%C4%C0%CF%B5%D8%B7%BD+%28%A1%B6%BB%AA%C0%F6%C9%CF%B0%E0%D7%E5%A1%B7%B5%E7%D3%B0%D6%F7%CC%E2%C7%FA%29" title="我们的老地方 (《华丽上班族》电影主题曲)">我们的老地方 (《华丽上班族》电影主题曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=1152100&query=%BB%AA%C0%F6%C9%CF%B0%E0%D7%E5+%B5%E7%D3%B0%D4%AD%C9%F9%B4%F3%B5%FA&album_name=%BB%AA%C0%F6%C9%CF%B0%E0%D7%E5+%B5%E7%D3%B0%D4%AD%C9%F9%B4%F3%B5%FA" title="华丽上班族 电影原声大碟">华丽上班族 电影原声大碟</a></span>
+			              <span class="time">2:14</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000042lUha2Xkpdt.m4a?fromtag=52#,#我们的老地方 (《华丽上班族》电影主题曲)#,#143#,#陈奕迅#,#1152100#,#华丽上班族 电影原声大碟#,#134#,#0042lUha2Xkpdt#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>4</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5dd7a8896cfd7984&query=%D2%F2%CE%AA%B0%AE%C7%E9%28%B5%E7%D3%B0%A1%B6%BD%AB%B0%AE%C7%E9%BD%F8%D0%D0%B5%BD%B5%D7%A1%B7%D6%F7%CC%E2%C7%FA%29&song_name=%D2%F2%CE%AA%B0%AE%C7%E9%28%B5%E7%D3%B0%A1%B6%BD%AB%B0%AE%C7%E9%BD%F8%D0%D0%B5%BD%B5%D7%A1%B7%D6%F7%CC%E2%C7%FA%29" title="因为爱情(电影《将爱情进行到底》主题曲)">因为爱情(电影《将爱情进行到底》主题曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=68074&query=Stranger+Under+My+Skin&album_name=Stranger+Under+My+Skin" title="Stranger Under My Skin">Stranger Under My Skin</a></span>
+			              <span class="time">3:37</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004HdPmN0HZipA.m4a?fromtag=52#,#因为爱情(电影《将爱情进行到底》主题曲)#,#143#,#陈奕迅#,#68074#,#Stranger Under My Skin#,#217#,#004HdPmN0HZipA#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>5</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5acde169e4977d14&query=%CE%C8%CE%C8%B5%C4%D0%D2%B8%A3+%28Live%29&song_name=%CE%C8%CE%C8%B5%C4%D0%D2%B8%A3+%28Live%29" title="稳稳的幸福 (Live)">稳稳的幸福 (Live)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=929853&query=2015%BD%AD%CB%D5%CE%C0%CA%D3%D0%C2%C4%EA%D1%DD%B3%AA%BB%E1&album_name=2015%BD%AD%CB%D5%CE%C0%CA%D3%D0%C2%C4%EA%D1%DD%B3%AA%BB%E1" title="2015江苏卫视新年演唱会">2015江苏卫视新年演唱会</a></span>
+			              <span class="time">3:34</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C10000048OXr3RMxx9.m4a?fromtag=52#,#稳稳的幸福 (Live)#,#143#,#陈奕迅#,#929853#,#2015江苏卫视新年演唱会#,#214#,#00048OXr3RMxx9#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>6</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=52c9cc13f09d3bc1&query=%D2%F5%CC%EC%BF%EC%C0%D6&song_name=%D2%F5%CC%EC%BF%EC%C0%D6" title="阴天快乐">阴天快乐</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=485767&query=rice+%26+shine&album_name=rice+%26+shine" title="rice & shine">rice & shine</a></span>
+			              <span class="time">4:20</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004ec8yZ02bRYx.m4a?fromtag=52#,#阴天快乐#,#143#,#陈奕迅#,#485767#,#rice & shine#,#260#,#004ec8yZ02bRYx#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>7</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5b8462c5f499a505&query=%BF%D6%C1%FA%BD%F8%BB%AF%C2%DB+%28%A1%B6%CB%C0%BF%AA%26%2321874%3B%C0%B2%A1%B7%B5%E7%D3%B0%D6%F7%CC%E2%C7%FA%29&song_name=%BF%D6%C1%FA%BD%F8%BB%AF%C2%DB+%28%A1%B6%CB%C0%BF%AA%26%2321874%3B%C0%B2%A1%B7%B5%E7%D3%B0%D6%F7%CC%E2%C7%FA%29" title="恐龙进化论 (《死开&#21874;啦》电影主题曲)">恐龙进化论 (《死开&#21874;啦》电影主题曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=1137182&query=%BF%D6%C1%FA%BD%F8%BB%AF%C2%DB&album_name=%BF%D6%C1%FA%BD%F8%BB%AF%C2%DB" title="恐龙进化论">恐龙进化论</a></span>
+			              <span class="time">3:12</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002oygGb1Agtii.m4a?fromtag=52#,#恐龙进化论 (《死开&#21874;啦》电影主题曲)#,#143#,#陈奕迅#,#1137182#,#恐龙进化论#,#192#,#002oygGb1Agtii#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>8</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=55d9483fe67ceddb&query=%C4%E3%B8%F8%CE%D2%CC%FD%BA%C3&song_name=%C4%E3%B8%F8%CE%D2%CC%FD%BA%C3" title="你给我听好">你给我听好</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=485767&query=rice+%26+shine&album_name=rice+%26+shine" title="rice & shine">rice & shine</a></span>
+			              <span class="time">4:48</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C10000169sFo3JQRLo.m4a?fromtag=52#,#你给我听好#,#143#,#陈奕迅#,#485767#,#rice & shine#,#288#,#00169sFo3JQRLo#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>9</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5ebf149e1aa11b42&query=%B9%C2%B6%C0%BB%BC%D5%DF&song_name=%B9%C2%B6%C0%BB%BC%D5%DF" title="孤独患者">孤独患者</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=87048&query=%3F&album_name=%3F" title="?">?</a></span>
+			              <span class="time">4:32</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C10000184ejM4XouuN.m4a?fromtag=52#,#孤独患者#,#143#,#陈奕迅#,#87048#,#?#,#272#,#00184ejM4XouuN#]]', true)">播放</a>
+			            </li>
+			          </ul>
+			          <script type="text/javascript">
+							function playSingerOtherSongList(event) {
+								play(event,"[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003ULL5o2D7UMu.m4a?fromtag=52#,#陪你度过漫长岁月 (《陪安东尼度过漫长岁月》电影主题曲)#,#143#,#陈奕迅#,#1180610#,#陪你度过漫长岁月#,#242#,#003ULL5o2D7UMu#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000gHAjp4atnOs.m4a?fromtag=52#,#何必呢 (《华丽上班族》电影插曲)#,#143#,#陈奕迅#,#1152100#,#华丽上班族 电影原声大碟#,#301#,#000gHAjp4atnOs#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000042lUha2Xkpdt.m4a?fromtag=52#,#我们的老地方 (《华丽上班族》电影主题曲)#,#143#,#陈奕迅#,#1152100#,#华丽上班族 电影原声大碟#,#134#,#0042lUha2Xkpdt#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004HdPmN0HZipA.m4a?fromtag=52#,#因为爱情(电影《将爱情进行到底》主题曲)#,#143#,#陈奕迅#,#68074#,#Stranger Under My Skin#,#217#,#004HdPmN0HZipA#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C10000048OXr3RMxx9.m4a?fromtag=52#,#稳稳的幸福 (Live)#,#143#,#陈奕迅#,#929853#,#2015江苏卫视新年演唱会#,#214#,#00048OXr3RMxx9#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004ec8yZ02bRYx.m4a?fromtag=52#,#阴天快乐#,#143#,#陈奕迅#,#485767#,#rice & shine#,#260#,#004ec8yZ02bRYx#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002oygGb1Agtii.m4a?fromtag=52#,#恐龙进化论 (《死开&#21874;啦》电影主题曲)#,#143#,#陈奕迅#,#1137182#,#恐龙进化论#,#192#,#002oygGb1Agtii#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C10000169sFo3JQRLo.m4a?fromtag=52#,#你给我听好#,#143#,#陈奕迅#,#485767#,#rice & shine#,#288#,#00169sFo3JQRLo#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C10000184ejM4XouuN.m4a?fromtag=52#,#孤独患者#,#143#,#陈奕迅#,#87048#,#?#,#272#,#00184ejM4XouuN#]]");
+							}
+						</script>
+			        </div>
+			   </div>
+			</div>
+			<div class="r_con_280">
+			
+		      <div class="hot_albums">
+		        <div class="m_tit">
+		            <h2>该歌手热门专辑</h2>
+		        </div>
+		        <ul class="hot_albums_list">
+		          
+				  <li>
+		            <a class="img_b" uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=431346&album_name=2013+%B3%C2%DE%C8%D1%B8+music+life+%BE%AB%D1%A1&query=2013+%B3%C2%DE%C8%D1%B8+music+life+%BE%AB%D1%A1&singer_name=" title="2013 陈奕迅 music life 精选"><img src="http://imgcache.qq.com/music/photo/album/46/150_albumpic_431346_0.jpg" title="2013 陈奕迅 music life 精选" alt="2013 陈奕迅 music life 精选" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="125" height="125"></a>
+		            <span class="name"><a uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=431346&album_name=2013+%B3%C2%DE%C8%D1%B8+music+life+%BE%AB%D1%A1&query=2013+%B3%C2%DE%C8%D1%B8+music+life+%BE%AB%D1%A1&singer_name=" title="2013 陈奕迅 music life 精选">2013 陈奕迅 music life 精选</a></span>
+		            <span class="date ">2013-06-28</span>
+		          </li>
+		          
+				  <li>
+		            <a class="img_b" uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=48917&album_name=1997-2007+%BF%E7%CA%C0%BC%CD%B9%FA%D3%EF%BE%AB%D1%A1&query=1997-2007+%BF%E7%CA%C0%BC%CD%B9%FA%D3%EF%BE%AB%D1%A1&singer_name=" title="1997-2007 跨世纪国语精选"><img src="http://imgcache.qq.com/music/photo/album/17/150_albumpic_48917_0.jpg" title="1997-2007 跨世纪国语精选" alt="1997-2007 跨世纪国语精选" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="125" height="125"></a>
+		            <span class="name"><a uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=48917&album_name=1997-2007+%BF%E7%CA%C0%BC%CD%B9%FA%D3%EF%BE%AB%D1%A1&query=1997-2007+%BF%E7%CA%C0%BC%CD%B9%FA%D3%EF%BE%AB%D1%A1&singer_name=" title="1997-2007 跨世纪国语精选">1997-2007 跨世纪国语精选</a></span>
+		            <span class="date ">2008-03-25</span>
+		          </li>
+		          
+		        </ul>
+		      </div>
+		      <div id="hotsingerlist_div"></div>
+			  <script>$("#hotsingerlist_div").load("/frags/singer_tiny_hot_singer_list.html");</script>
+	       	  <div id="hotlist_div"></div>
+			   <script>$("#hotlist_div").load("/frags/album_tiny_hot_song_list.html");</script>
+			   
+
+<!--zly-->
+
+		    </div>
+		</div>
+	</div>
+	<div id="footer">
+			<a href="http://fuwu.sogou.com/" target="_blank">企业推广</a> - <a
+				href="http://pinyin.sogou.com" target="_blank">输入法</a> - <a
+				href="http://ie.sogou.com/" target="_blank">浏览器</a> - <a
+				href="http://mail.sogou.com" target="_blank">搜狗免费邮箱</a> - <a
+				href="http://job.sogou.com" target="_blank">诚聘英才</a> - <a
+				href="http://help.sogou.com/music.html" target="_blank">搜索帮助</a><br>
+			&copy;
+			<script>
+				document.write(new Date().getFullYear())
+			</script>
+			SOGOU.COM <a href="http://www.miibeian.gov.cn" target="_blank"
+				class="g">京ICP证050897号</a> <a
+				href="http://www.sogou.com/docs/terms.htm" target="_blank" class="g">免责声明</a>
+			<img src="/images/ba.gif" width="12" height="14" alt="备案">
+		</div>
+</body>
+</html>
+<script>
+var SugPara = {
+		"domain":"vs.sugg.sogou.com",
+		"sugType":"music",
+		"enableSug":true,
+		"revsd":1,
+		"inputid":"query",
+		"useParent":0
+	  }
+</script>
+<script src="/js/sugg_ajaj_2005.gz.js?v=5" language="javascript" type="text/javascript"></script>
+<script language='JavaScript'>
+var uigs_para={"uigs_productid":"music","uigs_page":"song_tiny","query":"十年","tiny_name":"十年"};
+</script>
+<script language='JavaScript' src='/js/common/pv.js'></script>
+<script language='JavaScript' src='http://pb.sogou.com/pb.js'></script>
+<!--tiny-->

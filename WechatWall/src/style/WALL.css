@@ -1,0 +1,123 @@
+body{
+    background-size: 100%;
+	background-image: url("../pics/background.png");
+}
+#WALL{
+	position: absolute;
+	width: 90%;
+	height: 700px;
+	left: 5%;
+	background-color: white;
+	opacity: 0.5;
+}
+@font-face
+{
+    font-family: myFont;
+    src: url("../fonts/fonts1.otf");
+}
+#notice{
+	position: absolute;
+    text-align: center;
+	border-radius: 25px;
+	background-color: #2F4F4F;
+	font-size: 50px;
+	line-height: 70px;
+	top: 55px;
+	height: 80px;
+	width: 50%;
+    left: 23%;
+    font-family: myFont;
+}
+.textList{
+	position: absolute;
+	border-radius: 25px;
+	width: 80%;
+	height: 100px;
+	left: 10%;
+	background-color: black;
+	opacity: 0.6;
+}
+#item1{
+	top: 200px;
+}
+#item2{
+	top: 350px;
+}
+#item3{
+	top: 500px;
+}
+.headPic{
+	display: none;
+	border: 3px solid #cccccc;
+    border-radius: 25px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 80px;
+    height: 80px;
+    background-size: 100% 100%;
+}
+.name{
+	position: absolute;
+    left: 1px;
+    top: 100px;
+    height: 50px;
+    width: 110px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+.message{
+    position: absolute;
+    top: 5px;
+    left: 125px;
+    height: 120px;
+    width: 75%;
+    font-size: 60px;
+    color: white;
+    font-family: myFont;
+}
+._circle1{
+    position: absolute;
+    top: 45px;
+    width: 10px;
+    height: 10px;
+    background-color: #008080;
+    border-radius: 100px;
+    opacity: 0.6;
+    left: 10px;
+    animation:change 1s 0 infinite alternate;
+    -webkit-animation:change 1s 0 infinite alternate;
+}
+._circle2{
+    position: absolute;
+    top: 45px;
+    width: 10px;
+    height: 10px;
+    background-color: #008080;
+    border-radius: 100px;
+    opacity: 0.6;
+    left: 40px;
+    animation:change 1s 0.5s infinite alternate;
+    -webkit-animation:change 1s 0.5s infinite alternate;
+}
+._circle3{
+    position: absolute;
+    top: 45px;
+    width: 10px;
+    height: 10px;
+    background-color: #008080;
+    border-radius: 100px;
+    opacity: 0.6;
+    left: 70px;
+    animation:change 1s 1s infinite alternate;
+    -webkit-animation:change 1s 1s infinite alternate;
+}
+@keyframes change {
+    0% {transform:scale(0.2);}
+    100% {transform:scale(2);}
+}
+@-webkit-keyframes change {
+    0% {-webkit-transform:scale(0.2);}
+    100% {-webkit-transform:scale(2);}
+}

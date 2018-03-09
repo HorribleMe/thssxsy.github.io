@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id = "@+id/gridLayout"
+    android:columnCount="3"
+    android:orientation="horizontal"
+    android:rowCount="9"
+    tools:context="com.example.thss_xsy.myapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_columnSpan="3"
+        android:layout_rowSpan="5"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <TextView
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data：">
+    </TextView>
+
+    <EditText
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="3"
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="0"
+        android:inputType="textCapWords"
+        android:singleLine="true">
+    </EditText>
+
+    <Button
+        android:id = "@+id/open"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="2"
+        android:onClick="open"
+        android:text="打开图片" />
+
+    <Button
+        android:id = "@+id/startTrans"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="2"
+        android:onClick="startTrans"
+        android:text="开始传输" />
+
+    <Button
+        android:id = "@+id/receive"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="2"
+        android:onClick="receive"
+        android:text="接收" />
+
+</GridLayout>
+

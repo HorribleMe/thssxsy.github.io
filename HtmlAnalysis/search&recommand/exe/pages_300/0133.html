@@ -1,0 +1,392 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="P3P" content='CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"'>
+<title>爱海滔滔——陈浩民，搜狗音乐在线试听</title>
+<link href="/dist/css/music.css?t=2015071013" rel="stylesheet" type="text/css">
+<link href="/dist/css/frame.css?t=2015071013" rel="stylesheet" type="text/css">
+<script src="/js/common/cookie.js" language="javascript" type="text/javascript"></script>
+<script src="/js/player/play_exe.js?t=20151102" language="javascript" type="text/javascript"></script>
+<script src="/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="/js/jquery.zclip.min.js"></script>
+</head>
+<body>
+	
+
+
+<div class="searchnav">
+  <ul class="topnav">
+    <li><a href="http://news.sogou.com/news?query=" onclick="navSubmit(this,'http://news.sogou.com/news');">新闻</a></li>
+	<li><a href="http://www.sogou.com/web?p=41240100&query=" onclick="navSubmit(this,'http://www.sogou.com/web?p=41240100');">网页</a></li>
+	<li><a href="http://weixin.sogou.com/weixin?p=41351200&type=2&query=" onclick="navSubmit(this,'http://weixin.sogou.com/weixin?p=41351200&type=2')">微信</a></li>
+	<li style="position: relative;"><a href="http://zhihu.sogou.com/zhihu?p=41351202&query=" onclick="navSubmit(this,'http://zhihu.sogou.com/?p=41351201')">知乎<img src="https://www.sogou.com/images/nav-new.gif" height="16" width="13" style="position: absolute;right:-12px;top:0;"></a></li>
+	<li><a href="http://wenwen.sogou.com/s/?cid=mp3search2ww&w=" onclick="navSubmit(this,'http://wenwen.sogou.com/?cid=mp3search2ww')">问问</a></li>
+	<li><a href="http://pic.sogou.com/pics?query=" onclick="navSubmit(this,'http://pic.sogou.com/');">图片</a></li>
+	<li><a href="http://v.sogou.com/v?query=" onclick="navSubmit(this,'http://v.sogou.com/');">视频</a></li>
+	<li class="cur">音乐</li>
+	<li><a href="http://map.sogou.com/#city=%u5168%u56FD&page=1&lq=" onclick="navSubmit(this,'http://map.sogou.com/');">地图</a></li>
+	<li><a href="http://www.sogou.com/docs/more.htm" target="_blank" uigs="result_nav_more">更多<span class="topraquo">&raquo;</span></a></li>
+  </ul>
+</div>
+<div class="header">
+  <div class="searchbox">
+    <a href="/" title="搜狗音乐"><img width="135" height="40" class="logo" title="搜狗音乐" src="/images/yinyue135x40.png?t=20150120" alt="搜狗音乐"></a>
+    <form class="searchform" id="searchForm" name="searchForm" action="/music.so" method="get">
+      <div class="querybox">
+        <div class="qborder"><input class="query" id="query" name="query" type="text" maxlength="100" value="爱海滔滔" autocomplete="off"> 
+		      <input type=hidden name="class" id="classid" value=1 />
+		      <input type=hidden name="ac" id="ac" value="1">
+		      <input type=hidden name="_asf" id="_asf">
+		      <input type=hidden name="_ast" id="_ast">
+		      <input type=hidden name="p" id="p">
+		      <input type="hidden" name="w" value="06009900"/>
+		      <input type=hidden name="interV" id="inter">
+		</div>
+      </div>
+      <div class="sbtn1"><input type="submit" value="搜狗搜索"></div>
+    </form>
+  </div>
+</div>
+<div class="mnavbox">
+  <ul class="mnav">
+    <li ><a uigs="in_header_tiny_nav" href="/">首页</a><i class="tip"></i></li>
+    <li ><a uigs="in_header_tiny_nav" href="/bang_list.html">榜单</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/list/singer">歌手</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/top/tag_list.html">标签</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/tiny/dissList">歌单</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/list/album">专辑</a></li>
+    <li ><a uigs="in_header_list_nav" href="/top/mv_bang.html">MV</a></li>  
+  	
+      <li class="act_info">
+      <span><a href="http://mp3.sogou.com/tiny/album?album_id=1174104&query=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4%B5%DA%CB%C4%BC%BE+%D7%DC%BE%F6%C8%FC&album_name=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4%B5%DA%CB%C4%BC%BE+%D7%DC%BE%F6%C8%FC&singer_name=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4" class="act_icon" title="中国好声音第四季">中国好声音第四季</a></span>
+      <span>|</span>
+<span><a href="http://kan.sogou.com/player/180823920/" class="null" title="好声音现场视频">好声音现场视频</a></span>
+      
+      </li>
+  </ul>
+</div>
+<script>
+function navSubmit(obj, defaultHref) {
+    if (document.searchForm.query.value.length > 0) {
+        var href = obj.href;
+        var query = document.searchForm.query.value;
+        href = href + encodeURIComponent(query);
+        obj.href = href;
+    }else{
+    	obj.href = defaultHref;
+    }
+}
+</script>
+<!--zly-->
+	<div id="wrapper" class="wrapper">
+	
+		<div class="location">
+			<a uigs="in_song_tiny_nav2" href="/list/singer">歌手</a> <span>&gt;</span> <a uigs="in_song_tiny_nav2" href="/tiny/singer?singer_id=4356&query=%B3%C2%BA%C6%C3%F1&singer_name=%B3%C2%BA%C6%C3%F1">陈浩民</a> <span>&gt;</span> 爱海滔滔
+		</div>
+		<div class="content">
+			<div class="l_con_680">
+				<div class="song_info_area">
+					<div class="album_cover">
+						<img src="http://imgcache.qq.com/music/photo/album_300/77/300_albumpic_13077_0.jpg" title="爱海滔滔" alt="爱海滔滔" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="220" height="220">
+					</div>
+					<div class="song_info">
+						<div class="song_tit">
+							<h2 title="爱海滔滔">爱海滔滔
+							
+							<a uigs="out_song_tiny_mv" title="爱海滔滔的MV" class="video_icon" target="_blank" href="http://www.yinyuetai.com/video/8897"></a>
+							</h2>
+						</div>
+						<div class="song_btns">
+							<a uigs="out_song_tiny_play" onclick="play(event,'[[#147421#,#2#,#http://cc.stream.qqmusic.qq.com/C100002e6ChH3TcV6a.m4a?fromtag=52#,#爱海滔滔#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#270#,#5b6c114e30b0f2a4#]]')" href="javascript:void(0)" class="start_btn">播放</a>
+						</div>
+						<ul class="song_detail">
+							<li>歌手：<a uigs="in_song_tiny_singer" href="/tiny/singer?singer_id=4356&query=%B3%C2%BA%C6%C3%F1&singer_name=%B3%C2%BA%C6%C3%F1" target="_blank" title="陈浩民">陈浩民</a></li>
+							<li>语言：<span>国语 </span></li>
+							<li>所属专辑：<a uigs="in_song_tiny_album" href="/tiny/album?album_id=13077&album_name=%B0%AE%BA%A3%CC%CF%CC%CF&singer_name=%B3%C2%BA%C6%C3%F1&query=%B0%AE%BA%A3%CC%CF%CC%CF" target="_blank" title="爱海滔滔">爱海滔滔</a></li>
+							<li>发行时间：<span>2004-12-01 </span></li>
+						</ul>
+					</div>
+				</div><div class="lyrics">
+				<p class="lyrics_tit">歌词<span class="opt"><a id="copy-button" href="javascript:void(0)">复制</a></span></p><p style="">爱海滔滔 - 陈浩民</p><p style="">词：稻草人</p><p style="">曲：稻草人</p><p style="">试着去努力鼓起勇气放弃你</p><p style="">总是不争气没有这么快学会安静</p><p style="">就连眼泪时刻在提醒根本无法放得下你</p><p style="">漆黑的夜晚还是找到了我排山倒海来袭</p><p style="">一定是我不够好所以你才想要逃</p><p style="">逃到天涯和海角躲在别人的怀抱</p><p style="">你能不能不管过得好不好</p><p style="">不要故意躲开不让我知道</p><p><a class="more_open" href="javascript:void(0)" onclick="$('.more_open').hide();$('.more_close').show();$('.lyrics p').show();">更多</a></p><p style="display:none">只要你过得很好什么都已不重要</p><p style="display:none">我不会故意打扰更不会让你烦恼</p><p style="display:none">我每一夜不管你知不知道</p><p style="display:none">傻傻流着眼泪默默的祈祷</p><p style="display:none">希望你过得好</p><p style="display:none">试着去努力鼓起勇气放弃你</p><p style="display:none">总是不争气没有这么快学会安静</p><p style="display:none">就连眼泪时刻在提醒根本无法放得下你</p><p style="display:none">漆黑的夜晚还是找到了我排山倒海来袭</p><p style="display:none">一定是我不够好所以你才想要逃</p><p style="display:none">逃到天涯和海角躲在别人的怀抱</p><p style="display:none">你能不能不管过得好不好</p><p style="display:none">不要故意躲开不让我知道</p><p style="display:none">只要你过得很好什么都已不重要</p><p style="display:none">我不会故意打扰更不会让你烦恼</p><p style="display:none">我每一夜不管你知不知道</p><p style="display:none">傻傻流着眼泪默默的祈祷</p><p style="display:none">希望你过得好</p><p style="display:none">总有一天你会看到</p><p style="display:none">爱如海掀起惊天巨滔</p><p style="display:none">我会以无坚不摧的力量</p><p style="display:none">让你知道</p><p style="display:none">一定是我不够好所以你才想要逃</p><p style="display:none">逃到天涯和海角躲在别人的怀抱</p><p style="display:none">你能不能不管过得好不好</p><p style="display:none">不要故意躲开不让我知道</p><p style="display:none">只要你过得很好什么都已不重要</p><p style="display:none">我不会故意打扰更不会让你烦恼</p><p style="display:none">我每一夜不管你知不知道</p><p style="display:none">傻傻流着眼泪默默的祈祷</p><p style="display:none">希望你过得好</p><p><a style="display:none" class="more_close" href="javascript:void(0)" onclick="$('.more_close').hide();$('.more_open').show();$('.lyrics p:gt(12)').hide();">收起</a></p><textarea id="copy_value" style="display:none">爱海滔滔 - 陈浩民
+词：稻草人
+曲：稻草人
+试着去努力鼓起勇气放弃你
+总是不争气没有这么快学会安静
+就连眼泪时刻在提醒根本无法放得下你
+漆黑的夜晚还是找到了我排山倒海来袭
+一定是我不够好所以你才想要逃
+逃到天涯和海角躲在别人的怀抱
+你能不能不管过得好不好
+不要故意躲开不让我知道
+只要你过得很好什么都已不重要
+我不会故意打扰更不会让你烦恼
+我每一夜不管你知不知道
+傻傻流着眼泪默默的祈祷
+希望你过得好
+试着去努力鼓起勇气放弃你
+总是不争气没有这么快学会安静
+就连眼泪时刻在提醒根本无法放得下你
+漆黑的夜晚还是找到了我排山倒海来袭
+一定是我不够好所以你才想要逃
+逃到天涯和海角躲在别人的怀抱
+你能不能不管过得好不好
+不要故意躲开不让我知道
+只要你过得很好什么都已不重要
+我不会故意打扰更不会让你烦恼
+我每一夜不管你知不知道
+傻傻流着眼泪默默的祈祷
+希望你过得好
+总有一天你会看到
+爱如海掀起惊天巨滔
+我会以无坚不摧的力量
+让你知道
+一定是我不够好所以你才想要逃
+逃到天涯和海角躲在别人的怀抱
+你能不能不管过得好不好
+不要故意躲开不让我知道
+只要你过得很好什么都已不重要
+我不会故意打扰更不会让你烦恼
+我每一夜不管你知不知道
+傻傻流着眼泪默默的祈祷
+希望你过得好
+</textarea><script>
+						$("#copy-button").zclip({
+						    path: "/js/ZeroClipboard.swf",
+						    copy: function(){return $("#copy_value").val();},
+							afterCopy:function(){
+								alert("歌词已复制到剪贴板");
+							}
+						});
+						
+						</script></div>
+				<div class="music_list_area">
+			        <div class="music_list_02 music_list_r">
+			          <div class="m_tit">
+			              <h2>该专辑其他歌曲</h2>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play_all" href="javascript:void(0)" onclick="playAlbumOtherSongList(event)">播放</a>
+			          </div>
+			          <ul>
+			            
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>1</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=53b3234c9f8df56d&query=%C4%AC%C6%F5&song_name=%C4%AC%C6%F5" title="默契">默契</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=4356&query=%B3%C2%BA%C6%C3%F1&singer_name=%B3%C2%BA%C6%C3%F1" title="陈浩民">陈浩民</a></span>
+			              <span class="time">3:58</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000Uwcab27mNVt.m4a?fromtag=52#,#默契#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#238#,#000Uwcab27mNVt#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>2</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=530c7de3db06c299&query=%C4%AC%C4%AC&song_name=%C4%AC%C4%AC" title="默默">默默</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=4356&query=%B3%C2%BA%C6%C3%F1&singer_name=%B3%C2%BA%C6%C3%F1" title="陈浩民">陈浩民</a></span>
+			              <span class="time">3:50</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003dixZP33XnWs.m4a?fromtag=52#,#默默#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#230#,#003dixZP33XnWs#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>3</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5c47236f80ff5b7d&query=%CF%E0%B0%AE%CC%AB%C4%D1&song_name=%CF%E0%B0%AE%CC%AB%C4%D1" title="相爱太难">相爱太难</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=4356&query=%B3%C2%BA%C6%C3%F1&singer_name=%B3%C2%BA%C6%C3%F1" title="陈浩民">陈浩民</a></span>
+			              <span class="time">4:19</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002OeddN2DByoF.m4a?fromtag=52#,#相爱太难#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#259#,#002OeddN2DByoF#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>4</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5c151b7846c89ce8&query=%D6%D3%E3%EB&song_name=%D6%D3%E3%EB" title="钟汶">钟汶</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=4356&query=%B3%C2%BA%C6%C3%F1&singer_name=%B3%C2%BA%C6%C3%F1" title="陈浩民">陈浩民</a></span>
+			              <span class="time">3:36</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002dHbsI1rAxlM.m4a?fromtag=52#,#钟汶#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#216#,#002dHbsI1rAxlM#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>5</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=50bae453e8856510&query=%B0%AE%C7%E9%C9%B5%B9%CF&song_name=%B0%AE%C7%E9%C9%B5%B9%CF" title="爱情傻瓜">爱情傻瓜</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=4356&query=%B3%C2%BA%C6%C3%F1&singer_name=%B3%C2%BA%C6%C3%F1" title="陈浩民">陈浩民</a></span>
+			              <span class="time">3:52</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002tsmMS10pba6.m4a?fromtag=52#,#爱情傻瓜#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#232#,#002tsmMS10pba6#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>6</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=53514cc96245fdd3&query=%B0%AE%C4%E3%D5%E6%BA%C3&song_name=%B0%AE%C4%E3%D5%E6%BA%C3" title="爱你真好">爱你真好</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=4356&query=%B3%C2%BA%C6%C3%F1&singer_name=%B3%C2%BA%C6%C3%F1" title="陈浩民">陈浩民</a></span>
+			              <span class="time">4:31</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000044HYNz3dYDr2.m4a?fromtag=52#,#爱你真好#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#271#,#0044HYNz3dYDr2#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>7</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5dcfd9b7a91fd14d&query=%B8%DF%C5%CA%B2%BB%C6%F0&song_name=%B8%DF%C5%CA%B2%BB%C6%F0" title="高攀不起">高攀不起</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=4356&query=%B3%C2%BA%C6%C3%F1&singer_name=%B3%C2%BA%C6%C3%F1" title="陈浩民">陈浩民</a></span>
+			              <span class="time">4:18</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000gEbXs0ZlAM6.m4a?fromtag=52#,#高攀不起#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#258#,#000gEbXs0ZlAM6#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>8</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5564737d8feaecea&query=%D2%BB%B4%A5%BC%B4%B7%A2&song_name=%D2%BB%B4%A5%BC%B4%B7%A2" title="一触即发">一触即发</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=4356&query=%B3%C2%BA%C6%C3%F1&singer_name=%B3%C2%BA%C6%C3%F1" title="陈浩民">陈浩民</a></span>
+			              <span class="time">3:50</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001F9VPV0uKLXo.m4a?fromtag=52#,#一触即发#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#230#,#001F9VPV0uKLXo#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>9</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5fffffffff147431&query=%B0%AE%BA%A3%CC%CF%CC%CF&song_name=%B0%AE%BA%A3%CC%CF%CC%CF" title="爱海滔滔">爱海滔滔</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=4356&query=%B3%C2%BA%C6%C3%F1&singer_name=%B3%C2%BA%C6%C3%F1" title="陈浩民">陈浩民</a></span>
+			              <span class="time">4:15</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004QWPaw1LoPKL.m4a?fromtag=52#,#爱海滔滔#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#255#,#004QWPaw1LoPKL#]]', true)">播放</a>
+			            </li>
+			          </ul>
+			          <script type="text/javascript">
+							function playAlbumOtherSongList(event) {
+								play(event,"[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000Uwcab27mNVt.m4a?fromtag=52#,#默契#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#238#,#000Uwcab27mNVt#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003dixZP33XnWs.m4a?fromtag=52#,#默默#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#230#,#003dixZP33XnWs#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002OeddN2DByoF.m4a?fromtag=52#,#相爱太难#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#259#,#002OeddN2DByoF#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002dHbsI1rAxlM.m4a?fromtag=52#,#钟汶#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#216#,#002dHbsI1rAxlM#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002tsmMS10pba6.m4a?fromtag=52#,#爱情傻瓜#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#232#,#002tsmMS10pba6#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000044HYNz3dYDr2.m4a?fromtag=52#,#爱你真好#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#271#,#0044HYNz3dYDr2#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000gEbXs0ZlAM6.m4a?fromtag=52#,#高攀不起#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#258#,#000gEbXs0ZlAM6#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001F9VPV0uKLXo.m4a?fromtag=52#,#一触即发#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#230#,#001F9VPV0uKLXo#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004QWPaw1LoPKL.m4a?fromtag=52#,#爱海滔滔#,#4356#,#陈浩民#,#13077#,#爱海滔滔#,#255#,#004QWPaw1LoPKL#]]");
+							}
+						</script>
+			        </div>
+			        <div class="music_list_02">
+			          <div class="m_tit">
+			              <h2>该歌手热门曲目</h2>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play_all" href="javascript:void(0)" onclick="playSingerOtherSongList(event)">播放</a>
+			              <span class="tit_info">
+			                  <a class="more" uigs="in_song_tiny_singer_hot_song_more" href="/tiny/singer?singer_id=4356&query=%B3%C2%BA%C6%C3%F1&singer_name=%B3%C2%BA%C6%C3%F1">更多<span>&gt;</span></a>
+			              </span>
+			          </div>
+			          <ul>
+			            
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>1</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=59f6f444e73ae0fc&query=%BB%EE%B7%F0%BC%C3%B9%AB%D6%F7%CC%E2%C7%FA&song_name=%BB%EE%B7%F0%BC%C3%B9%AB%D6%F7%CC%E2%C7%FA" title="活佛济公主题曲">活佛济公主题曲</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=143782&query=%D4%DA%CF%DF%C8%C8%CB%D1%A3%A8%BB%AA%D3%EF%A3%A9%CF%B5%C1%D035&album_name=%D4%DA%CF%DF%C8%C8%CB%D1%A3%A8%BB%AA%D3%EF%A3%A9%CF%B5%C1%D035" title="在线热搜（华语）系列35">在线热搜（华语）系列35</a></span>
+			              <span class="time">2:12</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002y2BBX3t5ZZ5.m4a?fromtag=52#,#活佛济公主题曲#,#4356#,#陈浩民#,#143782#,#在线热搜（华语）系列35#,#132#,#002y2BBX3t5ZZ5#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>2</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5ae1775b165adeb9&query=%B3%C7%C3%C5%28%B5%E7%CA%D3%BE%E7%A1%B6%BB%EE%B7%F0%BC%C3%B9%AB3%A1%B7%C6%AC%CE%B2%C7%FA%29&song_name=%B3%C7%C3%C5%28%B5%E7%CA%D3%BE%E7%A1%B6%BB%EE%B7%F0%BC%C3%B9%AB3%A1%B7%C6%AC%CE%B2%C7%FA%29" title="城门(电视剧《活佛济公3》片尾曲)">城门(电视剧《活佛济公3》片尾曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=146963&query=%BB%EE%B7%F0%BC%C3%B9%AB3+%B5%E7%CA%D3%D4%AD%C9%F9%B4%F8&album_name=%BB%EE%B7%F0%BC%C3%B9%AB3+%B5%E7%CA%D3%D4%AD%C9%F9%B4%F8" title="活佛济公3 电视原声带">活佛济公3 电视原声带</a></span>
+			              <span class="time">2:17</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000DzyXl3CqoRd.m4a?fromtag=52#,#城门(电视剧《活佛济公3》片尾曲)#,#4356#,#陈浩民#,#146963#,#活佛济公3 电视原声带#,#137#,#000DzyXl3CqoRd#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>3</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=51edb332489a8043&query=%D4%DA%C7%A3%CA%D6%B5%C4%D2%BB%CB%B2%BC%E4%28%B5%E7%CA%D3%BE%E7%A1%B6%BB%EE%B7%F0%BC%C3%B9%AB3%A1%B7%B2%E5%C7%FA%29&song_name=%D4%DA%C7%A3%CA%D6%B5%C4%D2%BB%CB%B2%BC%E4%28%B5%E7%CA%D3%BE%E7%A1%B6%BB%EE%B7%F0%BC%C3%B9%AB3%A1%B7%B2%E5%C7%FA%29" title="在牵手的一瞬间(电视剧《活佛济公3》插曲)">在牵手的一瞬间(电视剧《活佛济公3》插曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=146963&query=%BB%EE%B7%F0%BC%C3%B9%AB3+%B5%E7%CA%D3%D4%AD%C9%F9%B4%F8&album_name=%BB%EE%B7%F0%BC%C3%B9%AB3+%B5%E7%CA%D3%D4%AD%C9%F9%B4%F8" title="活佛济公3 电视原声带">活佛济公3 电视原声带</a></span>
+			              <span class="time">4:00</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003Lda6h4PnR9N.m4a?fromtag=52#,#在牵手的一瞬间(电视剧《活佛济公3》插曲)#,#4356#,#陈浩民#,#146963#,#活佛济公3 电视原声带#,#240#,#003Lda6h4PnR9N#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>4</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5fb79d000995decf&query=%B7%F0%C7%B0%D6%AE%D4%B8&song_name=%B7%F0%C7%B0%D6%AE%D4%B8" title="佛前之愿">佛前之愿</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=139205&query=%D4%DA%CF%DF%C8%C8%CB%D1%A3%A8%BB%AA%D3%EF%A3%A9%CF%B5%C1%D021&album_name=%D4%DA%CF%DF%C8%C8%CB%D1%A3%A8%BB%AA%D3%EF%A3%A9%CF%B5%C1%D021" title="在线热搜（华语）系列21">在线热搜（华语）系列21</a></span>
+			              <span class="time">2:13</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000045qGR51abS2S.m4a?fromtag=52#,#佛前之愿#,#4356#,#陈浩民#,#139205#,#在线热搜（华语）系列21#,#133#,#0045qGR51abS2S#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>5</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=59d03b45abdc3f96&query=%B5%DA%D2%BB%B4%CE&song_name=%B5%DA%D2%BB%B4%CE" title="第一次">第一次</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=104356&query=I+Am+%2F+You+Are&album_name=I+Am+%2F+You+Are" title="I Am / You Are">I Am / You Are</a></span>
+			              <span class="time">4:40</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002e4wr12R104t.m4a?fromtag=52#,#第一次#,#4356#,#陈浩民#,#104356#,#I Am / You Are#,#280#,#002e4wr12R104t#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>6</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=555149c3a71a9f36&query=%B5%DA%D2%BB%B4%CE%28%B5%E7%CA%D3%BE%E7%A1%B6%BB%EE%B7%F0%BC%C3%B9%AB3%A1%B7%B2%E5%C7%FA%29&song_name=%B5%DA%D2%BB%B4%CE%28%B5%E7%CA%D3%BE%E7%A1%B6%BB%EE%B7%F0%BC%C3%B9%AB3%A1%B7%B2%E5%C7%FA%29" title="第一次(电视剧《活佛济公3》插曲)">第一次(电视剧《活佛济公3》插曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=146963&query=%BB%EE%B7%F0%BC%C3%B9%AB3+%B5%E7%CA%D3%D4%AD%C9%F9%B4%F8&album_name=%BB%EE%B7%F0%BC%C3%B9%AB3+%B5%E7%CA%D3%D4%AD%C9%F9%B4%F8" title="活佛济公3 电视原声带">活佛济公3 电视原声带</a></span>
+			              <span class="time">4:40</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002iepF22u9PvK.m4a?fromtag=52#,#第一次(电视剧《活佛济公3》插曲)#,#4356#,#陈浩民#,#146963#,#活佛济公3 电视原声带#,#280#,#002iepF22u9PvK#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>7</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5ff2174cd61c7798&query=%B3%AC%D4%BD%CA%C0%BD%E7%28%B5%E7%CA%D3%BE%E7%A1%B6%BB%EE%B7%F0%BC%C3%B9%AB3%A1%B7%B2%E5%C7%FA%29&song_name=%B3%AC%D4%BD%CA%C0%BD%E7%28%B5%E7%CA%D3%BE%E7%A1%B6%BB%EE%B7%F0%BC%C3%B9%AB3%A1%B7%B2%E5%C7%FA%29" title="超越世界(电视剧《活佛济公3》插曲)">超越世界(电视剧《活佛济公3》插曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=146963&query=%BB%EE%B7%F0%BC%C3%B9%AB3+%B5%E7%CA%D3%D4%AD%C9%F9%B4%F8&album_name=%BB%EE%B7%F0%BC%C3%B9%AB3+%B5%E7%CA%D3%D4%AD%C9%F9%B4%F8" title="活佛济公3 电视原声带">活佛济公3 电视原声带</a></span>
+			              <span class="time">4:23</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004NrpQz0EJdkG.m4a?fromtag=52#,#超越世界(电视剧《活佛济公3》插曲)#,#4356#,#陈浩民#,#146963#,#活佛济公3 电视原声带#,#263#,#004NrpQz0EJdkG#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>8</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5aff0459d1109a4f&query=%C8%A1%D2%BB%C4%EE%28%B5%E7%CA%D3%BE%E7%A1%B6%CE%F7%D3%CE%BC%C7II%A1%B7%B2%E5%C7%FA%29&song_name=%C8%A1%D2%BB%C4%EE%28%B5%E7%CA%D3%BE%E7%A1%B6%CE%F7%D3%CE%BC%C7II%A1%B7%B2%E5%C7%FA%29" title="取一念(电视剧《西游记II》插曲)">取一念(电视剧《西游记II》插曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=13075&query=A+Day+with+Benny&album_name=A+Day+with+Benny" title="A Day with Benny">A Day with Benny</a></span>
+			              <span class="time">3:05</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001rvEd14VfC93.m4a?fromtag=52#,#取一念(电视剧《西游记II》插曲)#,#4356#,#陈浩民#,#13075#,#A Day with Benny#,#185#,#001rvEd14VfC93#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>9</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5b8ed40be1d0a5c7&query=%CD%FC%B2%BB%C1%CB%B5%C4%C8%CB&song_name=%CD%FC%B2%BB%C1%CB%B5%C4%C8%CB" title="忘不了的人">忘不了的人</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=104356&query=I+Am+%2F+You+Are&album_name=I+Am+%2F+You+Are" title="I Am / You Are">I Am / You Are</a></span>
+			              <span class="time">4:09</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003CP6H61gEcCJ.m4a?fromtag=52#,#忘不了的人#,#4356#,#陈浩民#,#104356#,#I Am / You Are#,#249#,#003CP6H61gEcCJ#]]', true)">播放</a>
+			            </li>
+			          </ul>
+			          <script type="text/javascript">
+							function playSingerOtherSongList(event) {
+								play(event,"[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002y2BBX3t5ZZ5.m4a?fromtag=52#,#活佛济公主题曲#,#4356#,#陈浩民#,#143782#,#在线热搜（华语）系列35#,#132#,#002y2BBX3t5ZZ5#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000DzyXl3CqoRd.m4a?fromtag=52#,#城门(电视剧《活佛济公3》片尾曲)#,#4356#,#陈浩民#,#146963#,#活佛济公3 电视原声带#,#137#,#000DzyXl3CqoRd#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003Lda6h4PnR9N.m4a?fromtag=52#,#在牵手的一瞬间(电视剧《活佛济公3》插曲)#,#4356#,#陈浩民#,#146963#,#活佛济公3 电视原声带#,#240#,#003Lda6h4PnR9N#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000045qGR51abS2S.m4a?fromtag=52#,#佛前之愿#,#4356#,#陈浩民#,#139205#,#在线热搜（华语）系列21#,#133#,#0045qGR51abS2S#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002e4wr12R104t.m4a?fromtag=52#,#第一次#,#4356#,#陈浩民#,#104356#,#I Am / You Are#,#280#,#002e4wr12R104t#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002iepF22u9PvK.m4a?fromtag=52#,#第一次(电视剧《活佛济公3》插曲)#,#4356#,#陈浩民#,#146963#,#活佛济公3 电视原声带#,#280#,#002iepF22u9PvK#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004NrpQz0EJdkG.m4a?fromtag=52#,#超越世界(电视剧《活佛济公3》插曲)#,#4356#,#陈浩民#,#146963#,#活佛济公3 电视原声带#,#263#,#004NrpQz0EJdkG#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001rvEd14VfC93.m4a?fromtag=52#,#取一念(电视剧《西游记II》插曲)#,#4356#,#陈浩民#,#13075#,#A Day with Benny#,#185#,#001rvEd14VfC93#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003CP6H61gEcCJ.m4a?fromtag=52#,#忘不了的人#,#4356#,#陈浩民#,#104356#,#I Am / You Are#,#249#,#003CP6H61gEcCJ#]]");
+							}
+						</script>
+			        </div>
+			   </div>
+			</div>
+			<div class="r_con_280">
+			
+		      <div class="hot_albums">
+		        <div class="m_tit">
+		            <h2>该歌手热门专辑</h2>
+		        </div>
+		        <ul class="hot_albums_list">
+		          
+				  <li>
+		            <a class="img_b" uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=104356&album_name=I+Am+%2F+You+Are&query=I+Am+%2F+You+Are&singer_name=" title="I Am / You Are"><img src="http://imgcache.qq.com/music/photo/album/56/150_albumpic_104356_0.jpg" title="I Am / You Are" alt="I Am / You Are" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="125" height="125"></a>
+		            <span class="name"><a uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=104356&album_name=I+Am+%2F+You+Are&query=I+Am+%2F+You+Are&singer_name=" title="I Am / You Are">I Am / You Are</a></span>
+		            <span class="date ">2012-04-18</span>
+		          </li>
+		          
+				  <li>
+		            <a class="img_b" uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=13077&album_name=%B0%AE%BA%A3%CC%CF%CC%CF&query=%B0%AE%BA%A3%CC%CF%CC%CF&singer_name=" title="爱海滔滔"><img src="http://imgcache.qq.com/music/photo/album/77/150_albumpic_13077_0.jpg" title="爱海滔滔" alt="爱海滔滔" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="125" height="125"></a>
+		            <span class="name"><a uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=13077&album_name=%B0%AE%BA%A3%CC%CF%CC%CF&query=%B0%AE%BA%A3%CC%CF%CC%CF&singer_name=" title="爱海滔滔">爱海滔滔</a></span>
+		            <span class="date ">2004-12-01</span>
+		          </li>
+		          
+		        </ul>
+		      </div>
+		      <div id="hotsingerlist_div"></div>
+			  <script>$("#hotsingerlist_div").load("/frags/singer_tiny_hot_singer_list.html");</script>
+	       	  <div id="hotlist_div"></div>
+			   <script>$("#hotlist_div").load("/frags/album_tiny_hot_song_list.html");</script>
+			   
+
+<!--zly-->
+
+		    </div>
+		</div>
+	</div>
+	<div id="footer">
+			<a href="http://fuwu.sogou.com/" target="_blank">企业推广</a> - <a
+				href="http://pinyin.sogou.com" target="_blank">输入法</a> - <a
+				href="http://ie.sogou.com/" target="_blank">浏览器</a> - <a
+				href="http://mail.sogou.com" target="_blank">搜狗免费邮箱</a> - <a
+				href="http://job.sogou.com" target="_blank">诚聘英才</a> - <a
+				href="http://help.sogou.com/music.html" target="_blank">搜索帮助</a><br>
+			&copy;
+			<script>
+				document.write(new Date().getFullYear())
+			</script>
+			SOGOU.COM <a href="http://www.miibeian.gov.cn" target="_blank"
+				class="g">京ICP证050897号</a> <a
+				href="http://www.sogou.com/docs/terms.htm" target="_blank" class="g">免责声明</a>
+			<img src="/images/ba.gif" width="12" height="14" alt="备案">
+		</div>
+</body>
+</html>
+<script>
+var SugPara = {
+		"domain":"vs.sugg.sogou.com",
+		"sugType":"music",
+		"enableSug":true,
+		"revsd":1,
+		"inputid":"query",
+		"useParent":0
+	  }
+</script>
+<script src="/js/sugg_ajaj_2005.gz.js?v=5" language="javascript" type="text/javascript"></script>
+<script language='JavaScript'>
+var uigs_para={"uigs_productid":"music","uigs_page":"song_tiny","query":"爱海滔滔","tiny_name":"爱海滔滔"};
+</script>
+<script language='JavaScript' src='/js/common/pv.js'></script>
+<script language='JavaScript' src='http://pb.sogou.com/pb.js'></script>
+<!--tiny-->

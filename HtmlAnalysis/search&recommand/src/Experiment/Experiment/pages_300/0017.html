@@ -1,0 +1,378 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="P3P" content='CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"'>
+<title>太早——刘允乐，搜狗音乐在线试听</title>
+<link href="/dist/css/music.css?t=2015071013" rel="stylesheet" type="text/css">
+<link href="/dist/css/frame.css?t=2015071013" rel="stylesheet" type="text/css">
+<script src="/js/common/cookie.js" language="javascript" type="text/javascript"></script>
+<script src="/js/player/play_exe.js?t=20151102" language="javascript" type="text/javascript"></script>
+<script src="/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="/js/jquery.zclip.min.js"></script>
+</head>
+<body>
+	
+
+
+<div class="searchnav">
+  <ul class="topnav">
+    <li><a href="http://news.sogou.com/news?query=" onclick="navSubmit(this,'http://news.sogou.com/news');">新闻</a></li>
+	<li><a href="http://www.sogou.com/web?p=41240100&query=" onclick="navSubmit(this,'http://www.sogou.com/web?p=41240100');">网页</a></li>
+	<li><a href="http://weixin.sogou.com/weixin?p=41351200&type=2&query=" onclick="navSubmit(this,'http://weixin.sogou.com/weixin?p=41351200&type=2')">微信</a></li>
+	<li style="position: relative;"><a href="http://zhihu.sogou.com/zhihu?p=41351202&query=" onclick="navSubmit(this,'http://zhihu.sogou.com/?p=41351201')">知乎<img src="https://www.sogou.com/images/nav-new.gif" height="16" width="13" style="position: absolute;right:-12px;top:0;"></a></li>
+	<li><a href="http://wenwen.sogou.com/s/?cid=mp3search2ww&w=" onclick="navSubmit(this,'http://wenwen.sogou.com/?cid=mp3search2ww')">问问</a></li>
+	<li><a href="http://pic.sogou.com/pics?query=" onclick="navSubmit(this,'http://pic.sogou.com/');">图片</a></li>
+	<li><a href="http://v.sogou.com/v?query=" onclick="navSubmit(this,'http://v.sogou.com/');">视频</a></li>
+	<li class="cur">音乐</li>
+	<li><a href="http://map.sogou.com/#city=%u5168%u56FD&page=1&lq=" onclick="navSubmit(this,'http://map.sogou.com/');">地图</a></li>
+	<li><a href="http://www.sogou.com/docs/more.htm" target="_blank" uigs="result_nav_more">更多<span class="topraquo">&raquo;</span></a></li>
+  </ul>
+</div>
+<div class="header">
+  <div class="searchbox">
+    <a href="/" title="搜狗音乐"><img width="135" height="40" class="logo" title="搜狗音乐" src="/images/yinyue135x40.png?t=20150120" alt="搜狗音乐"></a>
+    <form class="searchform" id="searchForm" name="searchForm" action="/music.so" method="get">
+      <div class="querybox">
+        <div class="qborder"><input class="query" id="query" name="query" type="text" maxlength="100" value="太早" autocomplete="off"> 
+		      <input type=hidden name="class" id="classid" value=1 />
+		      <input type=hidden name="ac" id="ac" value="1">
+		      <input type=hidden name="_asf" id="_asf">
+		      <input type=hidden name="_ast" id="_ast">
+		      <input type=hidden name="p" id="p">
+		      <input type="hidden" name="w" value="06009900"/>
+		      <input type=hidden name="interV" id="inter">
+		</div>
+      </div>
+      <div class="sbtn1"><input type="submit" value="搜狗搜索"></div>
+    </form>
+  </div>
+</div>
+<div class="mnavbox">
+  <ul class="mnav">
+    <li ><a uigs="in_header_tiny_nav" href="/">首页</a><i class="tip"></i></li>
+    <li ><a uigs="in_header_tiny_nav" href="/bang_list.html">榜单</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/list/singer">歌手</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/top/tag_list.html">标签</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/tiny/dissList">歌单</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/list/album">专辑</a></li>
+    <li ><a uigs="in_header_list_nav" href="/top/mv_bang.html">MV</a></li>  
+  	
+      <li class="act_info">
+      <span><a href="http://mp3.sogou.com/tiny/album?album_id=1174104&query=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4%B5%DA%CB%C4%BC%BE+%D7%DC%BE%F6%C8%FC&album_name=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4%B5%DA%CB%C4%BC%BE+%D7%DC%BE%F6%C8%FC&singer_name=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4" class="act_icon" title="中国好声音第四季">中国好声音第四季</a></span>
+      <span>|</span>
+<span><a href="http://kan.sogou.com/player/180823920/" class="null" title="好声音现场视频">好声音现场视频</a></span>
+      
+      </li>
+  </ul>
+</div>
+<script>
+function navSubmit(obj, defaultHref) {
+    if (document.searchForm.query.value.length > 0) {
+        var href = obj.href;
+        var query = document.searchForm.query.value;
+        href = href + encodeURIComponent(query);
+        obj.href = href;
+    }else{
+    	obj.href = defaultHref;
+    }
+}
+</script>
+<!--zly-->
+	<div id="wrapper" class="wrapper">
+	
+		<div class="location">
+			<a uigs="in_song_tiny_nav2" href="/list/singer">歌手</a> <span>&gt;</span> <a uigs="in_song_tiny_nav2" href="/tiny/singer?singer_id=6570&query=%C1%F5%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6">刘允乐</a> <span>&gt;</span> 太早
+		</div>
+		<div class="content">
+			<div class="l_con_680">
+				<div class="song_info_area">
+					<div class="album_cover">
+						<img src="http://imgcache.qq.com/music/photo/album_300/61/300_albumpic_13461_0.jpg" title="太早" alt="太早" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="220" height="220">
+					</div>
+					<div class="song_info">
+						<div class="song_tit">
+							<h2 title="太早">太早
+							
+							<a uigs="out_song_tiny_mv" title="太早的MV" class="video_icon" target="_blank" href="http://www.yinyuetai.com/video/163400"></a>
+							</h2>
+						</div>
+						<div class="song_btns">
+							<a uigs="out_song_tiny_play" onclick="play(event,'[[#151784#,#2#,#http://cc.stream.qqmusic.qq.com/C100003ikqTz3tYjps.m4a?fromtag=52#,#太早#,#6570#,#刘允乐#,#13461#,#允乐#,#229#,#5f92e43c32ac52f3#]]')" href="javascript:void(0)" class="start_btn">播放</a>
+						</div>
+						<ul class="song_detail">
+							<li>歌手：<a uigs="in_song_tiny_singer" href="/tiny/singer?singer_id=6570&query=%C1%F5%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6" target="_blank" title="刘允乐">刘允乐</a></li>
+							<li>语言：<span>国语 </span></li>
+							<li>所属专辑：<a uigs="in_song_tiny_album" href="/tiny/album?album_id=13461&album_name=%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6&query=%D4%CA%C0%D6" target="_blank" title="允乐">允乐</a></li>
+							<li>发行时间：<span>2005-01-01 </span></li>
+						</ul>
+					</div>
+				</div><div class="lyrics">
+				<p class="lyrics_tit">歌词<span class="opt"><a id="copy-button" href="javascript:void(0)">复制</a></span></p><p style="">太早 - 刘允乐</p><p style="">词：许常德</p><p style="">曲：曲立</p><p style="">我知道你装成听不到</p><p style="">我也能知道我的你都不要</p><p style="">我知道我都知道 这是分手预兆</p><p style="">却还要讨你不停的笑</p><p style="">我知道就快没完没了</p><p style="">你对我的好都来不及回报</p><p style="">你知道我不知道 该用什么计较</p><p style="">去换每一个天黑的拥抱</p><p><a class="more_open" href="javascript:void(0)" onclick="$('.more_open').hide();$('.more_close').show();$('.lyrics p').show();">更多</a></p><p style="display:none">我明知道你走得太早</p><p style="display:none">还要为你帮他买对车票</p><p style="display:none">有谁知道我的神魂颠倒</p><p style="display:none">至少值得你背着我偷笑</p><p style="display:none">我知道就快没完没了</p><p style="display:none">你对我的好都来不及回报</p><p style="display:none">你知道我不知道 该用什么计较</p><p style="display:none">去换每一个天黑的拥抱</p><p style="display:none">我明知道你走得太早</p><p style="display:none">还要为你帮他买对车票</p><p style="display:none">有谁知道我的神魂颠倒</p><p style="display:none">至少值得你背着我偷笑</p><p style="display:none">我明知道你走得太早</p><p style="display:none">还要提前祝你们白头偕老</p><p style="display:none">谁都知道会有这么一朝</p><p style="display:none">不管多糟我都还是想要</p><p style="display:none">不管多糟我都还是想要</p><p><a style="display:none" class="more_close" href="javascript:void(0)" onclick="$('.more_close').hide();$('.more_open').show();$('.lyrics p:gt(12)').hide();">收起</a></p><textarea id="copy_value" style="display:none">太早 - 刘允乐
+词：许常德
+曲：曲立
+我知道你装成听不到
+我也能知道我的你都不要
+我知道我都知道 这是分手预兆
+却还要讨你不停的笑
+我知道就快没完没了
+你对我的好都来不及回报
+你知道我不知道 该用什么计较
+去换每一个天黑的拥抱
+我明知道你走得太早
+还要为你帮他买对车票
+有谁知道我的神魂颠倒
+至少值得你背着我偷笑
+我知道就快没完没了
+你对我的好都来不及回报
+你知道我不知道 该用什么计较
+去换每一个天黑的拥抱
+我明知道你走得太早
+还要为你帮他买对车票
+有谁知道我的神魂颠倒
+至少值得你背着我偷笑
+我明知道你走得太早
+还要提前祝你们白头偕老
+谁都知道会有这么一朝
+不管多糟我都还是想要
+不管多糟我都还是想要
+</textarea><script>
+						$("#copy-button").zclip({
+						    path: "/js/ZeroClipboard.swf",
+						    copy: function(){return $("#copy_value").val();},
+							afterCopy:function(){
+								alert("歌词已复制到剪贴板");
+							}
+						});
+						
+						</script></div>
+				<div class="music_list_area">
+			        <div class="music_list_02 music_list_r">
+			          <div class="m_tit">
+			              <h2>该专辑其他歌曲</h2>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play_all" href="javascript:void(0)" onclick="playAlbumOtherSongList(event)">播放</a>
+			          </div>
+			          <ul>
+			            
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>1</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=50954609d5b873e7&query=%D7%EE%BA%F3%D2%BB%B4%CE%B5%BB%B8%E6&song_name=%D7%EE%BA%F3%D2%BB%B4%CE%B5%BB%B8%E6" title="最后一次祷告">最后一次祷告</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=6570&query=%C1%F5%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6" title="刘允乐">刘允乐</a></span>
+			              <span class="time">3:16</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000021iwzu0yLotW.m4a?fromtag=52#,#最后一次祷告#,#6570#,#刘允乐#,#13461#,#允乐#,#196#,#0021iwzu0yLotW#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>2</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5997c0737dbf733a&query=%BB%EE%B8%C3&song_name=%BB%EE%B8%C3" title="活该">活该</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=6570&query=%C1%F5%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6" title="刘允乐">刘允乐</a></span>
+			              <span class="time">4:15</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000UtOjg3tVLGx.m4a?fromtag=52#,#活该#,#6570#,#刘允乐#,#13461#,#允乐#,#255#,#000UtOjg3tVLGx#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>3</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=528d4af10c42611b&query=%B7%D6%BF%AA%B5%C4%D2%E2%CB%BC&song_name=%B7%D6%BF%AA%B5%C4%D2%E2%CB%BC" title="分开的意思">分开的意思</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=6570&query=%C1%F5%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6" title="刘允乐">刘允乐</a></span>
+			              <span class="time">3:57</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003dpKmt0dnkA2.m4a?fromtag=52#,#分开的意思#,#6570#,#刘允乐#,#13461#,#允乐#,#237#,#003dpKmt0dnkA2#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>4</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=53a82b83d850a73b&query=%D5%E6%B4%F5%CA%C6&song_name=%D5%E6%B4%F5%CA%C6" title="真歹势">真歹势</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=6570&query=%C1%F5%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6" title="刘允乐">刘允乐</a></span>
+			              <span class="time">4:29</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000014SUYi3Y7lMw.m4a?fromtag=52#,#真歹势#,#6570#,#刘允乐#,#13461#,#允乐#,#269#,#0014SUYi3Y7lMw#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>5</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=53ed0ddb7502dd5d&query=%D4%CA%C0%D6&song_name=%D4%CA%C0%D6" title="允乐">允乐</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=6570&query=%C1%F5%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6" title="刘允乐">刘允乐</a></span>
+			              <span class="time">4:16</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000BFQBb0Kec7U.m4a?fromtag=52#,#允乐#,#6570#,#刘允乐#,#13461#,#允乐#,#256#,#000BFQBb0Kec7U#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>6</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=51daffb081d4cfd7&query=Interlude&song_name=Interlude" title="Interlude">Interlude</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=6570&query=%C1%F5%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6" title="刘允乐">刘允乐</a></span>
+			              <span class="time">00:39</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001FAAIT0xYCwX.m4a?fromtag=52#,#Interlude#,#6570#,#刘允乐#,#13461#,#允乐#,#39#,#001FAAIT0xYCwX#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>7</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5a02d305d4b307ca&query=I+Don%A1%AFt+Want+A+Girl+Like+You&song_name=I+Don%A1%AFt+Want+A+Girl+Like+You" title="I Don’t Want A Girl Like You">I Don’t Want A Girl Like You</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=6570&query=%C1%F5%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6" title="刘允乐">刘允乐</a></span>
+			              <span class="time">2:45</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000qQOZq37l2Fd.m4a?fromtag=52#,#I Don’t Want A Girl Like You#,#6570#,#刘允乐#,#13461#,#允乐#,#165#,#000qQOZq37l2Fd#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>8</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5a3ead58a4ef34b9&query=%C7%E0%B3%C7%D6%AE%C1%B5&song_name=%C7%E0%B3%C7%D6%AE%C1%B5" title="青城之恋">青城之恋</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=6570&query=%C1%F5%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6" title="刘允乐">刘允乐</a></span>
+			              <span class="time">5:28</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001tRopu35v5Gu.m4a?fromtag=52#,#青城之恋#,#6570#,#刘允乐#,#13461#,#允乐#,#328#,#001tRopu35v5Gu#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>9</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5f362945ff622739&query=%D4%D9%D2%BB%B4%CE&song_name=%D4%D9%D2%BB%B4%CE" title="再一次">再一次</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=6570&query=%C1%F5%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6" title="刘允乐">刘允乐</a></span>
+			              <span class="time">4:19</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001nN1Og0Wpu2F.m4a?fromtag=52#,#再一次#,#6570#,#刘允乐#,#13461#,#允乐#,#259#,#001nN1Og0Wpu2F#]]', true)">播放</a>
+			            </li>
+			          </ul>
+			          <script type="text/javascript">
+							function playAlbumOtherSongList(event) {
+								play(event,"[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000021iwzu0yLotW.m4a?fromtag=52#,#最后一次祷告#,#6570#,#刘允乐#,#13461#,#允乐#,#196#,#0021iwzu0yLotW#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000UtOjg3tVLGx.m4a?fromtag=52#,#活该#,#6570#,#刘允乐#,#13461#,#允乐#,#255#,#000UtOjg3tVLGx#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003dpKmt0dnkA2.m4a?fromtag=52#,#分开的意思#,#6570#,#刘允乐#,#13461#,#允乐#,#237#,#003dpKmt0dnkA2#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000014SUYi3Y7lMw.m4a?fromtag=52#,#真歹势#,#6570#,#刘允乐#,#13461#,#允乐#,#269#,#0014SUYi3Y7lMw#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000BFQBb0Kec7U.m4a?fromtag=52#,#允乐#,#6570#,#刘允乐#,#13461#,#允乐#,#256#,#000BFQBb0Kec7U#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001FAAIT0xYCwX.m4a?fromtag=52#,#Interlude#,#6570#,#刘允乐#,#13461#,#允乐#,#39#,#001FAAIT0xYCwX#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000qQOZq37l2Fd.m4a?fromtag=52#,#I Don’t Want A Girl Like You#,#6570#,#刘允乐#,#13461#,#允乐#,#165#,#000qQOZq37l2Fd#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001tRopu35v5Gu.m4a?fromtag=52#,#青城之恋#,#6570#,#刘允乐#,#13461#,#允乐#,#328#,#001tRopu35v5Gu#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001nN1Og0Wpu2F.m4a?fromtag=52#,#再一次#,#6570#,#刘允乐#,#13461#,#允乐#,#259#,#001nN1Og0Wpu2F#]]");
+							}
+						</script>
+			        </div>
+			        <div class="music_list_02">
+			          <div class="m_tit">
+			              <h2>该歌手热门曲目</h2>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play_all" href="javascript:void(0)" onclick="playSingerOtherSongList(event)">播放</a>
+			              <span class="tit_info">
+			                  <a class="more" uigs="in_song_tiny_singer_hot_song_more" href="/tiny/singer?singer_id=6570&query=%C1%F5%D4%CA%C0%D6&singer_name=%C1%F5%D4%CA%C0%D6">更多<span>&gt;</span></a>
+			              </span>
+			          </div>
+			          <ul>
+			            
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>1</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=55b47b6909436bb7&query=%CD%B5%CC%EC%BB%BB%C8%D5&song_name=%CD%B5%CC%EC%BB%BB%C8%D5" title="偷天换日">偷天换日</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=222738&query=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE&album_name=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE" title="百代&#40643;梅调/山歌系列&#8231;七 红楼梦">百代&#40643;梅调/山歌系列&#8231;七 红楼梦</a></span>
+			              <span class="time">2:14</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003ghTZi4GuuSy.m4a?fromtag=52#,#偷天换日#,#6570#,#刘允乐#,#222738#,#百代&#40643;梅调/山歌系列&#8231;七 红楼梦#,#134#,#003ghTZi4GuuSy#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>2</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=58bd2913669eab67&query=%BD%F0%D3%F1%C1%BC%D4%B5&song_name=%BD%F0%D3%F1%C1%BC%D4%B5" title="金玉良缘">金玉良缘</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=222738&query=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE&album_name=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE" title="百代&#40643;梅调/山歌系列&#8231;七 红楼梦">百代&#40643;梅调/山歌系列&#8231;七 红楼梦</a></span>
+			              <span class="time">1:16</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002O4f7S3Dtbct.m4a?fromtag=52#,#金玉良缘#,#6570#,#刘允乐#,#222738#,#百代&#40643;梅调/山歌系列&#8231;七 红楼梦#,#76#,#002O4f7S3Dtbct#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>3</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5ed5e591843e32f3&query=%BF%DE%C1%E9&song_name=%BF%DE%C1%E9" title="哭灵">哭灵</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=222738&query=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE&album_name=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE" title="百代&#40643;梅调/山歌系列&#8231;七 红楼梦">百代&#40643;梅调/山歌系列&#8231;七 红楼梦</a></span>
+			              <span class="time">5:33</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004Ja2vK48ipqS.m4a?fromtag=52#,#哭灵#,#6570#,#刘允乐#,#222738#,#百代&#40643;梅调/山歌系列&#8231;七 红楼梦#,#333#,#004Ja2vK48ipqS#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>4</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5997c0737dbf733a&query=%BB%EE%B8%C3&song_name=%BB%EE%B8%C3" title="活该">活该</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=13461&query=%D4%CA%C0%D6&album_name=%D4%CA%C0%D6" title="允乐">允乐</a></span>
+			              <span class="time">4:15</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000UtOjg3tVLGx.m4a?fromtag=52#,#活该#,#6570#,#刘允乐#,#13461#,#允乐#,#255#,#000UtOjg3tVLGx#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>5</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=53ed0ddb7502dd5d&query=%D4%CA%C0%D6&song_name=%D4%CA%C0%D6" title="允乐">允乐</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=13461&query=%D4%CA%C0%D6&album_name=%D4%CA%C0%D6" title="允乐">允乐</a></span>
+			              <span class="time">4:16</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000BFQBb0Kec7U.m4a?fromtag=52#,#允乐#,#6570#,#刘允乐#,#13461#,#允乐#,#256#,#000BFQBb0Kec7U#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>6</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=50954609d5b873e7&query=%D7%EE%BA%F3%D2%BB%B4%CE%B5%BB%B8%E6&song_name=%D7%EE%BA%F3%D2%BB%B4%CE%B5%BB%B8%E6" title="最后一次祷告">最后一次祷告</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=13461&query=%D4%CA%C0%D6&album_name=%D4%CA%C0%D6" title="允乐">允乐</a></span>
+			              <span class="time">3:16</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000021iwzu0yLotW.m4a?fromtag=52#,#最后一次祷告#,#6570#,#刘允乐#,#13461#,#允乐#,#196#,#0021iwzu0yLotW#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>7</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5f362945ff622739&query=%D4%D9%D2%BB%B4%CE&song_name=%D4%D9%D2%BB%B4%CE" title="再一次">再一次</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=13461&query=%D4%CA%C0%D6&album_name=%D4%CA%C0%D6" title="允乐">允乐</a></span>
+			              <span class="time">4:19</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001nN1Og0Wpu2F.m4a?fromtag=52#,#再一次#,#6570#,#刘允乐#,#13461#,#允乐#,#259#,#001nN1Og0Wpu2F#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>8</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5348e35019f1a6aa&query=%CB%C6%D4%F8%CF%E0%CA%B6&song_name=%CB%C6%D4%F8%CF%E0%CA%B6" title="似曾相识">似曾相识</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=222738&query=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE&album_name=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE" title="百代&#40643;梅调/山歌系列&#8231;七 红楼梦">百代&#40643;梅调/山歌系列&#8231;七 红楼梦</a></span>
+			              <span class="time">1:14</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001R37Kr4Uu8fL.m4a?fromtag=52#,#似曾相识#,#6570#,#刘允乐#,#222738#,#百代&#40643;梅调/山歌系列&#8231;七 红楼梦#,#74#,#001R37Kr4Uu8fL#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>9</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=59ddd7991d7092cc&query=%BA%EC%C2%A5%C3%CE%BE%F5&song_name=%BA%EC%C2%A5%C3%CE%BE%F5" title="红楼梦觉">红楼梦觉</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=222738&query=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE&album_name=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE" title="百代&#40643;梅调/山歌系列&#8231;七 红楼梦">百代&#40643;梅调/山歌系列&#8231;七 红楼梦</a></span>
+			              <span class="time">1:39</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001vmau10jRouj.m4a?fromtag=52#,#红楼梦觉#,#6570#,#刘允乐#,#222738#,#百代&#40643;梅调/山歌系列&#8231;七 红楼梦#,#99#,#001vmau10jRouj#]]', true)">播放</a>
+			            </li>
+			          </ul>
+			          <script type="text/javascript">
+							function playSingerOtherSongList(event) {
+								play(event,"[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003ghTZi4GuuSy.m4a?fromtag=52#,#偷天换日#,#6570#,#刘允乐#,#222738#,#百代&#40643;梅调/山歌系列&#8231;七 红楼梦#,#134#,#003ghTZi4GuuSy#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002O4f7S3Dtbct.m4a?fromtag=52#,#金玉良缘#,#6570#,#刘允乐#,#222738#,#百代&#40643;梅调/山歌系列&#8231;七 红楼梦#,#76#,#002O4f7S3Dtbct#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004Ja2vK48ipqS.m4a?fromtag=52#,#哭灵#,#6570#,#刘允乐#,#222738#,#百代&#40643;梅调/山歌系列&#8231;七 红楼梦#,#333#,#004Ja2vK48ipqS#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000UtOjg3tVLGx.m4a?fromtag=52#,#活该#,#6570#,#刘允乐#,#13461#,#允乐#,#255#,#000UtOjg3tVLGx#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000BFQBb0Kec7U.m4a?fromtag=52#,#允乐#,#6570#,#刘允乐#,#13461#,#允乐#,#256#,#000BFQBb0Kec7U#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000021iwzu0yLotW.m4a?fromtag=52#,#最后一次祷告#,#6570#,#刘允乐#,#13461#,#允乐#,#196#,#0021iwzu0yLotW#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001nN1Og0Wpu2F.m4a?fromtag=52#,#再一次#,#6570#,#刘允乐#,#13461#,#允乐#,#259#,#001nN1Og0Wpu2F#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001R37Kr4Uu8fL.m4a?fromtag=52#,#似曾相识#,#6570#,#刘允乐#,#222738#,#百代&#40643;梅调/山歌系列&#8231;七 红楼梦#,#74#,#001R37Kr4Uu8fL#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001vmau10jRouj.m4a?fromtag=52#,#红楼梦觉#,#6570#,#刘允乐#,#222738#,#百代&#40643;梅调/山歌系列&#8231;七 红楼梦#,#99#,#001vmau10jRouj#]]");
+							}
+						</script>
+			        </div>
+			   </div>
+			</div>
+			<div class="r_con_280">
+			
+		      <div class="hot_albums">
+		        <div class="m_tit">
+		            <h2>该歌手热门专辑</h2>
+		        </div>
+		        <ul class="hot_albums_list">
+		          
+				  <li>
+		            <a class="img_b" uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=13461&album_name=%D4%CA%C0%D6&query=%D4%CA%C0%D6&singer_name=" title="允乐"><img src="http://imgcache.qq.com/music/photo/album/61/150_albumpic_13461_0.jpg" title="允乐" alt="允乐" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="125" height="125"></a>
+		            <span class="name"><a uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=13461&album_name=%D4%CA%C0%D6&query=%D4%CA%C0%D6&singer_name=" title="允乐">允乐</a></span>
+		            <span class="date ">2005-01-01</span>
+		          </li>
+		          
+				  <li>
+		            <a class="img_b" uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=222738&album_name=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE&query=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE&singer_name=" title="百代&#40643;梅调/山歌系列&#8231;七 红楼梦"><img src="http://imgcache.qq.com/music/photo/album/38/150_albumpic_222738_0.jpg" title="百代&#40643;梅调/山歌系列&#8231;七 红楼梦" alt="百代&#40643;梅调/山歌系列&#8231;七 红楼梦" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="125" height="125"></a>
+		            <span class="name"><a uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=222738&album_name=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE&query=%B0%D9%B4%FA%26%2340643%3B%C3%B7%B5%F7%2F%C9%BD%B8%E8%CF%B5%C1%D0%26%238231%3B%C6%DF+%BA%EC%C2%A5%C3%CE&singer_name=" title="百代&#40643;梅调/山歌系列&#8231;七 红楼梦">百代&#40643;梅调/山歌系列&#8231;七 红楼梦</a></span>
+		            <span class="date ">2006-02-28</span>
+		          </li>
+		          
+		        </ul>
+		      </div>
+		      <div id="hotsingerlist_div"></div>
+			  <script>$("#hotsingerlist_div").load("/frags/singer_tiny_hot_singer_list.html");</script>
+	       	  <div id="hotlist_div"></div>
+			   <script>$("#hotlist_div").load("/frags/album_tiny_hot_song_list.html");</script>
+			   
+
+<!--zly-->
+
+		    </div>
+		</div>
+	</div>
+	<div id="footer">
+			<a href="http://fuwu.sogou.com/" target="_blank">企业推广</a> - <a
+				href="http://pinyin.sogou.com" target="_blank">输入法</a> - <a
+				href="http://ie.sogou.com/" target="_blank">浏览器</a> - <a
+				href="http://mail.sogou.com" target="_blank">搜狗免费邮箱</a> - <a
+				href="http://job.sogou.com" target="_blank">诚聘英才</a> - <a
+				href="http://help.sogou.com/music.html" target="_blank">搜索帮助</a><br>
+			&copy;
+			<script>
+				document.write(new Date().getFullYear())
+			</script>
+			SOGOU.COM <a href="http://www.miibeian.gov.cn" target="_blank"
+				class="g">京ICP证050897号</a> <a
+				href="http://www.sogou.com/docs/terms.htm" target="_blank" class="g">免责声明</a>
+			<img src="/images/ba.gif" width="12" height="14" alt="备案">
+		</div>
+</body>
+</html>
+<script>
+var SugPara = {
+		"domain":"vs.sugg.sogou.com",
+		"sugType":"music",
+		"enableSug":true,
+		"revsd":1,
+		"inputid":"query",
+		"useParent":0
+	  }
+</script>
+<script src="/js/sugg_ajaj_2005.gz.js?v=5" language="javascript" type="text/javascript"></script>
+<script language='JavaScript'>
+var uigs_para={"uigs_productid":"music","uigs_page":"song_tiny","query":"太早","tiny_name":"太早"};
+</script>
+<script language='JavaScript' src='/js/common/pv.js'></script>
+<script language='JavaScript' src='http://pb.sogou.com/pb.js'></script>
+<!--tiny-->

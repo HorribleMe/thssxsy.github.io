@@ -1,0 +1,382 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="P3P" content='CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"'>
+<title>旅行——许巍，搜狗音乐在线试听</title>
+<link href="/dist/css/music.css?t=2015071013" rel="stylesheet" type="text/css">
+<link href="/dist/css/frame.css?t=2015071013" rel="stylesheet" type="text/css">
+<script src="/js/common/cookie.js" language="javascript" type="text/javascript"></script>
+<script src="/js/player/play_exe.js?t=20151102" language="javascript" type="text/javascript"></script>
+<script src="/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="/js/jquery.zclip.min.js"></script>
+</head>
+<body>
+	
+
+
+<div class="searchnav">
+  <ul class="topnav">
+    <li><a href="http://news.sogou.com/news?query=" onclick="navSubmit(this,'http://news.sogou.com/news');">新闻</a></li>
+	<li><a href="http://www.sogou.com/web?p=41240100&query=" onclick="navSubmit(this,'http://www.sogou.com/web?p=41240100');">网页</a></li>
+	<li><a href="http://weixin.sogou.com/weixin?p=41351200&type=2&query=" onclick="navSubmit(this,'http://weixin.sogou.com/weixin?p=41351200&type=2')">微信</a></li>
+	<li style="position: relative;"><a href="http://zhihu.sogou.com/zhihu?p=41351202&query=" onclick="navSubmit(this,'http://zhihu.sogou.com/?p=41351201')">知乎<img src="https://www.sogou.com/images/nav-new.gif" height="16" width="13" style="position: absolute;right:-12px;top:0;"></a></li>
+	<li><a href="http://wenwen.sogou.com/s/?cid=mp3search2ww&w=" onclick="navSubmit(this,'http://wenwen.sogou.com/?cid=mp3search2ww')">问问</a></li>
+	<li><a href="http://pic.sogou.com/pics?query=" onclick="navSubmit(this,'http://pic.sogou.com/');">图片</a></li>
+	<li><a href="http://v.sogou.com/v?query=" onclick="navSubmit(this,'http://v.sogou.com/');">视频</a></li>
+	<li class="cur">音乐</li>
+	<li><a href="http://map.sogou.com/#city=%u5168%u56FD&page=1&lq=" onclick="navSubmit(this,'http://map.sogou.com/');">地图</a></li>
+	<li><a href="http://www.sogou.com/docs/more.htm" target="_blank" uigs="result_nav_more">更多<span class="topraquo">&raquo;</span></a></li>
+  </ul>
+</div>
+<div class="header">
+  <div class="searchbox">
+    <a href="/" title="搜狗音乐"><img width="135" height="40" class="logo" title="搜狗音乐" src="/images/yinyue135x40.png?t=20150120" alt="搜狗音乐"></a>
+    <form class="searchform" id="searchForm" name="searchForm" action="/music.so" method="get">
+      <div class="querybox">
+        <div class="qborder"><input class="query" id="query" name="query" type="text" maxlength="100" value="旅行" autocomplete="off"> 
+		      <input type=hidden name="class" id="classid" value=1 />
+		      <input type=hidden name="ac" id="ac" value="1">
+		      <input type=hidden name="_asf" id="_asf">
+		      <input type=hidden name="_ast" id="_ast">
+		      <input type=hidden name="p" id="p">
+		      <input type="hidden" name="w" value="06009900"/>
+		      <input type=hidden name="interV" id="inter">
+		</div>
+      </div>
+      <div class="sbtn1"><input type="submit" value="搜狗搜索"></div>
+    </form>
+  </div>
+</div>
+<div class="mnavbox">
+  <ul class="mnav">
+    <li ><a uigs="in_header_tiny_nav" href="/">首页</a><i class="tip"></i></li>
+    <li ><a uigs="in_header_tiny_nav" href="/bang_list.html">榜单</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/list/singer">歌手</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/top/tag_list.html">标签</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/tiny/dissList">歌单</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/list/album">专辑</a></li>
+    <li ><a uigs="in_header_list_nav" href="/top/mv_bang.html">MV</a></li>  
+  	
+      <li class="act_info">
+      <span><a href="http://mp3.sogou.com/tiny/album?album_id=1174104&query=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4%B5%DA%CB%C4%BC%BE+%D7%DC%BE%F6%C8%FC&album_name=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4%B5%DA%CB%C4%BC%BE+%D7%DC%BE%F6%C8%FC&singer_name=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4" class="act_icon" title="中国好声音第四季">中国好声音第四季</a></span>
+      <span>|</span>
+<span><a href="http://kan.sogou.com/player/180823920/" class="null" title="好声音现场视频">好声音现场视频</a></span>
+      
+      </li>
+  </ul>
+</div>
+<script>
+function navSubmit(obj, defaultHref) {
+    if (document.searchForm.query.value.length > 0) {
+        var href = obj.href;
+        var query = document.searchForm.query.value;
+        href = href + encodeURIComponent(query);
+        obj.href = href;
+    }else{
+    	obj.href = defaultHref;
+    }
+}
+</script>
+<!--zly-->
+	<div id="wrapper" class="wrapper">
+	
+		<div class="location">
+			<a uigs="in_song_tiny_nav2" href="/list/singer">歌手</a> <span>&gt;</span> <a uigs="in_song_tiny_nav2" href="/tiny/singer?singer_id=3376&query=%D0%ED%CE%A1&singer_name=%D0%ED%CE%A1">许巍</a> <span>&gt;</span> 旅行
+		</div>
+		<div class="content">
+			<div class="l_con_680">
+				<div class="song_info_area">
+					<div class="album_cover">
+						<img src="http://imgcache.qq.com/music/photo/album_300/67/300_albumpic_66167_0.jpg" title="旅行" alt="旅行" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="220" height="220">
+					</div>
+					<div class="song_info">
+						<div class="song_tit">
+							<h2 title="旅行">旅行
+							
+							</h2>
+						</div>
+						<div class="song_btns">
+							<a uigs="out_song_tiny_play" onclick="play(event,'[[#784344#,#2#,#http://cc.stream.qqmusic.qq.com/C100004ca43c4cIrYU.m4a?fromtag=52#,#旅行#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#271#,#58037343fa069375#]]')" href="javascript:void(0)" class="start_btn">播放</a>
+						</div>
+						<ul class="song_detail">
+							<li>歌手：<a uigs="in_song_tiny_singer" href="/tiny/singer?singer_id=3376&query=%D0%ED%CE%A1&singer_name=%D0%ED%CE%A1" target="_blank" title="许巍">许巍</a></li>
+							<li>语言：<span>国语 </span></li>
+							<li>所属专辑：<a uigs="in_song_tiny_album" href="/tiny/album?album_id=66167&album_name=%D2%BB%CA%B1+Remix%B8%C5%C4%EE%BE%AB%D1%A1%BC%AD&singer_name=%D0%ED%CE%A1&query=%D2%BB%CA%B1+Remix%B8%C5%C4%EE%BE%AB%D1%A1%BC%AD" target="_blank" title="一时 Remix概念精选辑">一时 Remix概念精选辑</a></li>
+							<li>发行时间：<span>2011-01-01 </span></li>
+						</ul>
+					</div>
+				</div><div class="lyrics">
+				<p class="lyrics_tit">歌词<span class="opt"><a id="copy-button" href="javascript:void(0)">复制</a></span></p><p style="">旅行 - 许巍</p><p style="">词：许巍</p><p style="">曲：许巍</p><p style="">阵阵晚风吹动着松涛</p><p style="">吹响这风铃声如天籁</p><p style="">站在这城市的寂静处</p><p style="">让一切喧嚣走远</p><p style="">只有青山藏在白云间</p><p style="">蝴蝶自由穿行在清涧</p><p style="">看那晚霞盛开在天边</p><p style="">有一群向西归鸟</p><p><a class="more_open" href="javascript:void(0)" onclick="$('.more_open').hide();$('.more_close').show();$('.lyrics p').show();">更多</a></p><p style="display:none">谁画出这天地</p><p style="display:none">又画下我和你</p><p style="display:none">让我们的世界绚丽多彩</p><p style="display:none">谁让我们哭泣</p><p style="display:none">又给我们惊喜</p><p style="display:none">让我们就这样相爱相遇</p><p style="display:none">总是要说再见</p><p style="display:none">相聚又分离</p><p style="display:none">总是走在漫长的路上</p><p style="display:none">只有青山藏在白云间</p><p style="display:none">蝴蝶自由穿行在清涧</p><p style="display:none">看那晚霞盛开在天边</p><p style="display:none">有一群向西归鸟</p><p style="display:none">谁画出这天地</p><p style="display:none">又画下我和你</p><p style="display:none">让我们的世界绚丽多彩</p><p style="display:none">谁让我们哭泣</p><p style="display:none">又给我们惊喜</p><p style="display:none">让我们就这样相爱相遇</p><p style="display:none">总是要说再见</p><p style="display:none">相聚又分离</p><p style="display:none">总是走在漫长的路上</p><p><a style="display:none" class="more_close" href="javascript:void(0)" onclick="$('.more_close').hide();$('.more_open').show();$('.lyrics p:gt(12)').hide();">收起</a></p><textarea id="copy_value" style="display:none">旅行 - 许巍
+词：许巍
+曲：许巍
+阵阵晚风吹动着松涛
+吹响这风铃声如天籁
+站在这城市的寂静处
+让一切喧嚣走远
+只有青山藏在白云间
+蝴蝶自由穿行在清涧
+看那晚霞盛开在天边
+有一群向西归鸟
+谁画出这天地
+又画下我和你
+让我们的世界绚丽多彩
+谁让我们哭泣
+又给我们惊喜
+让我们就这样相爱相遇
+总是要说再见
+相聚又分离
+总是走在漫长的路上
+只有青山藏在白云间
+蝴蝶自由穿行在清涧
+看那晚霞盛开在天边
+有一群向西归鸟
+谁画出这天地
+又画下我和你
+让我们的世界绚丽多彩
+谁让我们哭泣
+又给我们惊喜
+让我们就这样相爱相遇
+总是要说再见
+相聚又分离
+总是走在漫长的路上
+</textarea><script>
+						$("#copy-button").zclip({
+						    path: "/js/ZeroClipboard.swf",
+						    copy: function(){return $("#copy_value").val();},
+							afterCopy:function(){
+								alert("歌词已复制到剪贴板");
+							}
+						});
+						
+						</script></div>
+				<div class="music_list_area">
+			        <div class="music_list_02 music_list_r">
+			          <div class="m_tit">
+			              <h2>该专辑其他歌曲</h2>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play_all" href="javascript:void(0)" onclick="playAlbumOtherSongList(event)">播放</a>
+			          </div>
+			          <ul>
+			            
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>1</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5c70e4eae85c5d93&query=INTRO&song_name=INTRO" title="INTRO">INTRO</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=3376&query=%D0%ED%CE%A1&singer_name=%D0%ED%CE%A1" title="许巍">许巍</a></span>
+			              <span class="time">1:07</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003XIjFa3AuNMM.m4a?fromtag=52#,#INTRO#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#67#,#003XIjFa3AuNMM#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>2</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=536074bcdb27da12&query=%D0%A1%D3%E3%B5%C4%C0%ED%CF%EB&song_name=%D0%A1%D3%E3%B5%C4%C0%ED%CF%EB" title="小鱼的理想">小鱼的理想</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=3376&query=%D0%ED%CE%A1&singer_name=%D0%ED%CE%A1" title="许巍">许巍</a></span>
+			              <span class="time">6:49</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004e18MO0bMZaZ.m4a?fromtag=52#,#小鱼的理想#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#409#,#004e18MO0bMZaZ#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>3</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=508d6682c956b839&query=%C0%B6%C1%AB%BB%A8%28%BA%C3%CF%EB%BA%C3%CF%EB%CC%B8%C1%B5%B0%AE%B2%E5%C7%FA%29&song_name=%C0%B6%C1%AB%BB%A8%28%BA%C3%CF%EB%BA%C3%CF%EB%CC%B8%C1%B5%B0%AE%B2%E5%C7%FA%29" title="蓝莲花(好想好想谈恋爱插曲)">蓝莲花(好想好想谈恋爱插曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=3376&query=%D0%ED%CE%A1&singer_name=%D0%ED%CE%A1" title="许巍">许巍</a></span>
+			              <span class="time">7:02</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000GwLJ01r1Ncz.m4a?fromtag=52#,#蓝莲花(好想好想谈恋爱插曲)#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#422#,#000GwLJ01r1Ncz#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>4</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5cc21da66b16b944&query=%C3%BF%D2%BB%BF%CC%B6%BC%CA%C7%D5%B8%D0%C2%B5%C4&song_name=%C3%BF%D2%BB%BF%CC%B6%BC%CA%C7%D5%B8%D0%C2%B5%C4" title="每一刻都是崭新的">每一刻都是崭新的</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=3376&query=%D0%ED%CE%A1&singer_name=%D0%ED%CE%A1" title="许巍">许巍</a></span>
+			              <span class="time">5:11</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003wKWlI0mOgXE.m4a?fromtag=52#,#每一刻都是崭新的#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#311#,#003wKWlI0mOgXE#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>5</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=549d62c63eafe778&query=%C9%D9%C4%EA&song_name=%C9%D9%C4%EA" title="少年">少年</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=3376&query=%D0%ED%CE%A1&singer_name=%D0%ED%CE%A1" title="许巍">许巍</a></span>
+			              <span class="time">5:30</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004Xf1mq0A9hoL.m4a?fromtag=52#,#少年#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#330#,#004Xf1mq0A9hoL#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>6</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=58384e9ea4696c18&query=%D0%C7%BF%D5&song_name=%D0%C7%BF%D5" title="星空">星空</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=3376&query=%D0%ED%CE%A1&singer_name=%D0%ED%CE%A1" title="许巍">许巍</a></span>
+			              <span class="time">4:56</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000013GesL3Yzpos.m4a?fromtag=52#,#星空#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#296#,#0013GesL3Yzpos#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>7</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=57221dd6a2d83605&query=%CA%B1%B9%E2&song_name=%CA%B1%B9%E2" title="时光">时光</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=3376&query=%D0%ED%CE%A1&singer_name=%D0%ED%CE%A1" title="许巍">许巍</a></span>
+			              <span class="time">5:25</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003dZRQr23BouY.m4a?fromtag=52#,#时光#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#325#,#003dZRQr23BouY#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>8</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5a26326220931d02&query=OUTRO&song_name=OUTRO" title="OUTRO">OUTRO</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=3376&query=%D0%ED%CE%A1&singer_name=%D0%ED%CE%A1" title="许巍">许巍</a></span>
+			              <span class="time">1:15</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003qDNRK10pJwA.m4a?fromtag=52#,#OUTRO#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#75#,#003qDNRK10pJwA#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>9</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5d53bcc659aceb10&query=%D2%BB%CC%EC&song_name=%D2%BB%CC%EC" title="一天">一天</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=3376&query=%D0%ED%CE%A1&singer_name=%D0%ED%CE%A1" title="许巍">许巍</a></span>
+			              <span class="time">18:25</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004MVwt52XPJQ6.m4a?fromtag=52#,#一天#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#1105#,#004MVwt52XPJQ6#]]', true)">播放</a>
+			            </li>
+			          </ul>
+			          <script type="text/javascript">
+							function playAlbumOtherSongList(event) {
+								play(event,"[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003XIjFa3AuNMM.m4a?fromtag=52#,#INTRO#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#67#,#003XIjFa3AuNMM#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004e18MO0bMZaZ.m4a?fromtag=52#,#小鱼的理想#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#409#,#004e18MO0bMZaZ#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000GwLJ01r1Ncz.m4a?fromtag=52#,#蓝莲花(好想好想谈恋爱插曲)#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#422#,#000GwLJ01r1Ncz#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003wKWlI0mOgXE.m4a?fromtag=52#,#每一刻都是崭新的#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#311#,#003wKWlI0mOgXE#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004Xf1mq0A9hoL.m4a?fromtag=52#,#少年#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#330#,#004Xf1mq0A9hoL#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000013GesL3Yzpos.m4a?fromtag=52#,#星空#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#296#,#0013GesL3Yzpos#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003dZRQr23BouY.m4a?fromtag=52#,#时光#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#325#,#003dZRQr23BouY#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003qDNRK10pJwA.m4a?fromtag=52#,#OUTRO#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#75#,#003qDNRK10pJwA#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004MVwt52XPJQ6.m4a?fromtag=52#,#一天#,#3376#,#许巍#,#66167#,#一时 Remix概念精选辑#,#1105#,#004MVwt52XPJQ6#]]");
+							}
+						</script>
+			        </div>
+			        <div class="music_list_02">
+			          <div class="m_tit">
+			              <h2>该歌手热门曲目</h2>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play_all" href="javascript:void(0)" onclick="playSingerOtherSongList(event)">播放</a>
+			              <span class="tit_info">
+			                  <a class="more" uigs="in_song_tiny_singer_hot_song_more" href="/tiny/singer?singer_id=3376&query=%D0%ED%CE%A1&singer_name=%D0%ED%CE%A1">更多<span>&gt;</span></a>
+			              </span>
+			          </div>
+			          <ul>
+			            
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>1</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=50abccd527570945&query=%B5%DA%C8%FD%BC%AB+%28%D1%EB%CA%D3%BC%CD%C2%BC%C6%AC%A1%B6%B5%DA%C8%FD%BC%AB%A1%B7%D6%F7%CC%E2%C7%FA%29&song_name=%B5%DA%C8%FD%BC%AB+%28%D1%EB%CA%D3%BC%CD%C2%BC%C6%AC%A1%B6%B5%DA%C8%FD%BC%AB%A1%B7%D6%F7%CC%E2%C7%FA%29" title="第三极 (央视纪录片《第三极》主题曲)">第三极 (央视纪录片《第三极》主题曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=964565&query=%B5%DA%C8%FD%BC%AB&album_name=%B5%DA%C8%FD%BC%AB" title="第三极">第三极</a></span>
+			              <span class="time">3:46</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000qHsaO31rlRg.m4a?fromtag=52#,#第三极 (央视纪录片《第三极》主题曲)#,#3376#,#许巍#,#964565#,#第三极#,#226#,#000qHsaO31rlRg#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>2</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=58af18864702b7c2&query=%CF%F1%B7%E7%D2%BB%D1%F9%D7%D4%D3%C9%28live%B0%E6%29&song_name=%CF%F1%B7%E7%D2%BB%D1%F9%D7%D4%D3%C9%28live%B0%E6%29" title="像风一样自由(live版)">像风一样自由(live版)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=662070&query=%B4%CB%CA%B1%B4%CB%BF%CC%D1%DD%B3%AA%BB%E1+LIVE%BC%CD%C2%BC%BC%AD&album_name=%B4%CB%CA%B1%B4%CB%BF%CC%D1%DD%B3%AA%BB%E1+LIVE%BC%CD%C2%BC%BC%AD" title="此时此刻演唱会 LIVE纪录辑">此时此刻演唱会 LIVE纪录辑</a></span>
+			              <span class="time">4:36</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000041f5Oi1BLvpk.m4a?fromtag=52#,#像风一样自由(live版)#,#3376#,#许巍#,#662070#,#此时此刻演唱会 LIVE纪录辑#,#276#,#0041f5Oi1BLvpk#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>3</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5b313f735e2945dd&query=%C0%B6%C1%AB%BB%A8&song_name=%C0%B6%C1%AB%BB%A8" title="蓝莲花">蓝莲花</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=14875&query=%D4%F8%BE%AD%B5%C4%C4%E3&album_name=%D4%F8%BE%AD%B5%C4%C4%E3" title="曾经的你">曾经的你</a></span>
+			              <span class="time">4:30</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002RKDzH1kOOy3.m4a?fromtag=52#,#蓝莲花#,#3376#,#许巍#,#14875#,#曾经的你#,#270#,#002RKDzH1kOOy3#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>4</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=57ead0ace210eed3&query=%CA%C0%CD%E2%CC%D2%D4%B4&song_name=%CA%C0%CD%E2%CC%D2%D4%B4" title="世外桃源">世外桃源</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=198945&query=%B4%CB%CA%B1%B4%CB%BF%CC&album_name=%B4%CB%CA%B1%B4%CB%BF%CC" title="此时此刻">此时此刻</a></span>
+			              <span class="time">4:47</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004XuHnz1XTup9.m4a?fromtag=52#,#世外桃源#,#3376#,#许巍#,#198945#,#此时此刻#,#287#,#004XuHnz1XTup9#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>5</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5702220e192f390a&query=%D4%F8%BE%AD%B5%C4%C4%E3&song_name=%D4%F8%BE%AD%B5%C4%C4%E3" title="曾经的你">曾经的你</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=38255&query=%BD%F1%CC%EC+%D0%ED%CE%A12002-2008%C9%FA%BB%EE%D7%F7%C6%B7%BC%AF&album_name=%BD%F1%CC%EC+%D0%ED%CE%A12002-2008%C9%FA%BB%EE%D7%F7%C6%B7%BC%AF" title="今天 许巍2002-2008生活作品集">今天 许巍2002-2008生活作品集</a></span>
+			              <span class="time">4:23</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000syFjm4Eg6xN.m4a?fromtag=52#,#曾经的你#,#3376#,#许巍#,#38255#,#今天 许巍2002-2008生活作品集#,#263#,#000syFjm4Eg6xN#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>6</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5a9f4d533596f4f7&query=%BF%D5%B9%C8%D3%C4%C0%BC&song_name=%BF%D5%B9%C8%D3%C4%C0%BC" title="空谷幽兰">空谷幽兰</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=198945&query=%B4%CB%CA%B1%B4%CB%BF%CC&album_name=%B4%CB%CA%B1%B4%CB%BF%CC" title="此时此刻">此时此刻</a></span>
+			              <span class="time">5:56</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004TPa1V1umwds.m4a?fromtag=52#,#空谷幽兰#,#3376#,#许巍#,#198945#,#此时此刻#,#356#,#004TPa1V1umwds#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>7</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=50c44edf5875dd6d&query=%BC%D2&song_name=%BC%D2" title="家">家</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=36371&query=%B0%AE%C8%E7%C9%D9%C4%EA&album_name=%B0%AE%C8%E7%C9%D9%C4%EA" title="爱如少年">爱如少年</a></span>
+			              <span class="time">4:42</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000h16Mm21S09Y.m4a?fromtag=52#,#家#,#3376#,#许巍#,#36371#,#爱如少年#,#282#,#000h16Mm21S09Y#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>8</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=544dd2b8958c508f&query=%C2%C3%D0%D0%28%B5%E7%D3%B0%A1%B6%BA%F3%BB%E1%CE%DE%C6%DA%A1%B7%B2%E5%C7%FA%29&song_name=%C2%C3%D0%D0%28%B5%E7%D3%B0%A1%B6%BA%F3%BB%E1%CE%DE%C6%DA%A1%B7%B2%E5%C7%FA%29" title="旅行(电影《后会无期》插曲)">旅行(电影《后会无期》插曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=7998&query=%C3%BF%D2%BB%BF%CC%B6%BC%CA%C7%D5%B8%D0%C2%B5%C4&album_name=%C3%BF%D2%BB%BF%CC%B6%BC%CA%C7%D5%B8%D0%C2%B5%C4" title="每一刻都是崭新的">每一刻都是崭新的</a></span>
+			              <span class="time">4:26</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000Qhd4C3Hfn7t.m4a?fromtag=52#,#旅行(电影《后会无期》插曲)#,#3376#,#许巍#,#7998#,#每一刻都是崭新的#,#266#,#000Qhd4C3Hfn7t#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>9</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=569a1b01e6307abe&query=%B9%CA%CF%E7%28live%B0%E6%29&song_name=%B9%CA%CF%E7%28live%B0%E6%29" title="故乡(live版)">故乡(live版)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=662070&query=%B4%CB%CA%B1%B4%CB%BF%CC%D1%DD%B3%AA%BB%E1+LIVE%BC%CD%C2%BC%BC%AD&album_name=%B4%CB%CA%B1%B4%CB%BF%CC%D1%DD%B3%AA%BB%E1+LIVE%BC%CD%C2%BC%BC%AD" title="此时此刻演唱会 LIVE纪录辑">此时此刻演唱会 LIVE纪录辑</a></span>
+			              <span class="time">6:06</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003YHHXP18D9uq.m4a?fromtag=52#,#故乡(live版)#,#3376#,#许巍#,#662070#,#此时此刻演唱会 LIVE纪录辑#,#366#,#003YHHXP18D9uq#]]', true)">播放</a>
+			            </li>
+			          </ul>
+			          <script type="text/javascript">
+							function playSingerOtherSongList(event) {
+								play(event,"[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000qHsaO31rlRg.m4a?fromtag=52#,#第三极 (央视纪录片《第三极》主题曲)#,#3376#,#许巍#,#964565#,#第三极#,#226#,#000qHsaO31rlRg#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000041f5Oi1BLvpk.m4a?fromtag=52#,#像风一样自由(live版)#,#3376#,#许巍#,#662070#,#此时此刻演唱会 LIVE纪录辑#,#276#,#0041f5Oi1BLvpk#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002RKDzH1kOOy3.m4a?fromtag=52#,#蓝莲花#,#3376#,#许巍#,#14875#,#曾经的你#,#270#,#002RKDzH1kOOy3#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004XuHnz1XTup9.m4a?fromtag=52#,#世外桃源#,#3376#,#许巍#,#198945#,#此时此刻#,#287#,#004XuHnz1XTup9#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000syFjm4Eg6xN.m4a?fromtag=52#,#曾经的你#,#3376#,#许巍#,#38255#,#今天 许巍2002-2008生活作品集#,#263#,#000syFjm4Eg6xN#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004TPa1V1umwds.m4a?fromtag=52#,#空谷幽兰#,#3376#,#许巍#,#198945#,#此时此刻#,#356#,#004TPa1V1umwds#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000h16Mm21S09Y.m4a?fromtag=52#,#家#,#3376#,#许巍#,#36371#,#爱如少年#,#282#,#000h16Mm21S09Y#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000Qhd4C3Hfn7t.m4a?fromtag=52#,#旅行(电影《后会无期》插曲)#,#3376#,#许巍#,#7998#,#每一刻都是崭新的#,#266#,#000Qhd4C3Hfn7t#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003YHHXP18D9uq.m4a?fromtag=52#,#故乡(live版)#,#3376#,#许巍#,#662070#,#此时此刻演唱会 LIVE纪录辑#,#366#,#003YHHXP18D9uq#]]");
+							}
+						</script>
+			        </div>
+			   </div>
+			</div>
+			<div class="r_con_280">
+			
+		      <div class="hot_albums">
+		        <div class="m_tit">
+		            <h2>该歌手热门专辑</h2>
+		        </div>
+		        <ul class="hot_albums_list">
+		          
+				  <li>
+		            <a class="img_b" uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=662070&album_name=%B4%CB%CA%B1%B4%CB%BF%CC%D1%DD%B3%AA%BB%E1+LIVE%BC%CD%C2%BC%BC%AD&query=%B4%CB%CA%B1%B4%CB%BF%CC%D1%DD%B3%AA%BB%E1+LIVE%BC%CD%C2%BC%BC%AD&singer_name=" title="此时此刻演唱会 LIVE纪录辑"><img src="http://imgcache.qq.com/music/photo/album/70/150_albumpic_662070_0.jpg" title="此时此刻演唱会 LIVE纪录辑" alt="此时此刻演唱会 LIVE纪录辑" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="125" height="125"></a>
+		            <span class="name"><a uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=662070&album_name=%B4%CB%CA%B1%B4%CB%BF%CC%D1%DD%B3%AA%BB%E1+LIVE%BC%CD%C2%BC%BC%AD&query=%B4%CB%CA%B1%B4%CB%BF%CC%D1%DD%B3%AA%BB%E1+LIVE%BC%CD%C2%BC%BC%AD&singer_name=" title="此时此刻演唱会 LIVE纪录辑">此时此刻演唱会 LIVE纪录辑</a></span>
+		            <span class="date ">2014-09-15</span>
+		          </li>
+		          
+				  <li>
+		            <a class="img_b" uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=14875&album_name=%D4%F8%BE%AD%B5%C4%C4%E3&query=%D4%F8%BE%AD%B5%C4%C4%E3&singer_name=" title="曾经的你"><img src="http://imgcache.qq.com/music/photo/album/75/150_albumpic_14875_0.jpg" title="曾经的你" alt="曾经的你" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="125" height="125"></a>
+		            <span class="name"><a uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=14875&album_name=%D4%F8%BE%AD%B5%C4%C4%E3&query=%D4%F8%BE%AD%B5%C4%C4%E3&singer_name=" title="曾经的你">曾经的你</a></span>
+		            <span class="date ">2006-09-01</span>
+		          </li>
+		          
+		        </ul>
+		      </div>
+		      <div id="hotsingerlist_div"></div>
+			  <script>$("#hotsingerlist_div").load("/frags/singer_tiny_hot_singer_list.html");</script>
+	       	  <div id="hotlist_div"></div>
+			   <script>$("#hotlist_div").load("/frags/album_tiny_hot_song_list.html");</script>
+			   
+
+<!--zly-->
+
+		    </div>
+		</div>
+	</div>
+	<div id="footer">
+			<a href="http://fuwu.sogou.com/" target="_blank">企业推广</a> - <a
+				href="http://pinyin.sogou.com" target="_blank">输入法</a> - <a
+				href="http://ie.sogou.com/" target="_blank">浏览器</a> - <a
+				href="http://mail.sogou.com" target="_blank">搜狗免费邮箱</a> - <a
+				href="http://job.sogou.com" target="_blank">诚聘英才</a> - <a
+				href="http://help.sogou.com/music.html" target="_blank">搜索帮助</a><br>
+			&copy;
+			<script>
+				document.write(new Date().getFullYear())
+			</script>
+			SOGOU.COM <a href="http://www.miibeian.gov.cn" target="_blank"
+				class="g">京ICP证050897号</a> <a
+				href="http://www.sogou.com/docs/terms.htm" target="_blank" class="g">免责声明</a>
+			<img src="/images/ba.gif" width="12" height="14" alt="备案">
+		</div>
+</body>
+</html>
+<script>
+var SugPara = {
+		"domain":"vs.sugg.sogou.com",
+		"sugType":"music",
+		"enableSug":true,
+		"revsd":1,
+		"inputid":"query",
+		"useParent":0
+	  }
+</script>
+<script src="/js/sugg_ajaj_2005.gz.js?v=5" language="javascript" type="text/javascript"></script>
+<script language='JavaScript'>
+var uigs_para={"uigs_productid":"music","uigs_page":"song_tiny","query":"旅行","tiny_name":"旅行"};
+</script>
+<script language='JavaScript' src='/js/common/pv.js'></script>
+<script language='JavaScript' src='http://pb.sogou.com/pb.js'></script>
+<!--tiny-->

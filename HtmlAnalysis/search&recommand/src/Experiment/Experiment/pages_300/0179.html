@@ -1,0 +1,397 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="P3P" content='CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"'>
+<title>老人与海——海鸣威，搜狗音乐在线试听</title>
+<link href="/dist/css/music.css?t=2015071013" rel="stylesheet" type="text/css">
+<link href="/dist/css/frame.css?t=2015071013" rel="stylesheet" type="text/css">
+<script src="/js/common/cookie.js" language="javascript" type="text/javascript"></script>
+<script src="/js/player/play_exe.js?t=20151102" language="javascript" type="text/javascript"></script>
+<script src="/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="/js/jquery.zclip.min.js"></script>
+</head>
+<body>
+	
+
+
+<div class="searchnav">
+  <ul class="topnav">
+    <li><a href="http://news.sogou.com/news?query=" onclick="navSubmit(this,'http://news.sogou.com/news');">新闻</a></li>
+	<li><a href="http://www.sogou.com/web?p=41240100&query=" onclick="navSubmit(this,'http://www.sogou.com/web?p=41240100');">网页</a></li>
+	<li><a href="http://weixin.sogou.com/weixin?p=41351200&type=2&query=" onclick="navSubmit(this,'http://weixin.sogou.com/weixin?p=41351200&type=2')">微信</a></li>
+	<li style="position: relative;"><a href="http://zhihu.sogou.com/zhihu?p=41351202&query=" onclick="navSubmit(this,'http://zhihu.sogou.com/?p=41351201')">知乎<img src="https://www.sogou.com/images/nav-new.gif" height="16" width="13" style="position: absolute;right:-12px;top:0;"></a></li>
+	<li><a href="http://wenwen.sogou.com/s/?cid=mp3search2ww&w=" onclick="navSubmit(this,'http://wenwen.sogou.com/?cid=mp3search2ww')">问问</a></li>
+	<li><a href="http://pic.sogou.com/pics?query=" onclick="navSubmit(this,'http://pic.sogou.com/');">图片</a></li>
+	<li><a href="http://v.sogou.com/v?query=" onclick="navSubmit(this,'http://v.sogou.com/');">视频</a></li>
+	<li class="cur">音乐</li>
+	<li><a href="http://map.sogou.com/#city=%u5168%u56FD&page=1&lq=" onclick="navSubmit(this,'http://map.sogou.com/');">地图</a></li>
+	<li><a href="http://www.sogou.com/docs/more.htm" target="_blank" uigs="result_nav_more">更多<span class="topraquo">&raquo;</span></a></li>
+  </ul>
+</div>
+<div class="header">
+  <div class="searchbox">
+    <a href="/" title="搜狗音乐"><img width="135" height="40" class="logo" title="搜狗音乐" src="/images/yinyue135x40.png?t=20150120" alt="搜狗音乐"></a>
+    <form class="searchform" id="searchForm" name="searchForm" action="/music.so" method="get">
+      <div class="querybox">
+        <div class="qborder"><input class="query" id="query" name="query" type="text" maxlength="100" value="老人与海" autocomplete="off"> 
+		      <input type=hidden name="class" id="classid" value=1 />
+		      <input type=hidden name="ac" id="ac" value="1">
+		      <input type=hidden name="_asf" id="_asf">
+		      <input type=hidden name="_ast" id="_ast">
+		      <input type=hidden name="p" id="p">
+		      <input type="hidden" name="w" value="06009900"/>
+		      <input type=hidden name="interV" id="inter">
+		</div>
+      </div>
+      <div class="sbtn1"><input type="submit" value="搜狗搜索"></div>
+    </form>
+  </div>
+</div>
+<div class="mnavbox">
+  <ul class="mnav">
+    <li ><a uigs="in_header_tiny_nav" href="/">首页</a><i class="tip"></i></li>
+    <li ><a uigs="in_header_tiny_nav" href="/bang_list.html">榜单</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/list/singer">歌手</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/top/tag_list.html">标签</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/tiny/dissList">歌单</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/list/album">专辑</a></li>
+    <li ><a uigs="in_header_list_nav" href="/top/mv_bang.html">MV</a></li>  
+  	
+      <li class="act_info">
+      <span><a href="http://mp3.sogou.com/tiny/album?album_id=1174104&query=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4%B5%DA%CB%C4%BC%BE+%D7%DC%BE%F6%C8%FC&album_name=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4%B5%DA%CB%C4%BC%BE+%D7%DC%BE%F6%C8%FC&singer_name=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4" class="act_icon" title="中国好声音第四季">中国好声音第四季</a></span>
+      <span>|</span>
+<span><a href="http://kan.sogou.com/player/180823920/" class="null" title="好声音现场视频">好声音现场视频</a></span>
+      
+      </li>
+  </ul>
+</div>
+<script>
+function navSubmit(obj, defaultHref) {
+    if (document.searchForm.query.value.length > 0) {
+        var href = obj.href;
+        var query = document.searchForm.query.value;
+        href = href + encodeURIComponent(query);
+        obj.href = href;
+    }else{
+    	obj.href = defaultHref;
+    }
+}
+</script>
+<!--zly-->
+	<div id="wrapper" class="wrapper">
+	
+		<div class="location">
+			<a uigs="in_song_tiny_nav2" href="/list/singer">歌手</a> <span>&gt;</span> <a uigs="in_song_tiny_nav2" href="/tiny/singer?singer_id=7179&query=%BA%A3%C3%F9%CD%FE&singer_name=%BA%A3%C3%F9%CD%FE">海鸣威</a> <span>&gt;</span> 老人与海
+		</div>
+		<div class="content">
+			<div class="l_con_680">
+				<div class="song_info_area">
+					<div class="album_cover">
+						<img src="http://imgcache.qq.com/music/photo/album_300/74/300_albumpic_31674_0.jpg" title="老人与海" alt="老人与海" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="220" height="220">
+					</div>
+					<div class="song_info">
+						<div class="song_tit">
+							<h2 title="老人与海">老人与海
+							
+							</h2>
+						</div>
+						<div class="song_btns">
+							<a uigs="out_song_tiny_play" onclick="play(event,'[[#392287#,#2#,#http://cc.stream.qqmusic.qq.com/C100001sdaYF1SYjhZ.m4a?fromtag=52#,#老人与海#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#266#,#5ec1d11ed648f89d#]]')" href="javascript:void(0)" class="start_btn">播放</a>
+						</div>
+						<ul class="song_detail">
+							<li>歌手：<a uigs="in_song_tiny_singer" href="/tiny/singer?singer_id=7179&query=%BA%A3%C3%F9%CD%FE&singer_name=%BA%A3%C3%F9%CD%FE" target="_blank" title="海鸣威">海鸣威</a></li>
+							<li>语言：<span>国语 </span></li>
+							<li>所属专辑：<a uigs="in_song_tiny_album" href="/tiny/album?album_id=31674&album_name=Dance+Dance+Dance&singer_name=%BA%A3%C3%F9%CD%FE&query=Dance+Dance+Dance" target="_blank" title="Dance Dance Dance">Dance Dance Dance</a></li>
+							<li>发行时间：<span>2007-05-06 </span></li>
+						</ul>
+					</div>
+				</div><div class="lyrics">
+				<p class="lyrics_tit">歌词<span class="opt"><a id="copy-button" href="javascript:void(0)">复制</a></span></p><p style="">老人与海 - 海鸣威</p><p style="">词：朱其民</p><p style="">曲：海鸣威</p><p style="">秋天的夜凋零在漫天落叶里面</p><p style="">泛黄世界一点一点随风而渐远</p><p style="">冬天的雪白色了你我的情人节</p><p style="">消失不见 爱的碎片</p><p style="">翻开尘封的相片</p><p style="">想起和你看过</p><p style="">的那些老旧默片</p><p style="">老人与海的情节</p><p><a class="more_open" href="javascript:void(0)" onclick="$('.more_open').hide();$('.more_close').show();$('.lyrics p').show();">更多</a></p><p style="display:none">画面中你却依稀 在浮现</p><p style="display:none">然而地球另一边</p><p style="display:none">飞机带走了我的思念 呵</p><p style="display:none">一个人的海边</p><p style="display:none">海潮循环仍不变</p><p style="display:none">空荡的世界</p><p style="display:none">我 们之间呼吸少了一些</p><p style="display:none">老人默默抽 着烟</p><p style="display:none">和我一起 失眠</p><p style="display:none">直觉呈现</p><p style="display:none">海的爱太深 时间太浅</p><p style="display:none">爱你的心 怎能搁浅</p><p style="display:none">老人的线紧牵 爱的信念</p><p style="display:none">岁月的帆 渐行渐远</p><p style="display:none">秋天的夜凋零在漫天落叶里面</p><p style="display:none">泛黄世界一点一点随风而渐远</p><p style="display:none">冬天的雪白色了你我的情人节</p><p style="display:none">消失不见 爱的碎片</p><p style="display:none">铺满灰尘的乐章第二页</p><p style="display:none">放在那里好久都没练</p><p style="display:none">静静写下诗篇</p><p style="display:none">等待从大海的另一边</p><p style="display:none">却被季风变线 you know</p><p style="display:none">爱所维系的生命线</p><p style="display:none">在风浪中摇曳</p><p style="display:none">我依然坚守这一切</p><p style="display:none">老人他默默牵 着线</p><p style="display:none">和我一起 哽咽</p><p style="display:none">也许明天 也许很远很远</p><p style="display:none">海的爱太深 时间太浅</p><p style="display:none">爱你的心 怎能搁浅</p><p style="display:none">老人的线紧牵 爱的信念</p><p style="display:none">岁月的帆 渐行渐远</p><p style="display:none">冬季终结纯白最后消失的那天</p><p style="display:none">海的诺言一点一点却走向长眠</p><p style="display:none">宁静前夜老人守候着他的心愿</p><p style="display:none">海的对面 你我两个世界</p><p><a style="display:none" class="more_close" href="javascript:void(0)" onclick="$('.more_close').hide();$('.more_open').show();$('.lyrics p:gt(12)').hide();">收起</a></p><textarea id="copy_value" style="display:none">老人与海 - 海鸣威
+词：朱其民
+曲：海鸣威
+秋天的夜凋零在漫天落叶里面
+泛黄世界一点一点随风而渐远
+冬天的雪白色了你我的情人节
+消失不见 爱的碎片
+翻开尘封的相片
+想起和你看过
+的那些老旧默片
+老人与海的情节
+画面中你却依稀 在浮现
+然而地球另一边
+飞机带走了我的思念 呵
+一个人的海边
+海潮循环仍不变
+空荡的世界
+我 们之间呼吸少了一些
+老人默默抽 着烟
+和我一起 失眠
+直觉呈现
+海的爱太深 时间太浅
+爱你的心 怎能搁浅
+老人的线紧牵 爱的信念
+岁月的帆 渐行渐远
+秋天的夜凋零在漫天落叶里面
+泛黄世界一点一点随风而渐远
+冬天的雪白色了你我的情人节
+消失不见 爱的碎片
+铺满灰尘的乐章第二页
+放在那里好久都没练
+静静写下诗篇
+等待从大海的另一边
+却被季风变线 you know
+爱所维系的生命线
+在风浪中摇曳
+我依然坚守这一切
+老人他默默牵 着线
+和我一起 哽咽
+也许明天 也许很远很远
+海的爱太深 时间太浅
+爱你的心 怎能搁浅
+老人的线紧牵 爱的信念
+岁月的帆 渐行渐远
+冬季终结纯白最后消失的那天
+海的诺言一点一点却走向长眠
+宁静前夜老人守候着他的心愿
+海的对面 你我两个世界
+</textarea><script>
+						$("#copy-button").zclip({
+						    path: "/js/ZeroClipboard.swf",
+						    copy: function(){return $("#copy_value").val();},
+							afterCopy:function(){
+								alert("歌词已复制到剪贴板");
+							}
+						});
+						
+						</script></div>
+				<div class="music_list_area">
+			        <div class="music_list_02 music_list_r">
+			          <div class="m_tit">
+			              <h2>该专辑其他歌曲</h2>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play_all" href="javascript:void(0)" onclick="playAlbumOtherSongList(event)">播放</a>
+			          </div>
+			          <ul>
+			            
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>1</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5dbf5ee62c7ae01d&query=Dance+Dance+Dance&song_name=Dance+Dance+Dance" title="Dance Dance Dance">Dance Dance Dance</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=7179&query=%BA%A3%C3%F9%CD%FE&singer_name=%BA%A3%C3%F9%CD%FE" title="海鸣威">海鸣威</a></span>
+			              <span class="time">4:08</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002NEt4j3QU7I3.m4a?fromtag=52#,#Dance Dance Dance#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#248#,#002NEt4j3QU7I3#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>2</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5a0fb303f0986760&query=%B2%A8%C2%C0%BF%CB%C8%FC%C4%C8&song_name=%B2%A8%C2%C0%BF%CB%C8%FC%C4%C8" title="波吕克赛娜">波吕克赛娜</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=7179&query=%BA%A3%C3%F9%CD%FE&singer_name=%BA%A3%C3%F9%CD%FE" title="海鸣威">海鸣威</a></span>
+			              <span class="time">3:48</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002zAwIW1zOW0B.m4a?fromtag=52#,#波吕克赛娜#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#228#,#002zAwIW1zOW0B#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>3</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5d70a2e6b7047721&query=%B2%CA%BA%E7%B1%B3%BA%F3&song_name=%B2%CA%BA%E7%B1%B3%BA%F3" title="彩虹背后">彩虹背后</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=7179&query=%BA%A3%C3%F9%CD%FE&singer_name=%BA%A3%C3%F9%CD%FE" title="海鸣威">海鸣威</a></span>
+			              <span class="time">4:16</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000hJ2I32vFDHu.m4a?fromtag=52#,#彩虹背后#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#256#,#000hJ2I32vFDHu#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>4</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=536957569b3cf60b&query=%CE%E8%B6%AF%C8%AB%B3%C7&song_name=%CE%E8%B6%AF%C8%AB%B3%C7" title="舞动全城">舞动全城</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=7179&query=%BA%A3%C3%F9%CD%FE&singer_name=%BA%A3%C3%F9%CD%FE" title="海鸣威">海鸣威</a></span>
+			              <span class="time">3:31</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000008APtV1hNXsc.m4a?fromtag=52#,#舞动全城#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#211#,#0008APtV1hNXsc#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>5</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5b4eec553775a37d&query=%C9%CB%D0%C4%B5%C4%BA%A3&song_name=%C9%CB%D0%C4%B5%C4%BA%A3" title="伤心的海">伤心的海</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=7179&query=%BA%A3%C3%F9%CD%FE&singer_name=%BA%A3%C3%F9%CD%FE" title="海鸣威">海鸣威</a></span>
+			              <span class="time">3:29</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000010I1jy08SXYb.m4a?fromtag=52#,#伤心的海#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#209#,#0010I1jy08SXYb#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>6</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=544540cf118cc2f5&query=%C8%CB%B8%E8%BA%CF%D2%BB&song_name=%C8%CB%B8%E8%BA%CF%D2%BB" title="人歌合一">人歌合一</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=7179&query=%BA%A3%C3%F9%CD%FE&singer_name=%BA%A3%C3%F9%CD%FE" title="海鸣威">海鸣威</a></span>
+			              <span class="time">3:33</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004eo4oH1buY5Y.m4a?fromtag=52#,#人歌合一#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#213#,#004eo4oH1buY5Y#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>7</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=53403e90c71affce&query=%C4%E3%B5%C4%B3%D0%C5%B5&song_name=%C4%E3%B5%C4%B3%D0%C5%B5" title="你的承诺">你的承诺</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=7179&query=%BA%A3%C3%F9%CD%FE&singer_name=%BA%A3%C3%F9%CD%FE" title="海鸣威">海鸣威</a></span>
+			              <span class="time">3:51</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003xiVH03AjzFv.m4a?fromtag=52#,#你的承诺#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#231#,#003xiVH03AjzFv#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>8</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=567d555901621e91&query=%C2%D2&song_name=%C2%D2" title="乱">乱</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=7179&query=%BA%A3%C3%F9%CD%FE&singer_name=%BA%A3%C3%F9%CD%FE" title="海鸣威">海鸣威</a></span>
+			              <span class="time">3:44</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000QUmGv2BkOWH.m4a?fromtag=52#,#乱#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#224#,#000QUmGv2BkOWH#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>9</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5a9c52a82170af8a&query=%B4%D3%BD%F1%D2%B9&song_name=%B4%D3%BD%F1%D2%B9" title="从今夜">从今夜</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=7179&query=%BA%A3%C3%F9%CD%FE&singer_name=%BA%A3%C3%F9%CD%FE" title="海鸣威">海鸣威</a></span>
+			              <span class="time">3:24</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000bULgu3hOZte.m4a?fromtag=52#,#从今夜#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#204#,#000bULgu3hOZte#]]', true)">播放</a>
+			            </li>
+			          </ul>
+			          <script type="text/javascript">
+							function playAlbumOtherSongList(event) {
+								play(event,"[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002NEt4j3QU7I3.m4a?fromtag=52#,#Dance Dance Dance#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#248#,#002NEt4j3QU7I3#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002zAwIW1zOW0B.m4a?fromtag=52#,#波吕克赛娜#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#228#,#002zAwIW1zOW0B#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000hJ2I32vFDHu.m4a?fromtag=52#,#彩虹背后#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#256#,#000hJ2I32vFDHu#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000008APtV1hNXsc.m4a?fromtag=52#,#舞动全城#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#211#,#0008APtV1hNXsc#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000010I1jy08SXYb.m4a?fromtag=52#,#伤心的海#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#209#,#0010I1jy08SXYb#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004eo4oH1buY5Y.m4a?fromtag=52#,#人歌合一#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#213#,#004eo4oH1buY5Y#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003xiVH03AjzFv.m4a?fromtag=52#,#你的承诺#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#231#,#003xiVH03AjzFv#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000QUmGv2BkOWH.m4a?fromtag=52#,#乱#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#224#,#000QUmGv2BkOWH#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000bULgu3hOZte.m4a?fromtag=52#,#从今夜#,#7179#,#海鸣威#,#31674#,#Dance Dance Dance#,#204#,#000bULgu3hOZte#]]");
+							}
+						</script>
+			        </div>
+			        <div class="music_list_02">
+			          <div class="m_tit">
+			              <h2>该歌手热门曲目</h2>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play_all" href="javascript:void(0)" onclick="playSingerOtherSongList(event)">播放</a>
+			              <span class="tit_info">
+			                  <a class="more" uigs="in_song_tiny_singer_hot_song_more" href="/tiny/singer?singer_id=7179&query=%BA%A3%C3%F9%CD%FE&singer_name=%BA%A3%C3%F9%CD%FE">更多<span>&gt;</span></a>
+			              </span>
+			          </div>
+			          <ul>
+			            
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>1</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5773f479150cb438&query=%B0%AE%B9%FD&song_name=%B0%AE%B9%FD" title="爱过">爱过</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=87748&query=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1&album_name=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1" title="工体爱情故事 2012新歌+精选">工体爱情故事 2012新歌+精选</a></span>
+			              <span class="time">4:08</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003RdCUl2ODmn3.m4a?fromtag=52#,#爱过#,#7179#,#海鸣威#,#87748#,#工体爱情故事 2012新歌+精选#,#248#,#003RdCUl2ODmn3#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>2</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5e8f59b7dfa66a97&query=%D2%BB%B8%F6%C8%CB%B5%C4%B1%B1%BE%A9%28%B5%E7%D3%B0%A1%B6%CB%AD%CB%B5%CE%D2%C3%C7%B2%BB%BB%E1%B0%AE%A1%B7%D6%F7%CC%E2%C7%FA%29&song_name=%D2%BB%B8%F6%C8%CB%B5%C4%B1%B1%BE%A9%28%B5%E7%D3%B0%A1%B6%CB%AD%CB%B5%CE%D2%C3%C7%B2%BB%BB%E1%B0%AE%A1%B7%D6%F7%CC%E2%C7%FA%29" title="一个人的北京(电影《谁说我们不会爱》主题曲)">一个人的北京(电影《谁说我们不会爱》主题曲)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=449081&query=%D2%BB%B8%F6%C8%CB%B5%C4%B1%B1%BE%A9&album_name=%D2%BB%B8%F6%C8%CB%B5%C4%B1%B1%BE%A9" title="一个人的北京">一个人的北京</a></span>
+			              <span class="time">3:26</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000LXZJ0222CcP.m4a?fromtag=52#,#一个人的北京(电影《谁说我们不会爱》主题曲)#,#7179#,#海鸣威#,#449081#,#一个人的北京#,#206#,#000LXZJ0222CcP#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>3</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=52e22726972eca87&query=%C4%E3%B5%C4%B3%D0%C5%B5&song_name=%C4%E3%B5%C4%B3%D0%C5%B5" title="你的承诺">你的承诺</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=87748&query=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1&album_name=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1" title="工体爱情故事 2012新歌+精选">工体爱情故事 2012新歌+精选</a></span>
+			              <span class="time">3:52</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000004bs093b3vl7.m4a?fromtag=52#,#你的承诺#,#7179#,#海鸣威#,#87748#,#工体爱情故事 2012新歌+精选#,#232#,#0004bs093b3vl7#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>4</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5453f86e39d1c9a3&query=%C3%C0%C5%AE%C9%DF&song_name=%C3%C0%C5%AE%C9%DF" title="美女蛇">美女蛇</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=1191122&query=%C3%C0%C5%AE%C9%DF&album_name=%C3%C0%C5%AE%C9%DF" title="美女蛇">美女蛇</a></span>
+			              <span class="time">3:38</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003apHqY12fWFG.m4a?fromtag=52#,#美女蛇#,#7179#,#海鸣威#,#1191122#,#美女蛇#,#218#,#003apHqY12fWFG#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>5</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=56dd67725bdbf4bf&query=%B2%CA%BA%E7%B1%B3%BA%F3&song_name=%B2%CA%BA%E7%B1%B3%BA%F3" title="彩虹背后">彩虹背后</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=87748&query=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1&album_name=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1" title="工体爱情故事 2012新歌+精选">工体爱情故事 2012新歌+精选</a></span>
+			              <span class="time">3:22</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003siWWw2hnf7J.m4a?fromtag=52#,#彩虹背后#,#7179#,#海鸣威#,#87748#,#工体爱情故事 2012新歌+精选#,#202#,#003siWWw2hnf7J#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>6</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=53636075c045991f&query=%CE%D2%B5%C4%BB%D8%D2%E4%B2%BB%CA%C7%CE%D2%B5%C4&song_name=%CE%D2%B5%C4%BB%D8%D2%E4%B2%BB%CA%C7%CE%D2%B5%C4" title="我的回忆不是我的">我的回忆不是我的</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=88902&query=%CE%D2%B5%C4%BB%D8%D2%E4%B2%BB%CA%C7%CE%D2%B5%C4&album_name=%CE%D2%B5%C4%BB%D8%D2%E4%B2%BB%CA%C7%CE%D2%B5%C4" title="我的回忆不是我的">我的回忆不是我的</a></span>
+			              <span class="time">3:52</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000024SKKT1yZNPS.m4a?fromtag=52#,#我的回忆不是我的#,#7179#,#海鸣威#,#88902#,#我的回忆不是我的#,#232#,#0024SKKT1yZNPS#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>7</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=546b7c4f885f1843&query=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2&song_name=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2" title="工体爱情故事">工体爱情故事</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=87748&query=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1&album_name=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1" title="工体爱情故事 2012新歌+精选">工体爱情故事 2012新歌+精选</a></span>
+			              <span class="time">3:15</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004DXvO11RFRsf.m4a?fromtag=52#,#工体爱情故事#,#7179#,#海鸣威#,#87748#,#工体爱情故事 2012新歌+精选#,#195#,#004DXvO11RFRsf#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>8</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=58e34540a2b4e31a&query=%C0%CF%C8%CB%D3%EB%BA%A32012&song_name=%C0%CF%C8%CB%D3%EB%BA%A32012" title="老人与海2012">老人与海2012</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=87748&query=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1&album_name=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1" title="工体爱情故事 2012新歌+精选">工体爱情故事 2012新歌+精选</a></span>
+			              <span class="time">4:03</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002ZD5qC2ICfco.m4a?fromtag=52#,#老人与海2012#,#7179#,#海鸣威#,#87748#,#工体爱情故事 2012新歌+精选#,#243#,#002ZD5qC2ICfco#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>9</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5b6f25e98642d553&query=%B0%AE%C3%BB%D3%D0%CB%AD%B6%D4%B2%BB%C6%F0%CB%AD&song_name=%B0%AE%C3%BB%D3%D0%CB%AD%B6%D4%B2%BB%C6%F0%CB%AD" title="爱没有谁对不起谁">爱没有谁对不起谁</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=89017&query=%C8%AB%C4%EA%C9%CB%B8%D0%B8%E8%C7%FA%B4%F3%C5%CC%B5%E33&album_name=%C8%AB%C4%EA%C9%CB%B8%D0%B8%E8%C7%FA%B4%F3%C5%CC%B5%E33" title="全年伤感歌曲大盘点3">全年伤感歌曲大盘点3</a></span>
+			              <span class="time">3:34</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000C8Mfg3sQvN7.m4a?fromtag=52#,#爱没有谁对不起谁#,#7179#,#海鸣威#,#89017#,#全年伤感歌曲大盘点3#,#214#,#000C8Mfg3sQvN7#]]', true)">播放</a>
+			            </li>
+			          </ul>
+			          <script type="text/javascript">
+							function playSingerOtherSongList(event) {
+								play(event,"[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003RdCUl2ODmn3.m4a?fromtag=52#,#爱过#,#7179#,#海鸣威#,#87748#,#工体爱情故事 2012新歌+精选#,#248#,#003RdCUl2ODmn3#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000LXZJ0222CcP.m4a?fromtag=52#,#一个人的北京(电影《谁说我们不会爱》主题曲)#,#7179#,#海鸣威#,#449081#,#一个人的北京#,#206#,#000LXZJ0222CcP#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000004bs093b3vl7.m4a?fromtag=52#,#你的承诺#,#7179#,#海鸣威#,#87748#,#工体爱情故事 2012新歌+精选#,#232#,#0004bs093b3vl7#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003apHqY12fWFG.m4a?fromtag=52#,#美女蛇#,#7179#,#海鸣威#,#1191122#,#美女蛇#,#218#,#003apHqY12fWFG#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003siWWw2hnf7J.m4a?fromtag=52#,#彩虹背后#,#7179#,#海鸣威#,#87748#,#工体爱情故事 2012新歌+精选#,#202#,#003siWWw2hnf7J#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000024SKKT1yZNPS.m4a?fromtag=52#,#我的回忆不是我的#,#7179#,#海鸣威#,#88902#,#我的回忆不是我的#,#232#,#0024SKKT1yZNPS#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004DXvO11RFRsf.m4a?fromtag=52#,#工体爱情故事#,#7179#,#海鸣威#,#87748#,#工体爱情故事 2012新歌+精选#,#195#,#004DXvO11RFRsf#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002ZD5qC2ICfco.m4a?fromtag=52#,#老人与海2012#,#7179#,#海鸣威#,#87748#,#工体爱情故事 2012新歌+精选#,#243#,#002ZD5qC2ICfco#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000C8Mfg3sQvN7.m4a?fromtag=52#,#爱没有谁对不起谁#,#7179#,#海鸣威#,#89017#,#全年伤感歌曲大盘点3#,#214#,#000C8Mfg3sQvN7#]]");
+							}
+						</script>
+			        </div>
+			   </div>
+			</div>
+			<div class="r_con_280">
+			
+		      <div class="hot_albums">
+		        <div class="m_tit">
+		            <h2>该歌手热门专辑</h2>
+		        </div>
+		        <ul class="hot_albums_list">
+		          
+				  <li>
+		            <a class="img_b" uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=87748&album_name=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1&query=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1&singer_name=" title="工体爱情故事 2012新歌+精选"><img src="http://imgcache.qq.com/music/photo/album/48/150_albumpic_87748_0.jpg" title="工体爱情故事 2012新歌+精选" alt="工体爱情故事 2012新歌+精选" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="125" height="125"></a>
+		            <span class="name"><a uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=87748&album_name=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1&query=%B9%A4%CC%E5%B0%AE%C7%E9%B9%CA%CA%C2+2012%D0%C2%B8%E8%2B%BE%AB%D1%A1&singer_name=" title="工体爱情故事 2012新歌+精选">工体爱情故事 2012新歌+精选</a></span>
+		            <span class="date ">2011-12-12</span>
+		          </li>
+		          
+				  <li>
+		            <a class="img_b" uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=88902&album_name=%CE%D2%B5%C4%BB%D8%D2%E4%B2%BB%CA%C7%CE%D2%B5%C4&query=%CE%D2%B5%C4%BB%D8%D2%E4%B2%BB%CA%C7%CE%D2%B5%C4&singer_name=" title="我的回忆不是我的"><img src="http://imgcache.qq.com/music/photo/album/2/150_albumpic_88902_0.jpg" title="我的回忆不是我的" alt="我的回忆不是我的" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="125" height="125"></a>
+		            <span class="name"><a uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=88902&album_name=%CE%D2%B5%C4%BB%D8%D2%E4%B2%BB%CA%C7%CE%D2%B5%C4&query=%CE%D2%B5%C4%BB%D8%D2%E4%B2%BB%CA%C7%CE%D2%B5%C4&singer_name=" title="我的回忆不是我的">我的回忆不是我的</a></span>
+		            <span class="date ">2010-04-29</span>
+		          </li>
+		          
+		        </ul>
+		      </div>
+		      <div id="hotsingerlist_div"></div>
+			  <script>$("#hotsingerlist_div").load("/frags/singer_tiny_hot_singer_list.html");</script>
+	       	  <div id="hotlist_div"></div>
+			   <script>$("#hotlist_div").load("/frags/album_tiny_hot_song_list.html");</script>
+			   
+
+<!--zly-->
+
+		    </div>
+		</div>
+	</div>
+	<div id="footer">
+			<a href="http://fuwu.sogou.com/" target="_blank">企业推广</a> - <a
+				href="http://pinyin.sogou.com" target="_blank">输入法</a> - <a
+				href="http://ie.sogou.com/" target="_blank">浏览器</a> - <a
+				href="http://mail.sogou.com" target="_blank">搜狗免费邮箱</a> - <a
+				href="http://job.sogou.com" target="_blank">诚聘英才</a> - <a
+				href="http://help.sogou.com/music.html" target="_blank">搜索帮助</a><br>
+			&copy;
+			<script>
+				document.write(new Date().getFullYear())
+			</script>
+			SOGOU.COM <a href="http://www.miibeian.gov.cn" target="_blank"
+				class="g">京ICP证050897号</a> <a
+				href="http://www.sogou.com/docs/terms.htm" target="_blank" class="g">免责声明</a>
+			<img src="/images/ba.gif" width="12" height="14" alt="备案">
+		</div>
+</body>
+</html>
+<script>
+var SugPara = {
+		"domain":"vs.sugg.sogou.com",
+		"sugType":"music",
+		"enableSug":true,
+		"revsd":1,
+		"inputid":"query",
+		"useParent":0
+	  }
+</script>
+<script src="/js/sugg_ajaj_2005.gz.js?v=5" language="javascript" type="text/javascript"></script>
+<script language='JavaScript'>
+var uigs_para={"uigs_productid":"music","uigs_page":"song_tiny","query":"老人与海","tiny_name":"老人与海"};
+</script>
+<script language='JavaScript' src='/js/common/pv.js'></script>
+<script language='JavaScript' src='http://pb.sogou.com/pb.js'></script>
+<!--tiny-->

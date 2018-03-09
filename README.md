@@ -1,5 +1,4 @@
 # thssxsy.github.io
-Haus of Gaga
 
 HorribleMe
 

@@ -1,0 +1,367 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="P3P" content='CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"'>
+<title>南山南——马頔，搜狗音乐在线试听</title>
+<link href="/dist/css/music.css?t=2015071013" rel="stylesheet" type="text/css">
+<link href="/dist/css/frame.css?t=2015071013" rel="stylesheet" type="text/css">
+<script src="/js/common/cookie.js" language="javascript" type="text/javascript"></script>
+<script src="/js/player/play_exe.js?t=20151102" language="javascript" type="text/javascript"></script>
+<script src="/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="/js/jquery.zclip.min.js"></script>
+</head>
+<body>
+	
+
+
+<div class="searchnav">
+  <ul class="topnav">
+    <li><a href="http://news.sogou.com/news?query=" onclick="navSubmit(this,'http://news.sogou.com/news');">新闻</a></li>
+	<li><a href="http://www.sogou.com/web?p=41240100&query=" onclick="navSubmit(this,'http://www.sogou.com/web?p=41240100');">网页</a></li>
+	<li><a href="http://weixin.sogou.com/weixin?p=41351200&type=2&query=" onclick="navSubmit(this,'http://weixin.sogou.com/weixin?p=41351200&type=2')">微信</a></li>
+	<li style="position: relative;"><a href="http://zhihu.sogou.com/zhihu?p=41351202&query=" onclick="navSubmit(this,'http://zhihu.sogou.com/?p=41351201')">知乎<img src="https://www.sogou.com/images/nav-new.gif" height="16" width="13" style="position: absolute;right:-12px;top:0;"></a></li>
+	<li><a href="http://wenwen.sogou.com/s/?cid=mp3search2ww&w=" onclick="navSubmit(this,'http://wenwen.sogou.com/?cid=mp3search2ww')">问问</a></li>
+	<li><a href="http://pic.sogou.com/pics?query=" onclick="navSubmit(this,'http://pic.sogou.com/');">图片</a></li>
+	<li><a href="http://v.sogou.com/v?query=" onclick="navSubmit(this,'http://v.sogou.com/');">视频</a></li>
+	<li class="cur">音乐</li>
+	<li><a href="http://map.sogou.com/#city=%u5168%u56FD&page=1&lq=" onclick="navSubmit(this,'http://map.sogou.com/');">地图</a></li>
+	<li><a href="http://www.sogou.com/docs/more.htm" target="_blank" uigs="result_nav_more">更多<span class="topraquo">&raquo;</span></a></li>
+  </ul>
+</div>
+<div class="header">
+  <div class="searchbox">
+    <a href="/" title="搜狗音乐"><img width="135" height="40" class="logo" title="搜狗音乐" src="/images/yinyue135x40.png?t=20150120" alt="搜狗音乐"></a>
+    <form class="searchform" id="searchForm" name="searchForm" action="/music.so" method="get">
+      <div class="querybox">
+        <div class="qborder"><input class="query" id="query" name="query" type="text" maxlength="100" value="南山南" autocomplete="off"> 
+		      <input type=hidden name="class" id="classid" value=1 />
+		      <input type=hidden name="ac" id="ac" value="1">
+		      <input type=hidden name="_asf" id="_asf">
+		      <input type=hidden name="_ast" id="_ast">
+		      <input type=hidden name="p" id="p">
+		      <input type="hidden" name="w" value="06009900"/>
+		      <input type=hidden name="interV" id="inter">
+		</div>
+      </div>
+      <div class="sbtn1"><input type="submit" value="搜狗搜索"></div>
+    </form>
+  </div>
+</div>
+<div class="mnavbox">
+  <ul class="mnav">
+    <li ><a uigs="in_header_tiny_nav" href="/">首页</a><i class="tip"></i></li>
+    <li ><a uigs="in_header_tiny_nav" href="/bang_list.html">榜单</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/list/singer">歌手</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/top/tag_list.html">标签</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/tiny/dissList">歌单</a></li>
+    <li ><a uigs="in_header_tiny_nav" href="/list/album">专辑</a></li>
+    <li ><a uigs="in_header_list_nav" href="/top/mv_bang.html">MV</a></li>  
+  	
+      <li class="act_info">
+      <span><a href="http://mp3.sogou.com/tiny/album?album_id=1174104&query=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4%B5%DA%CB%C4%BC%BE+%D7%DC%BE%F6%C8%FC&album_name=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4%B5%DA%CB%C4%BC%BE+%D7%DC%BE%F6%C8%FC&singer_name=%D6%D0%B9%FA%BA%C3%C9%F9%D2%F4" class="act_icon" title="中国好声音第四季">中国好声音第四季</a></span>
+      <span>|</span>
+<span><a href="http://kan.sogou.com/player/180823920/" class="null" title="好声音现场视频">好声音现场视频</a></span>
+      
+      </li>
+  </ul>
+</div>
+<script>
+function navSubmit(obj, defaultHref) {
+    if (document.searchForm.query.value.length > 0) {
+        var href = obj.href;
+        var query = document.searchForm.query.value;
+        href = href + encodeURIComponent(query);
+        obj.href = href;
+    }else{
+    	obj.href = defaultHref;
+    }
+}
+</script>
+<!--zly-->
+	<div id="wrapper" class="wrapper">
+	
+		<div class="location">
+			<a uigs="in_song_tiny_nav2" href="/list/singer">歌手</a> <span>&gt;</span> <a uigs="in_song_tiny_nav2" href="/tiny/singer?singer_id=171061&query=%C2%ED%EE%45&singer_name=%C2%ED%EE%45">马頔</a> <span>&gt;</span> 南山南
+		</div>
+		<div class="content">
+			<div class="l_con_680">
+				<div class="song_info_area">
+					<div class="album_cover">
+						<img src="http://imgcache.qq.com/music/photo/album_300/53/300_albumpic_444153_0.jpg" title="南山南" alt="南山南" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="220" height="220">
+					</div>
+					<div class="song_info">
+						<div class="song_tit">
+							<h2 title="南山南">南山南
+							
+							</h2>
+						</div>
+						<div class="song_btns">
+							<a uigs="out_song_tiny_play" onclick="play(event,'[[#5057872#,#2#,#http://cc.stream.qqmusic.qq.com/C1000030moFt21TOxK.m4a?fromtag=52#,#南山南#,#171061#,#马頔#,#444153#,#往复随安#,#336#,#5e950a95abfae5a7#]]')" href="javascript:void(0)" class="start_btn">播放</a>
+						</div>
+						<ul class="song_detail">
+							<li>歌手：<a uigs="in_song_tiny_singer" href="/tiny/singer?singer_id=171061&query=%C2%ED%EE%45&singer_name=%C2%ED%EE%45" target="_blank" title="马頔">马頔</a></li>
+							<li>语言：<span>国语 </span></li>
+							<li>所属专辑：<a uigs="in_song_tiny_album" href="/tiny/album?album_id=444153&album_name=%CD%F9%B8%B4%CB%E6%B0%B2&singer_name=%C2%ED%EE%45&query=%CD%F9%B8%B4%CB%E6%B0%B2" target="_blank" title="往复随安">往复随安</a></li>
+							<li>发行时间：<span>2013-07-19 </span></li>
+						</ul>
+					</div>
+				</div><div class="lyrics">
+				<p class="lyrics_tit">歌词<span class="opt"><a id="copy-button" href="javascript:void(0)">复制</a></span></p><p style="">南山南 - 马頔</p><p style="">词：马頔</p><p style="">曲：马頔</p><p style="">你在南方的艳阳里</p><p style="">大雪纷飞</p><p style="">我在北方的寒夜里</p><p style="">四季如春</p><p style="">如果天黑之前来得及</p><p style="">我要忘了你的眼睛</p><p style="">穷极一生</p><p style="">做不完一场梦</p><p><a class="more_open" href="javascript:void(0)" onclick="$('.more_open').hide();$('.more_close').show();$('.lyrics p').show();">更多</a></p><p style="display:none">他不再和谁谈论相逢的孤岛</p><p style="display:none">因为心里早已荒无人烟</p><p style="display:none">他的心里再装不下一个家</p><p style="display:none">做一个只对自己说谎的哑巴</p><p style="display:none">他说你任何为人称道的美丽</p><p style="display:none">不及他第一次遇见你</p><p style="display:none">时光苟延残喘</p><p style="display:none">无可奈何</p><p style="display:none">如果所有土地连在一起</p><p style="display:none">走上一生</p><p style="display:none">只为拥抱你</p><p style="display:none">喝醉了他的梦</p><p style="display:none">晚安</p><p style="display:none">他听见有人唱着古老的歌</p><p style="display:none">唱着今天还在远方</p><p style="display:none">发生的就在他眼睛里</p><p style="display:none">看到的孤岛</p><p style="display:none">没有悲伤</p><p style="display:none">但也没有花朵</p><p style="display:none">你在南方的艳阳里大雪纷飞</p><p style="display:none">我在北方的寒夜里四季如春</p><p style="display:none">如果天黑之前来得及</p><p style="display:none">我要忘了你的眼睛穷极一生</p><p style="display:none">做不完一场梦</p><p style="display:none">你在南方的艳阳里大雪纷飞</p><p style="display:none">我在北方的寒夜里四季如春</p><p style="display:none">如果天黑之前来得及</p><p style="display:none">我要忘了你的眼睛穷极一生</p><p style="display:none">做不完一场梦</p><p style="display:none">大梦初醒</p><p style="display:none">荒唐了一生</p><p style="display:none">南山南</p><p style="display:none">北秋悲</p><p style="display:none">南山有谷堆南风喃</p><p style="display:none">北海北 北海有墓碑</p><p><a style="display:none" class="more_close" href="javascript:void(0)" onclick="$('.more_close').hide();$('.more_open').show();$('.lyrics p:gt(12)').hide();">收起</a></p><textarea id="copy_value" style="display:none">南山南 - 马頔
+词：马頔
+曲：马頔
+你在南方的艳阳里
+大雪纷飞
+我在北方的寒夜里
+四季如春
+如果天黑之前来得及
+我要忘了你的眼睛
+穷极一生
+做不完一场梦
+他不再和谁谈论相逢的孤岛
+因为心里早已荒无人烟
+他的心里再装不下一个家
+做一个只对自己说谎的哑巴
+他说你任何为人称道的美丽
+不及他第一次遇见你
+时光苟延残喘
+无可奈何
+如果所有土地连在一起
+走上一生
+只为拥抱你
+喝醉了他的梦
+晚安
+他听见有人唱着古老的歌
+唱着今天还在远方
+发生的就在他眼睛里
+看到的孤岛
+没有悲伤
+但也没有花朵
+你在南方的艳阳里大雪纷飞
+我在北方的寒夜里四季如春
+如果天黑之前来得及
+我要忘了你的眼睛穷极一生
+做不完一场梦
+你在南方的艳阳里大雪纷飞
+我在北方的寒夜里四季如春
+如果天黑之前来得及
+我要忘了你的眼睛穷极一生
+做不完一场梦
+大梦初醒
+荒唐了一生
+南山南
+北秋悲
+南山有谷堆南风喃
+北海北 北海有墓碑
+</textarea><script>
+						$("#copy-button").zclip({
+						    path: "/js/ZeroClipboard.swf",
+						    copy: function(){return $("#copy_value").val();},
+							afterCopy:function(){
+								alert("歌词已复制到剪贴板");
+							}
+						});
+						
+						</script></div>
+				<div class="music_list_area">
+			        <div class="music_list_02 music_list_r">
+			          <div class="m_tit">
+			              <h2>该专辑其他歌曲</h2>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play_all" href="javascript:void(0)" onclick="playAlbumOtherSongList(event)">播放</a>
+			          </div>
+			          <ul>
+			            
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>1</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=507bcee3c77f217e&query=Intro&song_name=Intro" title="Intro">Intro</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=171061&query=%C2%ED%26%2338932%3B&singer_name=%C2%ED%26%2338932%3B" title="马&#38932;">马&#38932;</a></span>
+			              <span class="time">3:46</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000023m8SU0jUJpW.m4a?fromtag=52#,#Intro#,#171061#,#马&#38932;#,#444153#,#往复随安#,#226#,#0023m8SU0jUJpW#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>2</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=58759483b59078c3&query=%BA%A3%DF%E4%DF%E4%D0%A1%BD%E3&song_name=%BA%A3%DF%E4%DF%E4%D0%A1%BD%E3" title="海咪咪小姐">海咪咪小姐</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=171061&query=%C2%ED%26%2338932%3B&singer_name=%C2%ED%26%2338932%3B" title="马&#38932;">马&#38932;</a></span>
+			              <span class="time">4:00</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000041p7eu2HYExa.m4a?fromtag=52#,#海咪咪小姐#,#171061#,#马&#38932;#,#444153#,#往复随安#,#240#,#0041p7eu2HYExa#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>3</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5af08d316d4959fa&query=%C4%FD%B6%F8%D3%C7&song_name=%C4%FD%B6%F8%D3%C7" title="凝而忧">凝而忧</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=171061&query=%C2%ED%26%2338932%3B&singer_name=%C2%ED%26%2338932%3B" title="马&#38932;">马&#38932;</a></span>
+			              <span class="time">3:15</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000019h6WN0ZbHe7.m4a?fromtag=52#,#凝而忧#,#171061#,#马&#38932;#,#444153#,#往复随安#,#195#,#0019h6WN0ZbHe7#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>4</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=537db689f778bad3&query=%CA%B1%BC%E4%C0%EF%B5%C4&song_name=%CA%B1%BC%E4%C0%EF%B5%C4" title="时间里的">时间里的</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=171061&query=%C2%ED%26%2338932%3B&singer_name=%C2%ED%26%2338932%3B" title="马&#38932;">马&#38932;</a></span>
+			              <span class="time">4:52</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001oXpGd0jfIWz.m4a?fromtag=52#,#时间里的#,#171061#,#马&#38932;#,#444153#,#往复随安#,#292#,#001oXpGd0jfIWz#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>5</b>
+			              <span class="song_name"><a uigs="in_song_tiny_album_other_song" href="/tiny/song?tid=5e6a3119537b17d8&query=%C7%D0%B6%FB%CE%F7%C2%C3%B9%DD%D3%D0%C3%BB%D3%D08310&song_name=%C7%D0%B6%FB%CE%F7%C2%C3%B9%DD%D3%D0%C3%BB%D3%D08310" title="切尔西旅馆有没有8310">切尔西旅馆有没有8310</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_album_other_song_singer" href="/tiny/singer?singer_id=171061&query=%C2%ED%26%2338932%3B&singer_name=%C2%ED%26%2338932%3B" title="马&#38932;">马&#38932;</a></span>
+			              <span class="time">3:58</span>
+			              <a class="play_btn" uigs="out_song_tiny_album_other_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000002yyOa1O5rUF.m4a?fromtag=52#,#切尔西旅馆有没有8310#,#171061#,#马&#38932;#,#444153#,#往复随安#,#238#,#0002yyOa1O5rUF#]]', true)">播放</a>
+			            </li>
+			          </ul>
+			          <script type="text/javascript">
+							function playAlbumOtherSongList(event) {
+								play(event,"[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000023m8SU0jUJpW.m4a?fromtag=52#,#Intro#,#171061#,#马&#38932;#,#444153#,#往复随安#,#226#,#0023m8SU0jUJpW#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000041p7eu2HYExa.m4a?fromtag=52#,#海咪咪小姐#,#171061#,#马&#38932;#,#444153#,#往复随安#,#240#,#0041p7eu2HYExa#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000019h6WN0ZbHe7.m4a?fromtag=52#,#凝而忧#,#171061#,#马&#38932;#,#444153#,#往复随安#,#195#,#0019h6WN0ZbHe7#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001oXpGd0jfIWz.m4a?fromtag=52#,#时间里的#,#171061#,#马&#38932;#,#444153#,#往复随安#,#292#,#001oXpGd0jfIWz#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000002yyOa1O5rUF.m4a?fromtag=52#,#切尔西旅馆有没有8310#,#171061#,#马&#38932;#,#444153#,#往复随安#,#238#,#0002yyOa1O5rUF#]]");
+							}
+						</script>
+			        </div>
+			        <div class="music_list_02">
+			          <div class="m_tit">
+			              <h2>该歌手热门曲目</h2>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play_all" href="javascript:void(0)" onclick="playSingerOtherSongList(event)">播放</a>
+			              <span class="tit_info">
+			                  <a class="more" uigs="in_song_tiny_singer_hot_song_more" href="/tiny/singer?singer_id=171061&query=%C2%ED%EE%45&singer_name=%C2%ED%EE%45">更多<span>&gt;</span></a>
+			              </span>
+			          </div>
+			          <ul>
+			            
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>1</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=528f515c66149fae&query=%C4%CF%C9%BD%C4%CF&song_name=%C4%CF%C9%BD%C4%CF" title="南山南">南山南</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=778079&query=%B9%C2%B5%BA&album_name=%B9%C2%B5%BA" title="孤岛">孤岛</a></span>
+			              <span class="time">5:25</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001abixR3f8L59.m4a?fromtag=52#,#南山南#,#171061#,#马頔#,#778079#,#孤岛#,#325#,#001abixR3f8L59#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>2</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5a422027f183e7c3&query=%B0%C1%BA%AE&song_name=%B0%C1%BA%AE" title="傲寒">傲寒</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=778079&query=%B9%C2%B5%BA&album_name=%B9%C2%B5%BA" title="孤岛">孤岛</a></span>
+			              <span class="time">6:00</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004eR7fg3XJbt6.m4a?fromtag=52#,#傲寒#,#171061#,#马頔#,#778079#,#孤岛#,#360#,#004eR7fg3XJbt6#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>3</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5fd282ca5d721ac2&query=%B9%D7%C4%BE&song_name=%B9%D7%C4%BE" title="棺木">棺木</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=778079&query=%B9%C2%B5%BA&album_name=%B9%C2%B5%BA" title="孤岛">孤岛</a></span>
+			              <span class="time">4:46</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003U6iuD2tTLiN.m4a?fromtag=52#,#棺木#,#171061#,#马頔#,#778079#,#孤岛#,#286#,#003U6iuD2tTLiN#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>4</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5c2015b8344cbd56&query=Intro+%28%BF%DA%B0%D7%29&song_name=Intro+%28%BF%DA%B0%D7%29" title="Intro (口白)">Intro (口白)</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=778079&query=%B9%C2%B5%BA&album_name=%B9%C2%B5%BA" title="孤岛">孤岛</a></span>
+			              <span class="time">4:02</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000040Xizc0NP7BZ.m4a?fromtag=52#,#Intro (口白)#,#171061#,#马頔#,#778079#,#孤岛#,#242#,#0040Xizc0NP7BZ#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>5</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=521acd4aaccc3329&query=%D7%EE%BA%F3%D2%BB%B4%CE%BF%B4%B2%BB%BC%FB%C4%C7%D0%A9%C8%CB%C0%CF%C8%A5&song_name=%D7%EE%BA%F3%D2%BB%B4%CE%BF%B4%B2%BB%BC%FB%C4%C7%D0%A9%C8%CB%C0%CF%C8%A5" title="最后一次看不见那些人老去">最后一次看不见那些人老去</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=778079&query=%B9%C2%B5%BA&album_name=%B9%C2%B5%BA" title="孤岛">孤岛</a></span>
+			              <span class="time">4:56</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000sO1uX0ZuxyW.m4a?fromtag=52#,#最后一次看不见那些人老去#,#171061#,#马頔#,#778079#,#孤岛#,#296#,#000sO1uX0ZuxyW#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>6</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=5aa7f3a00cab1745&query=%BA%A3%DF%E4%DF%E4%D0%A1%BD%E3&song_name=%BA%A3%DF%E4%DF%E4%D0%A1%BD%E3" title="海咪咪小姐">海咪咪小姐</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=778079&query=%B9%C2%B5%BA&album_name=%B9%C2%B5%BA" title="孤岛">孤岛</a></span>
+			              <span class="time">4:12</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001pmrYJ15Zbwp.m4a?fromtag=52#,#海咪咪小姐#,#171061#,#马頔#,#778079#,#孤岛#,#252#,#001pmrYJ15Zbwp#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>7</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=584125eed5278b0d&query=%CA%B1%BC%E4%C0%EF%B5%C4&song_name=%CA%B1%BC%E4%C0%EF%B5%C4" title="时间里的">时间里的</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=444153&query=%CD%F9%B8%B4%CB%E6%B0%B2&album_name=%CD%F9%B8%B4%CB%E6%B0%B2" title="往复随安">往复随安</a></span>
+			              <span class="time">4:52</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001oXpGd0jfIWz.m4a?fromtag=52#,#时间里的#,#171061#,#马頔#,#444153#,#往复随安#,#292#,#001oXpGd0jfIWz#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>8</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=51d6565626f75ce6&query=%B9%C2%C4%F1%B5%C4%B8%E8&song_name=%B9%C2%C4%F1%B5%C4%B8%E8" title="孤鸟的歌">孤鸟的歌</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=778079&query=%B9%C2%B5%BA&album_name=%B9%C2%B5%BA" title="孤岛">孤岛</a></span>
+			              <span class="time">3:40</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002A3bnr3PkCrD.m4a?fromtag=52#,#孤鸟的歌#,#171061#,#马頔#,#778079#,#孤岛#,#220#,#002A3bnr3PkCrD#]]', true)">播放</a>
+			            </li>
+						<li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+			              <b>9</b>
+			              <span class="song_name"><a uigs="in_song_tiny_singer_hot_song" href="/tiny/song?tid=552c1227ec5b1400&query=%B9%C2%B6%C0%B5%C4%C4%F1&song_name=%B9%C2%B6%C0%B5%C4%C4%F1" title="孤独的鸟">孤独的鸟</a></span>
+			              <span class="singer_name"><a uigs="in_song_tiny_singer_hot_song_album" href="/tiny/album?album_id=459928&query=%B9%C2%B6%C0%B5%C4%C4%F1&album_name=%B9%C2%B6%C0%B5%C4%C4%F1" title="孤独的鸟">孤独的鸟</a></span>
+			              <span class="time">3:36</span>
+			              <a class="play_btn" uigs="out_song_tiny_singer_hot_song_play" href="javascript:void(0)" onclick="play(event,'[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002SQSG20UXdLs.m4a?fromtag=52#,#孤独的鸟#,#171061#,#马頔#,#459928#,#孤独的鸟#,#216#,#002SQSG20UXdLs#]]', true)">播放</a>
+			            </li>
+			          </ul>
+			          <script type="text/javascript">
+							function playSingerOtherSongList(event) {
+								play(event,"[[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001abixR3f8L59.m4a?fromtag=52#,#南山南#,#171061#,#马頔#,#778079#,#孤岛#,#325#,#001abixR3f8L59#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100004eR7fg3XJbt6.m4a?fromtag=52#,#傲寒#,#171061#,#马頔#,#778079#,#孤岛#,#360#,#004eR7fg3XJbt6#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100003U6iuD2tTLiN.m4a?fromtag=52#,#棺木#,#171061#,#马頔#,#778079#,#孤岛#,#286#,#003U6iuD2tTLiN#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C1000040Xizc0NP7BZ.m4a?fromtag=52#,#Intro (口白)#,#171061#,#马頔#,#778079#,#孤岛#,#242#,#0040Xizc0NP7BZ#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100000sO1uX0ZuxyW.m4a?fromtag=52#,#最后一次看不见那些人老去#,#171061#,#马頔#,#778079#,#孤岛#,#296#,#000sO1uX0ZuxyW#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001pmrYJ15Zbwp.m4a?fromtag=52#,#海咪咪小姐#,#171061#,#马頔#,#778079#,#孤岛#,#252#,#001pmrYJ15Zbwp#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100001oXpGd0jfIWz.m4a?fromtag=52#,#时间里的#,#171061#,#马頔#,#444153#,#往复随安#,#292#,#001oXpGd0jfIWz#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002A3bnr3PkCrD.m4a?fromtag=52#,#孤鸟的歌#,#171061#,#马頔#,#778079#,#孤岛#,#220#,#002A3bnr3PkCrD#],[#0#,#2#,#http://cc.stream.qqmusic.qq.com/C100002SQSG20UXdLs.m4a?fromtag=52#,#孤独的鸟#,#171061#,#马頔#,#459928#,#孤独的鸟#,#216#,#002SQSG20UXdLs#]]");
+							}
+						</script>
+			        </div>
+			   </div>
+			</div>
+			<div class="r_con_280">
+			
+		      <div class="hot_albums">
+		        <div class="m_tit">
+		            <h2>该歌手热门专辑</h2>
+		        </div>
+		        <ul class="hot_albums_list">
+		          
+				  <li>
+		            <a class="img_b" uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=778079&album_name=%B9%C2%B5%BA&query=%B9%C2%B5%BA&singer_name=" title="孤岛"><img src="http://imgcache.qq.com/music/photo/album/79/150_albumpic_778079_0.jpg" title="孤岛" alt="孤岛" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="125" height="125"></a>
+		            <span class="name"><a uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=778079&album_name=%B9%C2%B5%BA&query=%B9%C2%B5%BA&singer_name=" title="孤岛">孤岛</a></span>
+		            <span class="date ">2014-11-06</span>
+		          </li>
+		          
+				  <li>
+		            <a class="img_b" uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=444153&album_name=%CD%F9%B8%B4%CB%E6%B0%B2&query=%CD%F9%B8%B4%CB%E6%B0%B2&singer_name=" title="往复随安"><img src="http://imgcache.qq.com/music/photo/album/53/150_albumpic_444153_0.jpg" title="往复随安" alt="往复随安" onerror="this.onerror=null;this.src='/images/default_album.png?t=20150507'" width="125" height="125"></a>
+		            <span class="name"><a uigs="in_song_tiny_hot_album_list" href="/tiny/album?album_id=444153&album_name=%CD%F9%B8%B4%CB%E6%B0%B2&query=%CD%F9%B8%B4%CB%E6%B0%B2&singer_name=" title="往复随安">往复随安</a></span>
+		            <span class="date ">2013-07-19</span>
+		          </li>
+		          
+		        </ul>
+		      </div>
+		      <div id="hotsingerlist_div"></div>
+			  <script>$("#hotsingerlist_div").load("/frags/singer_tiny_hot_singer_list.html");</script>
+	       	  <div id="hotlist_div"></div>
+			   <script>$("#hotlist_div").load("/frags/album_tiny_hot_song_list.html");</script>
+			   
+
+<!--zly-->
+
+		    </div>
+		</div>
+	</div>
+	<div id="footer">
+			<a href="http://fuwu.sogou.com/" target="_blank">企业推广</a> - <a
+				href="http://pinyin.sogou.com" target="_blank">输入法</a> - <a
+				href="http://ie.sogou.com/" target="_blank">浏览器</a> - <a
+				href="http://mail.sogou.com" target="_blank">搜狗免费邮箱</a> - <a
+				href="http://job.sogou.com" target="_blank">诚聘英才</a> - <a
+				href="http://help.sogou.com/music.html" target="_blank">搜索帮助</a><br>
+			&copy;
+			<script>
+				document.write(new Date().getFullYear())
+			</script>
+			SOGOU.COM <a href="http://www.miibeian.gov.cn" target="_blank"
+				class="g">京ICP证050897号</a> <a
+				href="http://www.sogou.com/docs/terms.htm" target="_blank" class="g">免责声明</a>
+			<img src="/images/ba.gif" width="12" height="14" alt="备案">
+		</div>
+</body>
+</html>
+<script>
+var SugPara = {
+		"domain":"vs.sugg.sogou.com",
+		"sugType":"music",
+		"enableSug":true,
+		"revsd":1,
+		"inputid":"query",
+		"useParent":0
+	  }
+</script>
+<script src="/js/sugg_ajaj_2005.gz.js?v=5" language="javascript" type="text/javascript"></script>
+<script language='JavaScript'>
+var uigs_para={"uigs_productid":"music","uigs_page":"song_tiny","query":"南山南","tiny_name":"南山南"};
+</script>
+<script language='JavaScript' src='/js/common/pv.js'></script>
+<script language='JavaScript' src='http://pb.sogou.com/pb.js'></script>
+<!--tiny-->
